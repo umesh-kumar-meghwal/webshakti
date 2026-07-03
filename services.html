@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="index, follow">
+   <title>Premium Digital Services | Web Shakti Kota</title>
+
+   <meta name="description"
+      content="Professional Web Development, SEO, App Development and UI/UX Design services in Kota by Web Shakti.">
+   <link rel="canonical" href="https://webshaktii.netlify.app/services.html">
+      <link rel="icon" href="/images/logo.png" type="image/x-icon">
+
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- Fonts & Icons -->
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <!-- AOS Animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+               colors: { primary: '#2563eb', dark: '#0f172a', surface: '#f8fafc' }
+            }
+         }
+      }
+   </script>
+   <style>
+      .bg-grid {
+         background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+         background-size: 30px 30px;
+      }
+
+      .glass-card {
+         background: rgba(255, 255, 255, 0.8);
+         backdrop-filter: blur(12px);
+         border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .gradient-text {
+         background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   </style>
+</head>
+
+<body class="bg-surface text-slate-900 font-sans bg-dots">
+
+   <!-- Premium Navbar -->
+   <nav class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
+         <div class="flex items-center gap-2">
+            <img src="images/logo.png" alt="Web Shakti" class="h-10">
+         </div>
+         <div class="hidden lg:flex items-center gap-10 font-semibold text-slate-600">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            <a href="team.html" class="hover:text-primary transition-colors">Team</a>
+
+            <a href="contact.html"
+               class="bg-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:bg-blue-700 transition-all">Get
+               a Quote</a>
+         </div>
+         <button class="lg:hidden text-2xl text-dark focus:outline-none" id="menu-btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+         </button>
+      </div>
+   </nav>
+
+   <!-- Mobile Slide-over Menu -->
+   <div id="mobile-menu"
+      class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white transition-all duration-300">
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-white focus:outline-none">
+         <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="index.html" class="mobile-link hover:text-primary transition-colors">Home</a>
+      <a href="services.html" class="mobile-link hover:text-primary transition-colors">Services</a>
+      <a href="about.html" class="mobile-link hover:text-primary transition-colors">About Us</a>
+      <a href="contact.html" class="mobile-link hover:text-primary transition-colors">Contact</a>
+      <a href="team.html" class="mobile-link hover:text-primary transition-colors">Team</a>
+      <a href="contact.html"
+         class="mobile-link bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all text-lg">Get a
+         Quote</a>
+   </div>
+
+
+   <!-- Hero Section -->
+   <section class="pt-40 pb-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+         <span
+            class="inline-block px-4 py-1.5 bg-blue-50 text-primary rounded-full text-xs font-extrabold uppercase tracking-widest mb-6"
+            data-aos="fade-up">Our Expertise</span>
+         <h1 class="text-4xl md:text-6xl font-extrabold text-dark leading-tight" data-aos="fade-up"
+            data-aos-delay="100">
+            Solutions that drive <span class="gradient-text">Real Growth.</span>
+         </h1>
+         <p class="mt-6 text-slate-500 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="200">
+            We don't just build websites; we build digital experiences that convert visitors into loyal customers.
+            Explore our wide range of professional services.
+         </p>
+      </div>
+   </section>
+
+   <!-- Services Bento Grid -->
+   <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service 1: Web Dev -->
+            <div
+               class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-100 relative overflow-hidden group"
+               data-aos="fade-up">
+               <div
+                  class="icon-box w-16 h-16 bg-blue-50 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 transition-all duration-300">
+                  <i class="fa-solid fa-laptop-code"></i>
+               </div>
+               <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+               <p class="text-slate-500 text-sm leading-relaxed mb-6">High-performance, scalable websites built with the
+                  latest frameworks like React, Next.js, and Node.js.</p>
+               <ul class="space-y-3 mb-8">
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-primary mr-2"></i> SINGLE PAGE APPLICATIONS</li>
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-primary mr-2"></i> CORPORATE PORTALS</li>
+               </ul>
+               <a href="new_technology.html"
+                  class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Learn
+                  More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Service 2: Ecommerce -->
+            <div
+               class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-100 group"
+               data-aos="fade-up" data-aos-delay="100">
+               <div
+                  class="icon-box w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-8 transition-all duration-300">
+                  <i class="fa-solid fa-cart-shopping"></i>
+               </div>
+               <h3 class="text-2xl font-bold mb-4">E-Commerce Stores</h3>
+               <p class="text-slate-500 text-sm leading-relaxed mb-6">Launch your online shop with secure payment
+                  gateways, inventory management, and user-friendly UX.</p>
+               <ul class="space-y-3 mb-8">
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-emerald-600 mr-2"></i> MULTI-VENDOR SUPPORT</li>
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-emerald-600 mr-2"></i> SECURE CHECKOUT</li>
+               </ul>
+               <a href="#"
+                  class="text-emerald-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Learn
+                  More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Service 3: SEO -->
+            <div
+               class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-100 group"
+               data-aos="fade-up" data-aos-delay="200">
+               <div
+                  class="icon-box w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-8 transition-all duration-300">
+                  <i class="fa-solid fa-chart-line"></i>
+               </div>
+               <h3 class="text-2xl font-bold mb-4">SEO & Ranking</h3>
+               <p class="text-slate-500 text-sm leading-relaxed mb-6">Get on the first page of Google. We provide
+                  on-page, off-page, and technical SEO for maximum reach.</p>
+               <ul class="space-y-3 mb-8">
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-purple-600 mr-2"></i> KEYWORD STRATEGY</li>
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-purple-600 mr-2"></i> BACKLINK BUILDING</li>
+               </ul>
+               <a href="#"
+                  class="text-purple-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Learn
+                  More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Service 4: UI/UX -->
+            <div
+               class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-100 group"
+               data-aos="fade-up">
+               <div
+                  class="icon-box w-16 h-16 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-3xl mb-8 transition-all duration-300">
+                  <i class="fa-solid fa-pen-nib"></i>
+               </div>
+               <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+               <p class="text-slate-500 text-sm leading-relaxed mb-6">Creating pixel-perfect, intuitive designs that
+                  provide an engaging journey for your users.</p>
+               <ul class="space-y-3 mb-8">
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-orange-600 mr-2"></i> WIREFRAMING</li>
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-orange-600 mr-2"></i> PROTOTYPING</li>
+               </ul>
+               <a href="long_live_ux.html"
+                  class="text-orange-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Learn
+                  More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Service 5: App Dev -->
+            <div
+               class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-100 group"
+               data-aos="fade-up" data-aos-delay="100">
+               <div
+                  class="icon-box w-16 h-16 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center text-3xl mb-8 transition-all duration-300">
+                  <i class="fa-solid fa-mobile-button"></i>
+               </div>
+               <h3 class="text-2xl font-bold mb-4">App Development</h3>
+               <p class="text-slate-500 text-sm leading-relaxed mb-6">Custom Android and iOS apps that are fast, secure,
+                  and native-feeling using Flutter/React Native.</p>
+               <ul class="space-y-3 mb-8">
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-rose-600 mr-2"></i> HYBRID APPS</li>
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-rose-600 mr-2"></i> API INTEGRATION</li>
+               </ul>
+               <a href="#"
+                  class="text-rose-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Learn
+                  More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Service 6: Maintenance -->
+            <div
+               class="service-card bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-100 group"
+               data-aos="fade-up" data-aos-delay="200">
+               <div
+                  class="icon-box w-16 h-16 bg-slate-100 text-slate-600 rounded-2xl flex items-center justify-center text-3xl mb-8 transition-all duration-300">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+               </div>
+               <h3 class="text-2xl font-bold mb-4">AMC & Support</h3>
+               <p class="text-slate-500 text-sm leading-relaxed mb-6">Regular updates, security patches, and 24/7
+                  technical support to keep your business running smoothly.</p>
+               <ul class="space-y-3 mb-8">
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-slate-600 mr-2"></i> CLOUD BACKUPS</li>
+                  <li class="flex items-center text-xs font-bold text-slate-400"><i
+                        class="fa-solid fa-circle-check text-slate-600 mr-2"></i> BUG FIXING</li>
+               </ul>
+               <a href="#"
+                  class="text-slate-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Learn
+                  More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- Our Projects Section -->
+   <section class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+         <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-dark mb-4">Our Featured Projects</h2>
+            <p class="text-slate-500">A glimpse of the creative work we've delivered for our clients.</p>
+         </div>
+
+         <!-- Projects Grid -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Project 1 -->
+            <div
+               class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
+               <div class="h-56 overflow-hidden">
+                  <img src="images/mahabali.PNG" alt="Mahabali Event Kota"
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+               </div>
+               <div class="p-6">
+                  <h3 class="text-lg font-bold text-dark mb-2">Mahabali Event Kota</h3>
+                  <p class="text-slate-500 text-sm mb-4">Event management and booking website designed for seamless user
+                     experience.</p>
+                  <a href="https://mahabaliieventskota.netlify.app/" target="_blank"
+                     class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
+                     View Project <i class="fa-solid fa-arrow-right ml-2"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+               class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
+               <div class="h-56 overflow-hidden">
+                  <img src="images/sakshi.PNG" alt="Sakshi Mehndi Artist"
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+               </div>
+               <div class="p-6">
+                  <h3 class="text-lg font-bold text-dark mb-2">Sakshi Mehndi Artist</h3>
+                  <p class="text-slate-500 text-sm mb-4">A beautiful portfolio website showcasing intricate mehndi
+                     designs and services.</p>
+                  <a href="https://sakshimehndiarts.netlify.app/" target="_blank"
+                     class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
+                     View Project <i class="fa-solid fa-arrow-right ml-2"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+               class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
+               <div class="h-56 overflow-hidden">
+                  <img src="images/elitivision.PNG" alt="Elitivision Photography"
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+               </div>
+               <div class="p-6">
+                  <h3 class="text-lg font-bold text-dark mb-2">Elitivision Photography</h3>
+                  <p class="text-slate-500 text-sm mb-4">Professional photography website with high-quality gallery and
+                     booking system.</p>
+                  <a href="https://elitevision-photography.gt.tc/" target="_blank"
+                     class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
+                     View Project <i class="fa-solid fa-arrow-right ml-2"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+               class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
+               <div class="h-56 overflow-hidden">
+                  <img src="images/sonalika.PNG" alt="Project 4"
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+               </div>
+               <div class="p-6">
+                  <h3 class="text-lg font-bold text-dark mb-2">Sonalika Mehndi Artist</h3>
+
+                  <p class="text-slate-500 text-sm mb-4">A beautiful modern website mehndi designs and services.</p>
+
+                  <a href="https://sonalikamehndiartists.netlify.app/" target="_blank"
+                     class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
+                     View Project <i class="fa-solid fa-arrow-right ml-2"></i>
+                  </a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- How We Work (Process) -->
+   <section class="py-24 bg-dark text-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+         <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Our Development <span class="text-primary">Process</span></h2>
+            <p class="text-slate-400">Step-by-step transparency from idea to deployment.</p>
+         </div>
+
+         <div class="grid md:grid-cols-4 gap-12 relative">
+            <!-- Line connecting steps (hidden on mobile) -->
+            <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-slate-800 z-0"></div>
+
+            <div class="relative z-10 text-center" data-aos="fade-right">
+               <div
+                  class="w-24 h-24 bg-dark border-4 border-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 bg-slate-900 shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+                  01</div>
+               <h4 class="text-xl font-bold mb-2">Discovery</h4>
+               <p class="text-slate-500 text-sm">Understanding your business goals and audience.</p>
+            </div>
+
+            <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="100">
+               <div
+                  class="w-24 h-24 bg-dark border-4 border-slate-700 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 bg-slate-900 hover:border-primary transition duration-500">
+                  02</div>
+               <h4 class="text-xl font-bold mb-2">Design</h4>
+               <p class="text-slate-500 text-sm">Creating wireframes and modern visual UI components.</p>
+            </div>
+
+            <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="200">
+               <div
+                  class="w-24 h-24 bg-dark border-4 border-slate-700 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 bg-slate-900 hover:border-primary transition duration-500">
+                  03</div>
+               <h4 class="text-xl font-bold mb-2">Build</h4>
+               <p class="text-slate-500 text-sm">Writing clean, optimized code and testing features.</p>
+            </div>
+
+            <div class="relative z-10 text-center" data-aos="fade-right" data-aos-delay="300">
+               <div
+                  class="w-24 h-24 bg-dark border-4 border-emerald-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 bg-slate-900 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+                  04</div>
+               <h4 class="text-xl font-bold mb-2">Launch</h4>
+               <p class="text-slate-500 text-sm">Live deployment and post-launch maintenance.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Technology Stack -->
+   <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+         <h2 class="text-3xl font-bold text-dark mb-12">Technologies We Master</h2>
+         <div
+            class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+            <i class="fa-brands fa-html5 text-6xl hover:text-[#e34c26] transition"></i>
+            <i class="fa-brands fa-css3-alt text-6xl hover:text-[#264de4] transition"></i>
+            <i class="fa-brands fa-js text-6xl hover:text-[#f7df1e] transition"></i>
+            <i class="fa-brands fa-react text-6xl hover:text-[#61dbfb] transition"></i>
+            <i class="fa-brands fa-node-js text-6xl hover:text-[#68a063] transition"></i>
+            <i class="fa-brands fa-php text-6xl hover:text-[#777bb4] transition"></i>
+            <i class="fa-brands fa-wordpress text-6xl hover:text-[#21759b] transition"></i>
+            <i class="fa-brands fa-aws text-6xl hover:text-[#ff9900] transition"></i>
+         </div>
+      </div>
+   </section>
+
+   <!-- CTA Section -->
+   <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+         <div class="bg-primary rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 relative z-10">Ready to start your project?</h2>
+            <p class="text-blue-100 mb-10 text-lg relative z-10">Get a free consultation and customized quote for your
+               business today.</p>
+            <a href="contact.html"
+               class="inline-block px-10 py-4 bg-white text-primary font-bold rounded-2xl hover:bg-slate-100 transition shadow-xl relative z-10">Hire
+               Us Now</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-white border-t border-slate-100 py-12">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+         <img src="images/logo.png" alt="best web developer in kota" class="h-10">
+         <p class="text-slate-400 text-sm font-medium">© 2026 Web Shakti Kota. Best Web Development in Dadabari.</p>
+         <div class="flex gap-4">
+            <a href="https://www.linkedin.com/company/web-shakti"
+               class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/web.shakti/"
+               class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition"><i
+                  class="fa-brands fa-instagram"></i></a>
+         </div>
+      </div>
+   </footer>
+
+   <!-- AOS Scripts -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({ duration: 1000, once: true });
+      // FAQ Toggle (Fixed Logic)
+      function toggleFaq(id) {
+         const p = document.getElementById(`faq-${id}`);
+         const icon = document.getElementById(`icon-${id}`);
+
+         if (p.classList.contains('hidden')) {
+            p.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+         } else {
+            p.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+         }
+      }
+
+      // Mobile Menu Actions
+      const menuBtn = document.getElementById('menu-btn');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      menuBtn.addEventListener('click', () => {
+         mobileMenu.classList.remove('hidden');
+         mobileMenu.classList.add('flex');
+      });
+
+      function hideMenu() {
+         mobileMenu.classList.add('hidden');
+         mobileMenu.classList.remove('flex');
+      }
+
+      closeMenu.addEventListener('click', hideMenu);
+      mobileLinks.forEach(link => {
+         link.addEventListener('click', hideMenu);
+      });
+   </script>
+
+</body>
+
+</html>

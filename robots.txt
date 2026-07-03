@@ -1,0 +1,3 @@
+Sitemap: https://webshaktii.netlify.app/sitemap.xml
+User-agent: *
+Allow: /

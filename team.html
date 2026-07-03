@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="index, follow">
+   <title>Our Leadership Team | Web Shakti Kota</title>
+   <link rel="canonical" href="https://webshaktii.netlify.app/team.html">
+      <link rel="icon" href="/images/logo.png" type="image/x-icon">
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- Fonts & Icons -->
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+   <!-- AOS Animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+               colors: {
+                  primary: '#2563eb',
+                  secondary: '#7c3aed',
+                  dark: '#0f172a'
+               }
+            }
+         }
+      }
+   </script>
+
+   <style>
+      .bg-grid {
+         background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+         background-size: 30px 30px;
+      }
+
+      .glass-card {
+         background: rgba(255, 255, 255, 0.8);
+         backdrop-filter: blur(12px);
+         border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .gradient-text {
+         background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans overflow-x-hidden bg-grid">
+
+   <!-- Premium Navbar -->
+   <nav class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
+         <div class="flex items-center gap-2">
+            <img src="images/logo.png" alt="Web Shakti" class="h-10">
+         </div>
+         <div class="hidden lg:flex items-center gap-10 font-semibold text-slate-600">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            <a href="team.html" class="hover:text-primary transition-colors">Team</a>
+
+            <a href="contact.html"
+               class="bg-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:bg-blue-700 transition-all">Get
+               a Quote</a>
+         </div>
+         <button class="lg:hidden text-2xl text-dark focus:outline-none" id="menu-btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+         </button>
+      </div>
+   </nav>
+
+   <!-- Mobile Slide-over Menu -->
+   <div id="mobile-menu"
+      class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white transition-all duration-300">
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-white focus:outline-none">
+         <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="index.html" class="mobile-link hover:text-primary transition-colors">Home</a>
+      <a href="services.html" class="mobile-link hover:text-primary transition-colors">Services</a>
+      <a href="about.html" class="mobile-link hover:text-primary transition-colors">About Us</a>
+      <a href="contact.html" class="mobile-link hover:text-primary transition-colors">Contact</a>
+      <a href="team.html" class="mobile-link hover:text-primary transition-colors">Team</a>
+      <a href="contact.html"
+         class="mobile-link bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all text-lg">Get a
+         Quote</a>
+   </div>
+
+
+   <!-- Hero Header -->
+   <header class="pt-28 pb-12 sm:pb-16 lg:pt-48 lg:pb-24 bg-white border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+         <span
+            class="inline-block px-4 py-1.5 bg-indigo-50 text-primary rounded-full text-xs font-extrabold uppercase tracking-widest mb-6"
+            data-aos="fade-up">Creative Minds</span>
+         <h1 class="text-3xl sm:text-5xl lg:text-7xl font-extrabold text-dark leading-tight mb-8" data-aos="fade-up"
+            data-aos-delay="100">
+            The Team Behind <br><span class="text-primary">Web Shakti's Success.</span>
+         </h1>
+         <p class="text-slate-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            Meet the visionaries, designers, and developers dedicated to transforming your business with high-end
+            technology and creative solutions.
+         </p>
+      </div>
+   </header>
+
+   <!-- Founders Section -->
+   <section class="py-12 sm:py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+         <!-- Umesh Kumar Meghwal -->
+         <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16 sm:mb-24 lg:mb-32">
+            <div class="relative group overflow-hidden rounded-[2rem] sm:rounded-[3rem] shadow-2xl" data-aos="fade-right">
+               <img src="images/umesh.jpg" alt="Umesh Kumar Meghwal"
+                  class="member-img w-full h-[320px] sm:h-[450px] lg:h-[500px] object-cover transition-all duration-700">
+               <div
+                  class="social-overlay absolute bottom-8 left-8 flex gap-4 opacity-0 translate-y-10 transition-all duration-500">
+                  <a href="https://umeshkumarmeghwal.netlify.app"
+                     class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-xl hover:bg-primary hover:text-white transition"><i
+                        class="fa-solid fa-globe"></i></a>
+                  <a href="#"
+                     class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-xl hover:bg-blue-600 hover:text-white transition"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+               </div>
+            </div>
+            <div data-aos="fade-left">
+               <span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Founder &
+                  Visionary</span>
+               <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark mb-6">Umesh Kumar Meghwal</h2>
+               <div class="space-y-6 text-slate-600 leading-relaxed text-sm sm:text-lg">
+                  <p>
+                     With a deep-rooted passion for technology and innovation, <strong>Umesh Kumar Meghwal</strong> founded Web
+                     Shakti with a single mission: to simplify complex business processes through smart digital
+                     solutions.
+                  </p>
+                  <p>
+                     As the core architect of our vision, he oversees the high-level strategy and technical framework of
+                     every project. His dedication to quality and excellence ensures that Web Shakti remains at the
+                     forefront of the industry, delivering not just websites, but powerful assets for business growth.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+                     <div class="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                        <p class="text-xl font-bold text-dark">Expertise</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Software Architecture & Cloud Solutions</p>
+                     </div>
+                     <div class="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                        <p class="text-xl font-bold text-dark">Experience</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Leader in Web Tech Innovation</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Harish Malav -->
+         <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div class="order-2 lg:order-1" data-aos="fade-right">
+               <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Co-Founder &
+                  Technical Head</span>
+               <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark mb-6">Harish Malav</h2>
+               <div class="space-y-6 text-slate-600 leading-relaxed text-sm sm:text-lg">
+                  <p>
+                     <strong>Harish Malav</strong> is the technical pillar of Web Shakti. Known for his exceptional problem-solving
+                     skills and strategic mindset, he ensures that every project meets the highest global standards of
+                     design and functionality.
+                  </p>
+                  <p>
+                     With a keen eye for detail and a commitment to user experience, Harish leads our development team
+                     through the most challenging technical hurdles. His creativity and innovative approach are vital in
+                     keeping Web Shakti's solutions modern, fast, and highly effective for our clients.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+                     <div class="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                        <p class="text-xl font-bold text-dark">Specialty</p>
+                        <p class="text-xs sm:text-sm text-slate-400">UI/UX Design & Full-Stack Development</p>
+                     </div>
+                     <div class="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                        <p class="text-xl font-bold text-dark">Commitment</p>
+                        <p class="text-xs sm:text-sm text-slate-400">100% Quality Assurance</p>
+                     </div>
+                  </div>
+                  <a href="https://harishmalav.netlify.app"
+                     class="inline-block mt-8 text-secondary font-bold border-b-2 border-secondary hover:text-dark hover:border-dark transition">Explore
+                     Portfolio →</a>
+               </div>
+            </div>
+            <div class="order-1 lg:order-2 relative group overflow-hidden rounded-[2rem] sm:rounded-[3rem] shadow-2xl"
+               data-aos="fade-left">
+               <img src="images/harish.jpg" alt="Harish Malav"
+                  class="member-img w-full h-[320px] sm:h-[450px] lg:h-[500px] object-cover transition-all duration-700">
+               <div
+                  class="social-overlay absolute bottom-8 left-8 flex gap-4 opacity-0 translate-y-10 transition-all duration-500">
+                  <a href="https://www.linkedin.com/company/web-shakti"
+                     class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.instagram.com/web.shakti/"
+                     class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition"><i
+                        class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- Join the team Section -->
+   <section class="py-12 sm:py-16 lg:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="bg-gradient-to-br from-primary to-secondary p-8 sm:p-12 lg:p-16 rounded-[2.5rem] sm:rounded-[4rem] text-center text-white shadow-2xl relative overflow-hidden"
+            data-aos="zoom-in">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+            <h2 class="text-2xl sm:text-4xl font-bold mb-6">Want to work with us?</h2>
+            <p class="text-blue-100 text-sm sm:text-lg mb-10 max-w-2xl mx-auto">We are always looking for passionate designers,
+               developers, and marketers to join our growing team in Kota.</p>
+            <a href="contact.html"
+               class="inline-block px-8 py-4 sm:px-10 sm:py-5 bg-white text-primary font-bold rounded-2xl hover:shadow-xl transition transform hover:scale-105">Get
+               in Touch</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-white border-t border-slate-100 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+         <img src="images/logo.png" alt="best web developer in kota" class="h-10">
+         <p class="text-slate-400 text-sm font-medium">© 2026 Web Shakti. Empowering Businesses with Excellence.</p>
+         <div class="flex gap-4 text-slate-400">
+            <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            <a href="#" class="hover:text-pink-600 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+         </div>
+      </div>
+   </footer>
+
+   <!-- AOS Scripts -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({ duration: 1000, once: true });
+      // FAQ Toggle (Fixed Logic)
+      function toggleFaq(id) {
+         const p = document.getElementById(`faq-${id}`);
+         const icon = document.getElementById(`icon-${id}`);
+
+         if (p.classList.contains('hidden')) {
+            p.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+         } else {
+            p.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+         }
+      }
+
+      // Mobile Menu Actions
+      const menuBtn = document.getElementById('menu-btn');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      menuBtn.addEventListener('click', () => {
+         mobileMenu.classList.remove('hidden');
+         mobileMenu.classList.add('flex');
+      });
+
+      function hideMenu() {
+         mobileMenu.classList.add('hidden');
+         mobileMenu.classList.remove('flex');
+      }
+
+      closeMenu.addEventListener('click', hideMenu);
+      mobileLinks.forEach(link => {
+         link.addEventListener('click', hideMenu);
+      });
+   </script>
+</body>
+
+</html>

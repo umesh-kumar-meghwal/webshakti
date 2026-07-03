@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="index, follow">
+   <title>Contact Us | Web Shakti Kota - Let's Build Your Project</title>
+   <link rel="canonical" href="https://webshaktii.netlify.app/contact.html">
+      <link rel="icon" href="/images/logo.png" type="image/x-icon">
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   
+   <!-- Fonts & Icons -->
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+   <!-- AOS Animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+               colors: { primary: '#2563eb', dark: '#0f172a' }
+            }
+         }
+      }
+   </script>
+
+    <style>
+      .bg-grid {
+         background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+         background-size: 30px 30px;
+      }
+
+      .glass-card {
+         background: rgba(255, 255, 255, 0.8);
+         backdrop-filter: blur(12px);
+         border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .gradient-text {
+         background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans overflow-x-hidden bg-grid">
+
+   <!-- Premium Navbar -->
+   <nav class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
+         <div class="flex items-center gap-2">
+            <img src="images/logo.png" alt="Web Shakti" class="h-10">
+         </div>
+         <div class="hidden lg:flex items-center gap-10 font-semibold text-slate-600">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            <a href="team.html" class="hover:text-primary transition-colors">Team</a>
+
+            <a href="contact.html"
+               class="bg-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:bg-blue-700 transition-all">Get
+               a Quote</a>
+         </div>
+         <button class="lg:hidden text-2xl text-dark focus:outline-none" id="menu-btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+         </button>
+      </div>
+   </nav>
+
+   <!-- Mobile Slide-over Menu -->
+   <div id="mobile-menu"
+      class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white transition-all duration-300">
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-white focus:outline-none">
+         <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="index.html" class="mobile-link hover:text-primary transition-colors">Home</a>
+      <a href="services.html" class="mobile-link hover:text-primary transition-colors">Services</a>
+      <a href="about.html" class="mobile-link hover:text-primary transition-colors">About Us</a>
+      <a href="contact.html" class="mobile-link hover:text-primary transition-colors">Contact</a>
+      <a href="team.html" class="mobile-link hover:text-primary transition-colors">Team</a>
+      <a href="contact.html"
+         class="mobile-link bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all text-lg">Get a
+         Quote</a>
+   </div>
+
+
+   <!-- Hero Section -->
+   <section class="pt-28 pb-12 lg:pt-40 lg:pb-20 bg-white border-b border-slate-100 text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+         <span class="inline-block px-4 py-1.5 bg-blue-50 text-primary rounded-full text-xs font-extrabold uppercase tracking-widest mb-6" data-aos="fade-down">Connect with us</span>
+         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-dark mb-6" data-aos="fade-up">Let's turn your idea into <span class="text-primary">Reality.</span></h1>
+         <p class="text-slate-500 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Have a question or a project in mind? Our team is ready to help you grow your business online. Drop us a message below!</p>
+      </div>
+   </section>
+
+   <!-- Contact Info & Form -->
+   <section class="py-12 sm:py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+            
+            <!-- Contact Info Sidebar -->
+            <div class="lg:col-span-5 space-y-6 sm:space-y-8" data-aos="fade-right">
+               <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-8">Contact Information</h2>
+               
+               <!-- Card 1: WhatsApp -->
+               <a href="https://wa.me/918000509635" class="contact-card flex items-center gap-4 sm:gap-6 p-5 sm:p-6 bg-white rounded-3xl border border-slate-100 shadow-sm transition-all group">
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-xl sm:text-2xl group-hover:bg-green-600 group-hover:text-white transition-colors">
+                     <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div>
+                     <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Chat on WhatsApp</p>
+                     <p class="text-base sm:text-lg font-bold">+91 8000509635</p>
+                  </div>
+               </a>
+
+               <!-- Card 2: Email -->
+               <div class="contact-card flex items-center gap-4 sm:gap-6 p-5 sm:p-6 bg-white rounded-3xl border border-slate-100 shadow-sm transition-all group">
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-xl sm:text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                     <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                     <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Address</p>
+                     <p class="text-base sm:text-lg font-bold break-all">webshakti154@gmail.com</p>
+                  </div>
+               </div>
+
+               <!-- Card 3: Address -->
+               <div class="contact-card flex items-center gap-4 sm:gap-6 p-5 sm:p-6 bg-white rounded-3xl border border-slate-100 shadow-sm transition-all group">
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-xl sm:text-2xl group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                     <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                     <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Office Location</p>
+                     <p class="text-sm sm:text-base font-bold">3E/32, Dadabari Extension, Kota, Rajasthan</p>
+                  </div>
+               </div>
+
+               <!-- Social Links -->
+               <div class="pt-4 sm:pt-8">
+                  <p class="font-bold mb-4 uppercase text-xs tracking-widest text-slate-400">Follow Our Journey</p>
+                  <div class="flex gap-4">
+                     <a href="https://www.linkedin.com/company/web-shakti" class="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-primary hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                     <a href="https://www.instagram.com/web.shakti/" class="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-pink-600 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="lg:col-span-7 mt-8 lg:mt-0" data-aos="fade-left">
+               <div class="bg-white p-5 sm:p-10 lg:p-12 rounded-[2rem] sm:rounded-[3rem] shadow-2xl border border-slate-100 relative">
+                  <form id="contactForm" class="space-y-6">
+                     <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                           <label class="text-sm font-bold text-slate-600 ml-2">Your Name</label>
+                           <input type="text" id="name" placeholder="John Doe" class="input-field" required>
+                        </div>
+                        <div class="space-y-2">
+                           <label class="text-sm font-bold text-slate-600 ml-2">Phone Number</label>
+                           <input type="text" id="number" placeholder="+91 00000 00000" class="input-field" required>
+                        </div>
+                     </div>
+                     <div class="space-y-2">
+                        <label class="text-sm font-bold text-slate-600 ml-2">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" class="input-field" required>
+                     </div>
+                     <div class="space-y-2">
+                        <label class="text-sm font-bold text-slate-600 ml-2">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us about your project..." class="input-field" required></textarea>
+                     </div>
+                     <button type="submit" class="w-full py-4 sm:py-5 bg-primary text-white rounded-2xl font-bold shadow-lg shadow-primary/30 hover:bg-blue-700 transition-all uppercase tracking-widest text-sm sm:text-base">Send Message Now</button>
+                  </form>
+
+                  <!-- Success Message (Hidden by default) -->
+                  <div id="successMessage" class="hidden py-12 text-center">
+                     <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-green-600" viewBox="0 0 24 24">
+                           <path fill="none" stroke="currentColor" stroke-width="3" d="M4 12l6 6L20 6" />
+                        </svg>
+                  </div>
+                     <h3 class="text-2xl sm:text-3xl font-bold mb-2">Message Sent!</h3>
+                     <p class="text-slate-500 text-sm sm:text-base">Thank you! We'll get back to you within 2-4 hours.</p>
+                     <button onclick="window.location.reload()" class="mt-8 text-primary font-bold hover:underline">Send another message</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <style>
+      .input-field {
+         width: 100%;
+         padding: 12px 20px;
+         border: 1px solid #e2e8f0;
+         border-radius: 12px;
+         outline: none;
+         transition: 0.3s;
+      }
+      .input-field:focus {
+         border-color: #3b82f6;
+         box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+   </style>
+
+   <!-- Detailed FAQ Section (Extra Content) -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+         <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16">Quick Help / FAQ</h2>
+         <div class="space-y-4">
+            
+            <div class="bg-white p-5 sm:p-8 rounded-3xl shadow-sm cursor-pointer group" onclick="toggleFaq(1)">
+               <div class="flex justify-between items-center">
+                  <h4 class="text-base sm:text-lg font-bold">How long does it take to start a project?</h4>
+                  <i id="icon-1" class="fa-solid fa-plus text-slate-400 group-hover:text-primary transition"></i>
+               </div>
+               <p id="faq-1" class="hidden mt-4 text-slate-500 text-sm sm:text-base leading-relaxed">Usually, we start the discovery phase within 24-48 hours after the initial consultation and advance payment.</p>
+            </div>
+
+            <div class="bg-white p-5 sm:p-8 rounded-3xl shadow-sm cursor-pointer group" onclick="toggleFaq(2)">
+               <div class="flex justify-between items-center">
+                  <h4 class="text-base sm:text-lg font-bold">What information do I need to provide?</h4>
+                  <i id="icon-2" class="fa-solid fa-plus text-slate-400 group-hover:text-primary transition"></i>
+               </div>
+               <p id="faq-2" class="hidden mt-4 text-slate-500 leading-relaxed text-sm">To give you an accurate quote, we need to know your business type, the number of pages required, your competitors, and any specific features (like e-commerce, booking systems, etc.).</p>
+            </div>
+
+            <div class="bg-white p-5 sm:p-8 rounded-3xl shadow-sm cursor-pointer group" onclick="toggleFaq(3)">
+               <div class="flex justify-between items-center">
+                  <h4 class="text-base sm:text-lg font-bold">Do you work with international clients?</h4>
+                  <i id="icon-3" class="fa-solid fa-plus text-slate-400 group-hover:text-primary transition"></i>
+               </div>
+               <p id="faq-3" class="hidden mt-4 text-slate-500 leading-relaxed text-sm">Yes, absolutely! While we are based in Kota, Rajasthan, we serve clients globally. We use Zoom, Google Meet, and Slack for seamless communication.</p>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- Google Maps -->
+   <section class="py-10 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-2xl border-4 sm:border-8 border-white">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.541983802652!2d75.82479975486609!3d25.153189392352743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f850012df720b%3A0xa2a0ad7866df8198!2sWeb%20Shakti!5e1!3m2!1sen!2sin!4v1752170735607!5m2!1sen!2sin"
+               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-white py-12 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+         <img src="images/logo.png" alt="best web developer in kota" class="h-10">
+         <p class="text-slate-400 text-sm font-bold text-center md:text-left">© 2026 Web Shakti Kota. All Rights Reserved.</p>
+         <div class="flex gap-4">
+            <a href="https://www.linkedin.com/company/web-shakti" class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/web.shakti/" class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({ duration: 1000, once: true });
+
+       // FAQ Toggle (Fixed Logic)
+      function toggleFaq(id) {
+         const p = document.getElementById(`faq-${id}`);
+         const icon = document.getElementById(`icon-${id}`);
+         
+         if (p.classList.contains('hidden')) {
+            p.classList.remove('hidden');
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+         } else {
+            p.classList.add('hidden');
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+         }
+      }
+
+      // Mobile Menu Actions
+      const menuBtn = document.getElementById('menu-btn');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      menuBtn.addEventListener('click', () => {
+         mobileMenu.classList.remove('hidden');
+         mobileMenu.classList.add('flex');
+      });
+
+      function hideMenu() {
+         mobileMenu.classList.add('hidden');
+         mobileMenu.classList.remove('flex');
+      }
+
+      closeMenu.addEventListener('click', hideMenu);
+      mobileLinks.forEach(link => {
+         link.addEventListener('click', hideMenu);
+      });
+
+      // Contact Form Submission
+      document.getElementById("contactForm").addEventListener("submit", async function (e) {
+         e.preventDefault();
+         
+         const btn = e.target.querySelector('button');
+         btn.innerText = "Sending...";
+         btn.disabled = true;
+
+         const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            number: document.getElementById("number").value,
+            message: document.getElementById("message").value
+         };
+
+         try {
+            await fetch("https://script.google.com/macros/s/AKfycbwsa5WSPJruX3e20ELybdb8E5mBKmcWW6T2D2jBMWtV9Wb3m3oswWM8S9NGnby2g78/exec", {
+               method: "POST",
+               mode: "no-cors",
+               headers: { "Content-Type": "application/json" },
+               body: JSON.stringify(formData)
+            });
+
+            document.getElementById("contactForm").classList.add("hidden");
+            document.getElementById("successMessage").classList.remove("hidden");
+         } catch (error) {
+            alert("Something went wrong. Please try again.");
+            btn.innerText = "Send Message Now";
+            btn.disabled = false;
+         }
+      });
+   </script>
+</body>
+</html>
