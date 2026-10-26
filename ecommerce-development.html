@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="index, follow, max-image-preview:large">
+   <title>E-commerce Website Development in Kota | Multi-Vendor Online Store | Web Shakti</title>
+   <meta name="description" content="Launch your online store with Web Shakti, Kota. Custom e-commerce website development with Razorpay and UPI checkout, inventory management and multi-vendor marketplace using Laravel, Django and PHP.">
+   <meta name="keywords" content="ecommerce website development in Kota, online store developer Kota, multi vendor marketplace development, Laravel ecommerce, Django ecommerce, Razorpay integration, web development Kota Rajasthan">
+   <link rel="canonical" href="https://webshaktii.netlify.app/ecommerce-development.html">
+   <link rel="icon" href="/images/logo.png" type="image/x-icon">
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Web Shakti">
+   <meta property="og:title" content="E-commerce Website Development in Kota | Web Shakti">
+   <meta property="og:description" content="Secure, fast and multi-vendor ready online stores with payment gateways, inventory management and GST billing.">
+   <meta property="og:url" content="https://webshaktii.netlify.app/ecommerce-development.html">
+   <meta property="og:image" content="https://webshaktii.netlify.app/images/img-1.png">
+   <meta name="twitter:card" content="summary_large_image">
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script>
+      tailwind.config = {
+         theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }, colors: { primary: '#2563eb', secondary: '#6366f1', dark: '#0f172a' } } }
+      }
+   </script>
+   <style>
+      .bg-grid { background-image: radial-gradient(#e2e8f0 1px, transparent 1px); background-size: 30px 30px; }
+      .glass-card { background: rgba(255,255,255,.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.3); }
+      .gradient-text { background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+   </style>
+
+   <!-- Structured data for Google -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@graph": [
+       {
+         "@type": "Service",
+         "name": "E-commerce Website Development",
+         "serviceType": "E-commerce development, multi-vendor marketplace development",
+         "description": "Custom online store development with secure payment gateways, inventory management and multi-vendor support using Laravel, Django, Flask and PHP.",
+         "areaServed": [{"@type":"City","name":"Kota"},{"@type":"City","name":"Jabalpur"},{"@type":"Country","name":"India"}],
+         "provider": {
+           "@type": "LocalBusiness",
+           "name": "Web Shakti",
+           "url": "https://webshaktii.netlify.app/",
+           "telephone": "+918000509635",
+           "email": "webshakti154@gmail.com",
+           "image": "https://webshaktii.netlify.app/images/logo.png",
+           "address": {"@type":"PostalAddress","streetAddress":"3-E-33, Dadabari","addressLocality":"Kota","addressRegion":"Rajasthan","postalCode":"324009","addressCountry":"IN"}
+         }
+       },
+       {
+         "@type": "BreadcrumbList",
+         "itemListElement": [
+           {"@type":"ListItem","position":1,"name":"Home","item":"https://webshaktii.netlify.app/"},
+           {"@type":"ListItem","position":2,"name":"Services","item":"https://webshaktii.netlify.app/services.html"},
+           {"@type":"ListItem","position":3,"name":"E-commerce Development","item":"https://webshaktii.netlify.app/ecommerce-development.html"}
+         ]
+       },
+       {
+         "@type": "FAQPage",
+         "mainEntity": [
+           {"@type":"Question","name":"How much does an e-commerce website cost in Kota?","acceptedAnswer":{"@type":"Answer","text":"The cost depends on the number of products, payment and shipping integrations and whether you need multi-vendor features. We quote each store after a short discussion, so you only pay for what your business needs."}},
+           {"@type":"Question","name":"Which payment gateways do you integrate?","acceptedAnswer":{"@type":"Answer","text":"We integrate popular Indian gateways such as Razorpay, PayU, Cashfree and Paytm, with UPI, cards, net banking, wallets and Cash on Delivery options."}},
+           {"@type":"Question","name":"Can you build a multi-vendor marketplace?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build marketplaces where each vendor has a separate panel to add products, manage stock and orders, while you control approvals, commission and payouts."}},
+           {"@type":"Question","name":"Is online payment on my store safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Card details are handled by the payment gateway's secure page, not stored on your server. We also use SSL, signature verification, CSRF protection and validated inputs."}},
+           {"@type":"Question","name":"How long does it take to build an online store?","acceptedAnswer":{"@type":"Answer","text":"A basic store usually takes 3-5 weeks. A multi-vendor marketplace with custom features takes longer, depending on the scope."}},
+           {"@type":"Question","name":"Will my online store rank on Google?","acceptedAnswer":{"@type":"Answer","text":"We build the store with SEO-friendly URLs, fast loading, product schema and mobile-first design. Rankings also depend on content and competition, so we offer SEO and digital marketing after launch."}}
+         ]
+       }
+     ]
+   }
+   </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans bg-grid overflow-x-hidden">
+
+   <!-- Navbar -->
+   <nav class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-slate-200" aria-label="Main navigation">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
+         <a href="index.html"><img src="images/logo.png" alt="Web Shakti Kota logo" class="h-10"></a>
+         <div class="hidden lg:flex items-center gap-10 font-semibold text-slate-600">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <a href="services.html" class="text-primary">Services</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            <a href="team.html" class="hover:text-primary transition-colors">Team</a>
+            <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:bg-blue-700 transition-all">Get a Quote</a>
+         </div>
+         <button class="lg:hidden text-2xl text-dark focus:outline-none" id="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+   </nav>
+
+   <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white">
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-white focus:outline-none" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      <a href="index.html" class="mobile-link hover:text-primary">Home</a>
+      <a href="services.html" class="mobile-link hover:text-primary">Services</a>
+      <a href="about.html" class="mobile-link hover:text-primary">About Us</a>
+      <a href="contact.html" class="mobile-link hover:text-primary">Contact</a>
+      <a href="team.html" class="mobile-link hover:text-primary">Team</a>
+      <a href="#contact" class="mobile-link bg-primary text-white px-8 py-3 rounded-full text-lg">Get a Quote</a>
+   </div>
+
+   <main>
+   <!-- Hero -->
+   <section class="pt-28 pb-12 lg:pt-40 lg:pb-20 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+         <div data-aos="fade-right">
+            <nav aria-label="Breadcrumb" class="text-xs text-slate-500 mb-4"><a href="index.html" class="hover:text-primary">Home</a> / <a href="services.html" class="hover:text-primary">Services</a> / <span class="text-slate-700 font-semibold">E-commerce Development</span></nav>
+            <span class="bg-blue-100 text-primary px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">E-commerce Stores</span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold mt-6 leading-tight text-dark">
+               E-commerce Website Development in Kota for <span class="gradient-text">Stores That Sell Online.</span>
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg">
+               Launch your online shop with secure payment gateways, inventory management and a user-friendly shopping experience. Web Shakti builds single-store and multi-vendor marketplaces that are fast, safe and ready to rank on Google.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+               <a href="#contact" class="px-8 py-4 bg-dark text-white rounded-2xl font-bold shadow-2xl hover:bg-slate-800 transition transform hover:-translate-y-1 text-center">Get a Free Quote</a>
+               <a href="https://wa.me/918000509635" class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 transition text-center"><i class="fa-brands fa-whatsapp text-green-600 mr-2"></i>Chat on WhatsApp</a>
+            </div>
+         </div>
+
+         <!-- Store mockup -->
+         <div class="relative" data-aos="zoom-in">
+            <div class="absolute -z-10 top-0 -right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+            <div class="rounded-3xl bg-white shadow-2xl border border-slate-200 overflow-hidden">
+               <div class="flex items-center gap-2 px-5 py-3 bg-slate-100">
+                  <span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-green-400"></span>
+                  <span class="ml-4 text-xs text-slate-500 bg-white rounded-full px-4 py-1 truncate">https://yourstore.in/shop</span>
+               </div>
+               <div class="p-5 sm:p-6 grid grid-cols-3 gap-4">
+                  <div class="rounded-2xl bg-slate-50 p-3"><div class="h-20 sm:h-24 rounded-xl bg-gradient-to-br from-blue-200 to-indigo-300 mb-3"></div><p class="text-xs font-bold">Product A</p><p class="text-xs text-primary font-bold">₹999</p></div>
+                  <div class="rounded-2xl bg-slate-50 p-3"><div class="h-20 sm:h-24 rounded-xl bg-gradient-to-br from-orange-200 to-pink-300 mb-3"></div><p class="text-xs font-bold">Product B</p><p class="text-xs text-primary font-bold">₹1,499</p></div>
+                  <div class="rounded-2xl bg-slate-50 p-3"><div class="h-20 sm:h-24 rounded-xl bg-gradient-to-br from-green-200 to-teal-300 mb-3"></div><p class="text-xs font-bold">Product C</p><p class="text-xs text-primary font-bold">₹799</p></div>
+                  <div class="col-span-3 rounded-2xl bg-dark text-white p-4 flex items-center justify-between">
+                     <div><p class="text-xs text-slate-400">Cart total</p><p class="font-extrabold text-lg">₹3,297</p></div>
+                     <span class="bg-primary px-5 py-2 rounded-xl text-sm font-bold"><i class="fa-solid fa-lock mr-2"></i>Secure Checkout</span>
+                  </div>
+               </div>
+            </div>
+            <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-white rounded-2xl shadow-xl border border-slate-100 px-4 py-3 flex items-center gap-3">
+               <span class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+               <div><p class="text-sm font-bold text-dark">UPI, Cards, COD</p><p class="text-xs text-slate-500">Payment ready</p></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Intro -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-white border-y border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+         <div data-aos="fade-right">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-6">Why Your Business Needs an Online Store</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">A local shop can only sell to the people who walk past it. An online store lets you sell to customers across Rajasthan and all of India, at any hour, without extra showroom cost.</p>
+            <p class="text-slate-600 leading-relaxed mb-4">But a store only works if customers trust it and can buy easily. A slow page, a confusing cart or a payment failure sends them straight to Amazon or Flipkart. That is why we focus on three things: a smooth shopping experience, a safe checkout and simple tools for you to manage products, stock and orders.</p>
+            <p class="text-slate-600 leading-relaxed">Whether you sell clothes, groceries, electronics, books, handmade products or run a marketplace with many sellers, we build the store around how your business actually works.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 gap-5" data-aos="fade-left">
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-earth-asia text-primary text-2xl mb-4"></i><h3 class="font-bold mb-2">Sell Beyond Your City</h3><p class="text-sm text-slate-500 leading-relaxed">Reach customers in every state with shipping partner integration.</p></div>
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-moon text-primary text-2xl mb-4"></i><h3 class="font-bold mb-2">Open 24/7</h3><p class="text-sm text-slate-500 leading-relaxed">Orders arrive day and night, even when your shop is closed.</p></div>
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-chart-pie text-primary text-2xl mb-4"></i><h3 class="font-bold mb-2">Know Your Numbers</h3><p class="text-sm text-slate-500 leading-relaxed">Sales, best sellers and customer data in one dashboard.</p></div>
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-store text-primary text-2xl mb-4"></i><h3 class="font-bold mb-2">Own Your Brand</h3><p class="text-sm text-slate-500 leading-relaxed">Your domain, your customers and no heavy marketplace commission.</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Features -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+         <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">E-commerce Features We Build</h2>
+            <p class="text-slate-500 text-sm sm:text-base">Everything a modern Indian online store needs to sell, ship and grow.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up">
+               <div class="w-14 h-14 bg-blue-50 text-primary rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors"><i class="fa-solid fa-users-line"></i></div>
+               <h3 class="text-xl font-bold mb-3">Multi-Vendor Support</h3>
+               <p class="text-slate-600 text-sm leading-relaxed mb-4">Turn your store into a marketplace where many sellers list and sell products.</p>
+               <ul class="text-slate-500 space-y-2 text-xs font-semibold">
+                  <li><i class="fa-solid fa-check text-primary mr-2"></i>Separate vendor panel and login</li>
+                  <li><i class="fa-solid fa-check text-primary mr-2"></i>Product approval by admin</li>
+                  <li><i class="fa-solid fa-check text-primary mr-2"></i>Commission and payout tracking</li>
+               </ul>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up" data-aos-delay="100">
+               <div class="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors"><i class="fa-solid fa-credit-card"></i></div>
+               <h3 class="text-xl font-bold mb-3">Secure Checkout</h3>
+               <p class="text-slate-600 text-sm leading-relaxed mb-4">A short, trusted checkout that reduces abandoned carts and payment failures.</p>
+               <ul class="text-slate-500 space-y-2 text-xs font-semibold">
+                  <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Razorpay, PayU, Cashfree, Paytm</li>
+                  <li><i class="fa-solid fa-check text-green-600 mr-2"></i>UPI, cards, net banking, wallets, COD</li>
+                  <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Verified payment confirmation</li>
+               </ul>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up" data-aos-delay="200">
+               <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors"><i class="fa-solid fa-boxes-stacked"></i></div>
+               <h3 class="text-xl font-bold mb-3">Inventory Management</h3>
+               <p class="text-slate-600 text-sm leading-relaxed mb-4">Always know what is in stock and never sell something you do not have.</p>
+               <ul class="text-slate-500 space-y-2 text-xs font-semibold">
+                  <li><i class="fa-solid fa-check text-orange-600 mr-2"></i>Live stock count and low-stock alerts</li>
+                  <li><i class="fa-solid fa-check text-orange-600 mr-2"></i>Variants: size, color, weight</li>
+                  <li><i class="fa-solid fa-check text-orange-600 mr-2"></i>Bulk product import by CSV</li>
+               </ul>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up">
+               <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors"><i class="fa-solid fa-truck-fast"></i></div>
+               <h3 class="text-xl font-bold mb-3">Orders &amp; Shipping</h3>
+               <p class="text-slate-600 text-sm leading-relaxed mb-4">From order placed to delivered, track and update everything from one panel.</p>
+               <ul class="text-slate-500 space-y-2 text-xs font-semibold">
+                  <li><i class="fa-solid fa-check text-purple-600 mr-2"></i>Shipping partner integration</li>
+                  <li><i class="fa-solid fa-check text-purple-600 mr-2"></i>Order status and tracking updates</li>
+                  <li><i class="fa-solid fa-check text-purple-600 mr-2"></i>Returns and refunds management</li>
+               </ul>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up" data-aos-delay="100">
+               <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition-colors"><i class="fa-solid fa-hand-pointer"></i></div>
+               <h3 class="text-xl font-bold mb-3">User-Friendly Shopping</h3>
+               <p class="text-slate-600 text-sm leading-relaxed mb-4">A store customers enjoy using, especially on mobile where most orders happen.</p>
+               <ul class="text-slate-500 space-y-2 text-xs font-semibold">
+                  <li><i class="fa-solid fa-check text-pink-600 mr-2"></i>Fast search, filters and sorting</li>
+                  <li><i class="fa-solid fa-check text-pink-600 mr-2"></i>Wishlist, reviews and ratings</li>
+                  <li><i class="fa-solid fa-check text-pink-600 mr-2"></i>Mobile-first cart and checkout</li>
+               </ul>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up" data-aos-delay="200">
+               <div class="w-14 h-14 bg-slate-100 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-dark group-hover:text-white transition-colors"><i class="fa-solid fa-file-invoice"></i></div>
+               <h3 class="text-xl font-bold mb-3">Admin, GST &amp; Marketing</h3>
+               <p class="text-slate-600 text-sm leading-relaxed mb-4">Tools to run the business side without a developer.</p>
+               <ul class="text-slate-500 space-y-2 text-xs font-semibold">
+                  <li><i class="fa-solid fa-check text-slate-700 mr-2"></i>GST-ready invoices</li>
+                  <li><i class="fa-solid fa-check text-slate-700 mr-2"></i>Coupons, offers and abandoned cart emails</li>
+                  <li><i class="fa-solid fa-check text-slate-700 mr-2"></i>Email and WhatsApp order alerts</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Security -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-dark text-white relative overflow-hidden">
+      <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary rounded-full blur-[120px] opacity-20"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative">
+         <div data-aos="fade-right">
+            <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-6">Secure Checkout Customers Can Trust</h2>
+            <p class="text-slate-400 leading-relaxed mb-4">People only pay on a website they trust. We design the whole payment flow so customer money and data stay protected.</p>
+            <p class="text-slate-400 leading-relaxed">We do not store card numbers on your server. Payments are handled on the payment gateway's secure page, and your store only receives a verified success or failure response.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 gap-5" data-aos="fade-left">
+            <div class="p-5 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-lock text-primary text-xl mb-3"></i><h3 class="font-bold mb-1">SSL / HTTPS</h3><p class="text-slate-400 text-sm leading-relaxed">Encrypted connection on every page.</p></div>
+            <div class="p-5 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-signature text-primary text-xl mb-3"></i><h3 class="font-bold mb-1">Payment Verification</h3><p class="text-slate-400 text-sm leading-relaxed">Gateway signatures are checked, so fake "paid" requests are rejected.</p></div>
+            <div class="p-5 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-shield-halved text-primary text-xl mb-3"></i><h3 class="font-bold mb-1">Attack Protection</h3><p class="text-slate-400 text-sm leading-relaxed">SQL injection, XSS and CSRF protection through Laravel or Django.</p></div>
+            <div class="p-5 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-user-lock text-primary text-xl mb-3"></i><h3 class="font-bold mb-1">Safe Accounts</h3><p class="text-slate-400 text-sm leading-relaxed">Hashed passwords, role-based access and login rate limits.</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Technology -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+         <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">Technology Behind Your Store</h2>
+            <p class="text-slate-500 text-sm sm:text-base">We choose the stack based on your product count, budget and growth plan.</p>
+         </div>
+         <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 sm:p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
+               <div class="w-12 h-12 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-laravel"></i></div>
+               <h3 class="text-lg font-bold mb-2">Laravel (PHP)</h3>
+               <p class="text-slate-500 text-sm leading-relaxed">Our top choice for custom stores and marketplaces. Built-in authentication, queues for emails and orders, and clean code that is easy to extend.</p>
+            </div>
+            <div class="p-6 sm:p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
+               <div class="w-12 h-12 rounded-2xl bg-green-50 text-green-700 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-python"></i></div>
+               <h3 class="text-lg font-bold mb-2">Python Django &amp; Flask</h3>
+               <p class="text-slate-500 text-sm leading-relaxed">Django gives a ready admin panel and strong default security for large catalogs. Flask suits lightweight stores and custom APIs.</p>
+            </div>
+            <div class="p-6 sm:p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
+               <div class="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-wind"></i></div>
+               <h3 class="text-lg font-bold mb-2">Tailwind, Bootstrap, JavaScript</h3>
+               <p class="text-slate-500 text-sm leading-relaxed">Clean HTML and CSS with Tailwind or Bootstrap for a modern, responsive design, and JavaScript for cart, filters and instant feedback.</p>
+            </div>
+         </div>
+         <p class="text-center text-sm text-slate-500 mt-8">Want to know more? Read about our full <a href="web-development.html" class="text-primary font-bold hover:underline">web development services</a>.</p>
+      </div>
+   </section>
+
+   <!-- SEO built in -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+         <div data-aos="fade-right">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-6">Built to Be Found on Google</h2>
+            <p class="text-slate-600 leading-relaxed mb-6">A store nobody finds does not sell. Every store we build starts with search-friendly foundations.</p>
+            <ul class="space-y-4 text-sm text-slate-600">
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Clean product URLs</strong> and proper titles and descriptions for each page.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Product schema</strong> so price, stock and ratings can appear in Google results.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Fast loading</strong> with compressed images and lean code, which matters for rankings and sales.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Mobile-first design</strong>, because Google ranks the mobile version of your site.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Sitemap and Search Console setup</strong> so new products are indexed quickly.</span></li>
+            </ul>
+         </div>
+         <div class="p-8 bg-white rounded-[2rem] border border-slate-100 shadow-sm" data-aos="fade-left">
+            <h3 class="font-bold text-lg mb-4">Store Launch Checklist</h3>
+            <ul class="space-y-3 text-sm text-slate-600">
+               <li><i class="fa-regular fa-square-check text-primary mr-3"></i>Domain, hosting and SSL</li>
+               <li><i class="fa-regular fa-square-check text-primary mr-3"></i>Product catalog and categories</li>
+               <li><i class="fa-regular fa-square-check text-primary mr-3"></i>Payment gateway tested end to end</li>
+               <li><i class="fa-regular fa-square-check text-primary mr-3"></i>Shipping and return policies</li>
+               <li><i class="fa-regular fa-square-check text-primary mr-3"></i>GST invoice and order emails</li>
+               <li><i class="fa-regular fa-square-check text-primary mr-3"></i>Analytics and Search Console</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <!-- Process -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+         <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">How We Launch Your Online Store</h2>
+            <p class="text-slate-500 text-sm sm:text-base">Clear steps, so you always know what is happening.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            <div class="p-6 border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">1</div><h3 class="font-bold mb-2">Plan</h3><p class="text-slate-500 text-sm leading-relaxed">Products, vendors, payments and shipping needs.</p></div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">2</div><h3 class="font-bold mb-2">Design</h3><p class="text-slate-500 text-sm leading-relaxed">Store look and shopping flow for your approval.</p></div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">3</div><h3 class="font-bold mb-2">Build</h3><p class="text-slate-500 text-sm leading-relaxed">Store, admin panel and integrations are developed.</p></div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">4</div><h3 class="font-bold mb-2">Test</h3><p class="text-slate-500 text-sm leading-relaxed">Test orders, payments, refunds and mobile devices.</p></div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">5</div><h3 class="font-bold mb-2">Launch</h3><p class="text-slate-500 text-sm leading-relaxed">Go live, train your team and continue support.</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- FAQ (matches FAQPage schema above) -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+         <h2 class="text-3xl font-bold text-center mb-12">E-commerce Development FAQs</h2>
+         <div class="space-y-4">
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h3 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(1)">How much does an e-commerce website cost in Kota?<i id="icon-1" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h3>
+               <p id="faq-1" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">The cost depends on the number of products, payment and shipping integrations and whether you need multi-vendor features. We quote each store after a short discussion, so you only pay for what your business needs.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h3 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(2)">Which payment gateways do you integrate?<i id="icon-2" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h3>
+               <p id="faq-2" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">We integrate popular Indian gateways such as Razorpay, PayU, Cashfree and Paytm, with UPI, cards, net banking, wallets and Cash on Delivery options.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h3 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(3)">Can you build a multi-vendor marketplace?<i id="icon-3" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h3>
+               <p id="faq-3" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">Yes. We build marketplaces where each vendor has a separate panel to add products, manage stock and orders, while you control approvals, commission and payouts.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h3 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(4)">Is online payment on my store safe?<i id="icon-4" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h3>
+               <p id="faq-4" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">Yes. Card details are handled by the payment gateway's secure page, not stored on your server. We also use SSL, signature verification, CSRF protection and validated inputs.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h3 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(5)">How long does it take to build an online store?<i id="icon-5" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h3>
+               <p id="faq-5" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">A basic store usually takes 3-5 weeks. A multi-vendor marketplace with custom features takes longer, depending on the scope.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h3 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(6)">Will my online store rank on Google?<i id="icon-6" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h3>
+               <p id="faq-6" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">We build the store with SEO-friendly URLs, fast loading, product schema and mobile-first design. Rankings also depend on content and competition, so we offer SEO and digital marketing after launch.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CTA -->
+   <section id="contact" class="py-12 sm:py-16 lg:py-24 bg-dark text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Start Selling Online?</h2>
+         <p class="text-slate-400 text-sm sm:text-base mb-10">Tell us what you sell and we will suggest the right store setup. We reply within 2-4 hours.</p>
+         <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://wa.me/918000509635" class="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-2xl font-bold transition"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp +91 8000509635</a>
+            <a href="mailto:webshakti154@gmail.com" class="px-8 py-4 bg-primary hover:bg-blue-700 rounded-2xl font-bold transition"><i class="fa-solid fa-envelope mr-2"></i>Email Us</a>
+            <a href="contact.html" class="px-8 py-4 border border-white/20 hover:bg-white/10 rounded-2xl font-bold transition">Open Contact Form</a>
+         </div>
+      </div>
+   </section>
+   </main>
+
+   <footer class="bg-white border-t border-slate-100 py-12">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+         <img src="images/logo.png" alt="best web developer in kota" class="h-10">
+         <p class="text-slate-400 text-sm font-medium">© 2026 Web Shakti Kota. Best Web Development in Dadabari.</p>
+         <div class="flex gap-4">
+            <a href="https://www.linkedin.com/company/web-shakti"
+               class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/web.shakti/"
+               class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition"><i
+                  class="fa-brands fa-instagram"></i></a>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({ duration: 800, once: true });
+      function toggleFaq(id) {
+         document.getElementById('faq-' + id).classList.toggle('hidden');
+         document.getElementById('icon-' + id).classList.toggle('rotate-180');
+      }
+      const menuBtn = document.getElementById('menu-btn');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      function hideMenu() { mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); }
+      menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); mobileMenu.classList.add('flex'); });
+      closeMenu.addEventListener('click', hideMenu);
+      document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', hideMenu));
+      window.addEventListener('scroll', function () {
+         const nav = document.querySelector('nav');
+         if (window.scrollY > 50) nav.classList.add('shadow-xl'); else nav.classList.remove('shadow-xl');
+      });
+   </script>
+</body>
+
+</html>

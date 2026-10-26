@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="index, follow">
+   <title>Website Development Company in Kota | PHP, Laravel, Django, Flask | Web Shakti</title>
+   <meta name="description" content="Web Shakti builds secure, fast and modern websites in Kota using HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, PHP, Laravel, Django and Flask.">
+   <link rel="canonical" href="https://webshaktii.netlify.app/web-development.html">
+   <link rel="icon" href="/images/logo.png" type="image/x-icon">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script>
+      tailwind.config = {
+         theme: { extend: { fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }, colors: { primary: '#2563eb', secondary: '#6366f1', dark: '#0f172a' } } }
+      }
+   </script>
+   <style>
+      .bg-grid { background-image: radial-gradient(#e2e8f0 1px, transparent 1px); background-size: 30px 30px; }
+      .glass-card { background: rgba(255,255,255,.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.3); }
+      .gradient-text { background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+      .code-win { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+      .tech-card:hover .tech-ic { transform: translateY(-3px) rotate(-4deg); }
+      .tech-ic { transition: transform .3s; }
+      @media (prefers-reduced-motion: reduce) { .tech-ic { transition: none; } }
+   </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans bg-grid overflow-x-hidden">
+
+   <!-- Navbar -->
+   <nav class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
+         <a href="index.html"><img src="images/logo.png" alt="Web Shakti" class="h-10"></a>
+         <div class="hidden lg:flex items-center gap-10 font-semibold text-slate-600">
+            <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+            <a href="services.html" class="text-primary">Services</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            <a href="team.html" class="hover:text-primary transition-colors">Team</a>
+            <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:bg-blue-700 transition-all">Get a Quote</a>
+         </div>
+         <button class="lg:hidden text-2xl text-dark focus:outline-none" id="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+   </nav>
+
+   <!-- Mobile Menu -->
+   <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white">
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-white focus:outline-none" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      <a href="index.html" class="mobile-link hover:text-primary">Home</a>
+      <a href="services.html" class="mobile-link hover:text-primary">Services</a>
+      <a href="about.html" class="mobile-link hover:text-primary">About Us</a>
+      <a href="contact.html" class="mobile-link hover:text-primary">Contact</a>
+      <a href="team.html" class="mobile-link hover:text-primary">Team</a>
+      <a href="#contact" class="mobile-link bg-primary text-white px-8 py-3 rounded-full text-lg">Get a Quote</a>
+   </div>
+
+   <!-- Hero -->
+   <section class="pt-28 pb-12 lg:pt-40 lg:pb-20 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+         <div data-aos="fade-right">
+            <span class="bg-blue-100 text-primary px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">Web Development in Kota</span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold mt-6 leading-tight text-dark">
+               Modern, Secure Websites Built to <span class="gradient-text">Grow Your Business.</span>
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg">
+               We build custom websites with PHP, Laravel, Django, Flask, Bootstrap and Tailwind CSS. Every site is designed to look premium, load fast, stay safe from attacks and turn visitors into customers.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+               <a href="#contact" class="px-8 py-4 bg-dark text-white rounded-2xl font-bold shadow-2xl hover:bg-slate-800 transition transform hover:-translate-y-1 text-center">Get a Free Quote</a>
+               <a href="#technologies" class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold text-slate-700 hover:bg-slate-50 transition text-center">Our Technologies</a>
+            </div>
+         </div>
+
+         <!-- Browser + code mockup -->
+         <div class="relative" data-aos="zoom-in">
+            <div class="absolute -z-10 top-0 -right-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+            <div class="rounded-3xl bg-dark shadow-2xl overflow-hidden border border-slate-800">
+               <div class="flex items-center gap-2 px-5 py-3 bg-slate-800">
+                  <span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-green-400"></span>
+                  <span class="ml-4 text-xs text-slate-400 bg-slate-900 rounded-full px-4 py-1 truncate">https://yourbusiness.in</span>
+               </div>
+               <pre class="code-win p-5 sm:p-6 text-xs sm:text-sm leading-relaxed text-slate-300 overflow-x-auto"><span class="text-slate-500">// Laravel: secure order route</span>
+<span class="text-purple-400">Route</span>::<span class="text-blue-400">post</span>(<span class="text-green-400">'/order'</span>, <span class="text-purple-400">function</span> (<span class="text-orange-300">$request</span>) {
+  <span class="text-orange-300">$data</span> = <span class="text-orange-300">$request</span>-&gt;<span class="text-blue-400">validate</span>([
+    <span class="text-green-400">'name'</span>  =&gt; <span class="text-green-400">'required|max:60'</span>,
+    <span class="text-green-400">'phone'</span> =&gt; <span class="text-green-400">'required|digits:10'</span>,
+  ]);
+  <span class="text-purple-400">Order</span>::<span class="text-blue-400">create</span>(<span class="text-orange-300">$data</span>);
+  <span class="text-purple-400">return</span> <span class="text-blue-400">redirect</span>(<span class="text-green-400">'/thank-you'</span>);
+})-&gt;<span class="text-blue-400">middleware</span>(<span class="text-green-400">'throttle:10,1'</span>);</pre>
+            </div>
+            <div class="absolute -bottom-5 -left-3 sm:-left-6 bg-white rounded-2xl shadow-xl border border-slate-100 px-4 py-3 flex items-center gap-3">
+               <span class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center"><i class="fa-solid fa-lock"></i></span>
+               <div><p class="text-sm font-bold text-dark">SSL Secured</p><p class="text-xs text-slate-500">Input validated</p></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Intro: what is web development -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-white border-y border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+         <div data-aos="fade-right">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-6">What Is Web Development, and Why Does Your Business Need It?</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">Web development is the work of building the website or web application your customers use. It has two parts. The <strong>front end</strong> is everything a visitor sees and touches: layout, colors, buttons, menus and forms. The <strong>back end</strong> is what works behind the screen: saving enquiries, processing orders, logging users in and storing data safely in a database.</p>
+            <p class="text-slate-600 leading-relaxed mb-4">Today, most customers search on Google or Instagram before they call or visit a shop. A professional website is the first thing they judge you by. If it looks old, loads slowly or breaks on a phone, they leave and go to a competitor.</p>
+            <p class="text-slate-600 leading-relaxed">A well built website works for you 24 hours a day. It answers questions, shows your work, collects leads and takes orders while you focus on running the business.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 gap-5" data-aos="fade-left">
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-clock text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Open 24/7</h4><p class="text-sm text-slate-500 leading-relaxed">Customers can find you, enquire and book at any hour, even when your shop is closed.</p></div>
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-handshake text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Builds Trust</h4><p class="text-sm text-slate-500 leading-relaxed">A clean, secure site with your own domain makes a new business look established.</p></div>
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-bullseye text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Generates Leads</h4><p class="text-sm text-slate-500 leading-relaxed">Contact forms, WhatsApp buttons and call links turn visitors into real enquiries.</p></div>
+            <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100"><i class="fa-solid fa-gears text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Saves Time</h4><p class="text-sm text-slate-500 leading-relaxed">Automate bookings, invoices, student records or orders instead of doing them by hand.</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Technologies -->
+   <section id="technologies" class="py-12 sm:py-16 lg:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+         <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">Technologies We Use, and Why</h2>
+            <p class="text-slate-500 text-sm sm:text-base">We do not force one tool on every project. We pick the combination that fits your budget, features and future growth.</p>
+         </div>
+
+         <h3 class="text-lg font-bold text-dark mb-5"><i class="fa-solid fa-desktop text-primary mr-2"></i>Front End: what your customers see</h3>
+         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-12">
+            <div class="tech-card bg-white p-6 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-html5"></i></div>
+               <h4 class="font-bold mb-2">HTML5</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">The structure of every page. Clean semantic HTML helps Google understand your content and helps screen readers too.</p>
+            </div>
+            <div class="tech-card bg-white p-6 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="80">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-css3-alt"></i></div>
+               <h4 class="font-bold mb-2">CSS3</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">Colors, spacing, layouts and smooth hover effects. It makes the site look like your brand.</p>
+            </div>
+            <div class="tech-card bg-white p-6 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="160">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-yellow-50 text-yellow-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-js"></i></div>
+               <h4 class="font-bold mb-2">JavaScript</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">Brings the page to life: menus, sliders, form checks, live search and instant feedback without reloading.</p>
+            </div>
+            <div class="tech-card bg-white p-6 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="240">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-bootstrap"></i></div>
+               <h4 class="font-bold mb-2">Bootstrap</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">A tested component system. Ideal for admin panels and business sites that must be ready quickly and work on every screen.</p>
+            </div>
+            <div class="tech-card bg-white p-6 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="320">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-wind"></i></div>
+               <h4 class="font-bold mb-2">Tailwind CSS</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">For fully custom, modern designs. Small final file size means faster loading, and no look-alike template feel.</p>
+            </div>
+         </div>
+
+         <h3 class="text-lg font-bold text-dark mb-5"><i class="fa-solid fa-server text-primary mr-2"></i>Back End: the engine behind the website</h3>
+         <div class="grid md:grid-cols-3 gap-6">
+            <div class="tech-card bg-white p-6 sm:p-8 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-php"></i></div>
+               <h4 class="text-lg font-bold mb-2">PHP</h4>
+               <p class="text-slate-500 text-sm leading-relaxed mb-3">Powers a huge part of the web and runs on almost every hosting plan. It keeps cost low for small and medium businesses.</p>
+               <p class="text-xs font-bold text-primary">Best for: business sites, enquiry systems, quick launches</p>
+            </div>
+            <div class="tech-card bg-white p-6 sm:p-8 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-laravel"></i></div>
+               <h4 class="text-lg font-bold mb-2">Laravel</h4>
+               <p class="text-slate-500 text-sm leading-relaxed mb-3">A professional PHP framework with login, permissions, validation, database tools and security protections built in. Code stays organized, so the site is easy to extend later.</p>
+               <p class="text-xs font-bold text-primary">Best for: e-commerce, dashboards, booking and management systems</p>
+            </div>
+            <div class="tech-card bg-white p-6 sm:p-8 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+               <div class="tech-ic w-12 h-12 rounded-2xl bg-green-50 text-green-700 flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-python"></i></div>
+               <h4 class="text-lg font-bold mb-2">Python: Django &amp; Flask</h4>
+               <p class="text-slate-500 text-sm leading-relaxed mb-3"><strong>Django</strong> is a complete framework with a ready admin panel and strong default security, great for larger data-driven systems. <strong>Flask</strong> is lightweight and flexible, perfect for APIs, small apps and custom tools.</p>
+               <p class="text-xs font-bold text-primary">Best for: portals, data-heavy apps, APIs, automation, AI features</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- How it works for business -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+         <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">How a Website Works for Your Business</h2>
+            <p class="text-slate-500 text-sm sm:text-base">Here is what happens from the moment a customer opens your site.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="p-6 border border-slate-200 rounded-[2rem]" data-aos="fade-up">
+               <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">1</div>
+               <h4 class="font-bold text-lg mb-2">Visitor arrives</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">They find you on Google or Instagram. HTML, CSS and Tailwind or Bootstrap load a fast, clean page on their phone.</p>
+            </div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]" data-aos="fade-up" data-aos-delay="100">
+               <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">2</div>
+               <h4 class="font-bold text-lg mb-2">They take action</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">They fill a form, book a slot or place an order. JavaScript checks the details instantly and shows helpful messages.</p>
+            </div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]" data-aos="fade-up" data-aos-delay="200">
+               <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">3</div>
+               <h4 class="font-bold text-lg mb-2">Server processes it</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">PHP, Laravel, Django or Flask re-checks the data, blocks anything unsafe and saves it in the database.</p>
+            </div>
+            <div class="p-6 border border-slate-200 rounded-[2rem]" data-aos="fade-up" data-aos-delay="300">
+               <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">4</div>
+               <h4 class="font-bold text-lg mb-2">You get the lead</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">You see the enquiry in your dashboard, email or WhatsApp, and the customer gets a confirmation.</p>
+            </div>
+         </div>
+
+         <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 sm:p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
+               <h4 class="font-bold text-lg mb-3"><i class="fa-solid fa-store text-primary mr-2"></i>Shops &amp; E-commerce</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">Show products, accept online payments, track stock and manage orders from one admin panel. Sell beyond your city, not just to people who walk in.</p>
+            </div>
+            <div class="p-6 sm:p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
+               <h4 class="font-bold text-lg mb-3"><i class="fa-solid fa-graduation-cap text-primary mr-2"></i>Coaching &amp; Institutes</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">Student login, results, fee records, notices and enquiry forms. Useful for a city like Kota with many coaching and education businesses.</p>
+            </div>
+            <div class="p-6 sm:p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
+               <h4 class="font-bold text-lg mb-3"><i class="fa-solid fa-camera text-primary mr-2"></i>Services &amp; Portfolios</h4>
+               <p class="text-slate-500 text-sm leading-relaxed">Photographers, event planners, artists and agencies can display work, collect booking requests and rank for local searches.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Security -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-dark text-white relative overflow-hidden">
+      <div class="absolute -top-20 -left-20 w-80 h-80 bg-primary rounded-full blur-[120px] opacity-20"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+         <div class="max-w-3xl mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Security Is Built In, Not Added Later</h2>
+            <p class="text-slate-400 leading-relaxed">A hacked website loses customer data, Google ranking and trust. We choose Laravel and Django for serious projects because they ship with proven protections, and we add our own checks on top.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-lock text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">SSL / HTTPS</h4><p class="text-slate-400 text-sm leading-relaxed">All data between your visitor and the server is encrypted. Browsers also show a padlock instead of a warning.</p></div>
+            <div class="p-6 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-database text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">SQL Injection Protection</h4><p class="text-slate-400 text-sm leading-relaxed">Laravel's Eloquent and Django's ORM use parameterized queries, so malicious input cannot read or delete your database.</p></div>
+            <div class="p-6 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-user-shield text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">XSS &amp; CSRF Protection</h4><p class="text-slate-400 text-sm leading-relaxed">Output is escaped by default and forms carry security tokens, which blocks script injection and forged requests.</p></div>
+            <div class="p-6 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-key text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Safe Passwords</h4><p class="text-slate-400 text-sm leading-relaxed">Passwords are hashed, never stored as plain text. Even if data leaks, real passwords stay unreadable.</p></div>
+            <div class="p-6 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-users-gear text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Role-Based Access</h4><p class="text-slate-400 text-sm leading-relaxed">Admins, staff and customers each see only what they should. Admin areas are protected and rate limited against brute force.</p></div>
+            <div class="p-6 bg-white/5 border border-white/10 rounded-3xl"><i class="fa-solid fa-cloud-arrow-up text-primary text-2xl mb-4"></i><h4 class="font-bold mb-2">Backups &amp; Updates</h4><p class="text-slate-400 text-sm leading-relaxed">Regular backups and updated frameworks mean a problem can be fixed quickly without losing your data.</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Design focus -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+         <div data-aos="fade-right">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-6">Modern Design That Actually Converts</h2>
+            <p class="text-slate-600 leading-relaxed mb-6">Good design is not only about looking nice. It decides whether a visitor trusts you, understands your offer and clicks the contact button. Here is what we focus on in every project.</p>
+            <ul class="space-y-4 text-sm text-slate-600">
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Mobile first.</strong> Most of your customers use phones, so we design the phone layout first and then scale up.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Speed.</strong> Compressed images, lean code and caching target a load time under 2 seconds.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Clear layout.</strong> Strong headings, readable text, enough white space and one obvious action per section.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">Brand identity.</strong> Your colors, fonts and tone, so the site does not look like a copied template.</span></li>
+               <li class="flex gap-3"><i class="fa-solid fa-circle-check text-primary mt-1"></i><span><strong class="text-dark">SEO and accessibility.</strong> Proper headings, alt text, meta tags and good contrast help both Google and real people.</span></li>
+            </ul>
+         </div>
+         <div class="grid grid-cols-2 gap-5" data-aos="fade-left">
+            <div class="p-6 rounded-3xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white"><p class="text-4xl font-extrabold">53%</p><p class="text-sm mt-2 text-blue-100">of mobile visitors leave a page that takes over 3 seconds to load (Google research)</p></div>
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100"><i class="fa-solid fa-mobile-screen text-primary text-3xl mb-4"></i><p class="font-bold">Responsive</p><p class="text-sm text-slate-500 mt-1">Phone, tablet, desktop</p></div>
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100"><i class="fa-solid fa-palette text-primary text-3xl mb-4"></i><p class="font-bold">Custom UI</p><p class="text-sm text-slate-500 mt-1">Built around your brand</p></div>
+            <div class="p-6 rounded-3xl bg-dark text-white"><i class="fa-solid fa-magnifying-glass-chart text-primary text-3xl mb-4"></i><p class="font-bold">SEO Ready</p><p class="text-sm text-slate-400 mt-1">Easier to find on Google</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Process -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+         <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">Our Development Process</h2>
+            <p class="text-slate-500 text-sm sm:text-base">Clear steps from the first call to launch and support.</p>
+         </div>
+         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            <div class="p-6 bg-white border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">1</div><h4 class="font-bold mb-2">Discuss</h4><p class="text-slate-500 text-sm leading-relaxed">Goals, audience, budget and the features you need.</p></div>
+            <div class="p-6 bg-white border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">2</div><h4 class="font-bold mb-2">Plan &amp; Design</h4><p class="text-slate-500 text-sm leading-relaxed">Sitemap, layout and visual style for your approval.</p></div>
+            <div class="p-6 bg-white border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">3</div><h4 class="font-bold mb-2">Develop</h4><p class="text-slate-500 text-sm leading-relaxed">Front end and back end are coded with the right stack.</p></div>
+            <div class="p-6 bg-white border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">4</div><h4 class="font-bold mb-2">Test</h4><p class="text-slate-500 text-sm leading-relaxed">Speed, security and every device and browser checked.</p></div>
+            <div class="p-6 bg-white border border-slate-200 rounded-[2rem]"><div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">5</div><h4 class="font-bold mb-2">Launch &amp; Support</h4><p class="text-slate-500 text-sm leading-relaxed">Domain, hosting and SSL setup, then ongoing updates.</p></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Pricing teaser -->
+   <section class="py-12 sm:py-16 bg-white border-y border-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+         <h2 class="text-3xl font-bold text-dark mb-4">Plans Start at ₹4,999</h2>
+         <p class="text-slate-500 text-sm sm:text-base mb-8">Starter ₹4,999 for a single page website. Business Pro ₹14,999 for a multi-page dynamic site with CMS. Laravel, Django and custom systems are quoted after we understand your needs.</p>
+         <a href="index.html#pricing" class="inline-block px-8 py-4 border border-slate-300 bg-white rounded-2xl font-bold hover:bg-slate-100 transition">See All Plans</a>
+      </div>
+   </section>
+
+   <!-- FAQ -->
+   <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+         <h2 class="text-3xl font-bold text-center mb-12">Web Development FAQs</h2>
+         <div class="space-y-4">
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h4 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(1)">How long does a website take?<i id="icon-1" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h4>
+               <p id="faq-1" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">A starter website takes 3-7 days. A professional business website takes 2-4 weeks, and a Laravel or Django system with dashboards can take longer depending on features.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h4 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(2)">Which technology is right for my business?<i id="icon-2" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h4>
+               <p id="faq-2" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">For a simple brand or portfolio site, HTML, CSS, JavaScript and Tailwind or Bootstrap are enough. If you need logins, payments or admin panels, we use Laravel or Django. We recommend the option after a short discussion.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h4 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(3)">Will my website be secure?<i id="icon-3" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h4>
+               <p id="faq-3" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">We use SSL, input validation, hashed passwords and the built-in protections of Laravel and Django. No website can be called 100% unhackable, which is why we also offer updates and backups after launch.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h4 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(4)">Do you provide domain and hosting?<i id="icon-4" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h4>
+               <p id="faq-4" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">Yes. We handle domain registration, cloud hosting and SSL, so you do not need to deal with the technical setup.</p>
+            </div>
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
+               <h4 class="font-bold flex justify-between items-center cursor-pointer text-dark select-none" onclick="toggleFaq(5)">Can I update the website myself later?<i id="icon-5" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i></h4>
+               <p id="faq-5" class="mt-4 text-slate-500 text-sm leading-relaxed hidden">Yes. With a CMS or admin panel you can change text, images, prices and products without writing code. We also give a short walkthrough after delivery.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CTA / Contact -->
+   <section id="contact" class="py-12 sm:py-16 lg:py-24 bg-dark text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Build Your Website?</h2>
+         <p class="text-slate-400 text-sm sm:text-base mb-10">Tell us about your project and we will get back to you within 2-4 hours.</p>
+         <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://wa.me/918000509635" class="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-2xl font-bold transition"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp +91 8000509635</a>
+            <a href="mailto:webshakti154@gmail.com" class="px-8 py-4 bg-primary hover:bg-blue-700 rounded-2xl font-bold transition"><i class="fa-solid fa-envelope mr-2"></i>Email Us</a>
+            <a href="contact.html" class="px-8 py-4 border border-white/20 hover:bg-white/10 rounded-2xl font-bold transition">Open Contact Form</a>
+         </div>
+      </div>
+   </section>
+
+   <footer class="bg-white border-t border-slate-100 py-12">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+         <img src="images/logo.png" alt="best web developer in kota" class="h-10">
+         <p class="text-slate-400 text-sm font-medium">© 2026 Web Shakti Kota. Best Web Development in Dadabari.</p>
+         <div class="flex gap-4">
+            <a href="https://www.linkedin.com/company/web-shakti"
+               class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/web.shakti/"
+               class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition"><i
+                  class="fa-brands fa-instagram"></i></a>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({ duration: 800, once: true });
+
+      function toggleFaq(id) {
+         document.getElementById('faq-' + id).classList.toggle('hidden');
+         document.getElementById('icon-' + id).classList.toggle('rotate-180');
+      }
+
+      const menuBtn = document.getElementById('menu-btn');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      function hideMenu() { mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); }
+      menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); mobileMenu.classList.add('flex'); });
+      closeMenu.addEventListener('click', hideMenu);
+      document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', hideMenu));
+
+      window.addEventListener('scroll', function () {
+         const nav = document.querySelector('nav');
+         if (window.scrollY > 50) nav.classList.add('shadow-xl'); else nav.classList.remove('shadow-xl');
+      });
+   </script>
+</body>
+
+</html>
