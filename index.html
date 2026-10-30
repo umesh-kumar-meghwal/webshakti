@@ -45,7 +45,50 @@
       }
    </style>
    </head>
+   <script>
+const API = "https://web-shakti-backend.vercel.app"; // apna Vercel main domain
 
+// XSS se bachne ke liye text escape
+const esc = (s = "") =>
+  String(s).replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+
+async function loadProjects() {
+  const grid = document.getElementById("projects-grid");
+  try {
+    const res = await fetch(`${API}/api/projects`);
+    const json = await res.json();
+
+    if (!json.success || !json.data.length) {
+      grid.innerHTML = '<p class="text-slate-500 col-span-full text-center">Abhi koi project nahi hai.</p>';
+      return;
+    }
+
+    grid.innerHTML = json.data.map(p => `
+      <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
+        <div class="h-56 overflow-hidden bg-slate-100">
+          <img src="${esc(p.image_url || 'images/placeholder.png')}" alt="${esc(p.name)}"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-dark mb-2">${esc(p.name)}</h3>
+          <p class="text-slate-500 text-sm mb-4">${esc(p.description)}</p>
+          <a href="${esc(p.link)}" target="_blank" rel="noopener"
+            class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
+            View Project <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    `).join("");
+  } catch (err) {
+    console.error(err);
+    grid.innerHTML = '<p class="text-red-500 col-span-full text-center">Projects load nahi ho paaye.</p>';
+  }
+}
+
+loadProjects();
+</script>
    <body class="bg-slate-50 text-slate-900 font-sans bg-grid overflow-x-hidden">
 
       <!-- Premium Navbar -->
@@ -478,120 +521,10 @@
             </div>
 
             <!-- Projects Grid -->
-            <div
+            <div id="projects-grid"
                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-               <!-- Project 1 -->
-               <div
-                  class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
-                  <div class="h-56 overflow-hidden">
-                     <img src="images/mahabali.PNG" alt="Mahabali Event Kota"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  </div>
-                  <div class="p-6">
-                     <h3 class="text-lg font-bold text-dark mb-2">Mahabali
-                        Event Kota</h3>
-                     <p class="text-slate-500 text-sm mb-4">Event management
-                        and booking website designed for seamless user
-                        experience.</p>
-                     <a href="https://mahabaliieventskota.netlify.app/"
-                        target="_blank"
-                        class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
-                        View Project <i
-                           class="fa-solid fa-arrow-right ml-2"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <!-- Project 2 -->
-               <div
-                  class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
-                  <div class="h-56 overflow-hidden">
-                     <img src="images/sakshi.PNG" alt="Sakshi Mehndi Artist"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  </div>
-                  <div class="p-6">
-                     <h3 class="text-lg font-bold text-dark mb-2">Sakshi
-                        Mehndi Artist</h3>
-                     <p class="text-slate-500 text-sm mb-4">A beautiful
-                        portfolio website showcasing intricate mehndi
-                        designs and services.</p>
-                     <a href="https://sakshimehndiarts.netlify.app/"
-                        target="_blank"
-                        class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
-                        View Project <i
-                           class="fa-solid fa-arrow-right ml-2"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <div
-                  class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
-                  <div class="h-56 overflow-hidden">
-                     <img src="images/prdigitalagency.PNG"
-                        alt="Pr Digital Agency"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  </div>
-                  <div class="p-6">
-                     <h3 class="text-lg font-bold text-dark mb-2">Pr Digital
-                        Agency</h3>
-                     <p class="text-slate-500 text-sm mb-4">A premium
-                        corporate website designed for a digital marketing
-                        agency to showcase their branding, SaaS products, and
-                        advertising services</p>
-                     <a href="https://prdigitalagency.netlify.app/"
-                        target="_blank"
-                        class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
-                        View Project <i
-                           class="fa-solid fa-arrow-right ml-2"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <!-- Project 3 -->
-               <div
-                  class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
-                  <div class="h-56 overflow-hidden">
-                     <img src="images/elitivision.PNG"
-                        alt="Elitivision Photography"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  </div>
-                  <div class="p-6">
-                     <h3 class="text-lg font-bold text-dark mb-2">Elitivision
-                        Photography</h3>
-                     <p class="text-slate-500 text-sm mb-4">Professional
-                        photography website with high-quality gallery and
-                        booking system.</p>
-                     <a href="https://elitevision-photography.netlify.app/"
-                        target="_blank"
-                        class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
-                        View Project <i
-                           class="fa-solid fa-arrow-right ml-2"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <!-- Project 4 -->
-               <div
-                  class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
-                  <div class="h-56 overflow-hidden">
-                     <img src="images/sonalika.PNG" alt="Project 4"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  </div>
-                  <div class="p-6">
-                     <h3 class="text-lg font-bold text-dark mb-2">Sonalika
-                        Mehndi Artist</h3>
-                     <p class="text-slate-500 text-sm mb-4">A beautiful
-                        modern website mehndi designs and services.</p>
-                     <a href="https://sonalikamehndiartists.netlify.app/"
-                        target="_blank"
-                        class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
-                        View Project <i
-                           class="fa-solid fa-arrow-right ml-2"></i>
-                     </a>
-                  </div>
-               </div>
-
+               <p class="text-slate-500 col-span-full text-center">Loading
+                  projects...</p>
             </div>
          </div>
       </section>
@@ -825,11 +758,11 @@
                   <!-- Jabalpur Branch -->
                   <div>
                      <a href="webshakti-jabalpur.html">
-                     <h5 class="text-white font-semibold mb-2">
-                        <i
-                           class="fa-solid fa-location-dot mr-2 text-primary"></i>
-                        Jabalpur, Madhya Pradesh
-                     </h5>
+                        <h5 class="text-white font-semibold mb-2">
+                           <i
+                              class="fa-solid fa-location-dot mr-2 text-primary"></i>
+                           Jabalpur, Madhya Pradesh
+                        </h5>
                      </a>
                      <a
                         href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001"
