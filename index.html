@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
    <head>
       <meta charset="utf-8">
@@ -12,7 +12,7 @@
       <meta name="robots"
          content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
       <meta name="author" content="Web Shakti">
-      <meta name="theme-color" content="#2563eb">
+      <meta name="theme-color" content="#061b3f">
 
       <!-- ===== Canonical, Language, Geo ===== -->
       <link rel="canonical" href="https://webshakti.net.in/">
@@ -206,896 +206,559 @@
       <link rel="dns-prefetch" href="//fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
       <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-      <link rel="dns-prefetch" href="//unpkg.com">
       <link rel="dns-prefetch" href="//web-shakti-backend.vercel.app">
-      <link rel="preconnect" href="https://web-shakti-backend.vercel.app"
-         crossorigin>
-      <link rel="preload" as="image" href="images/img-1.png">
+      <link rel="preconnect" href="https://web-shakti-backend.vercel.app" crossorigin>
+      <link rel="preload" as="image" href="images/logo-light.png">
 
-      <!-- ===== Existing assets (unchanged) ===== -->
+      <!-- ===== Assets ===== -->
       <link rel="icon" href="/images/logo.png" type="image/x-icon">
       <link rel="apple-touch-icon" href="/images/logo.png">
-      <script src="https://cdn.tailwindcss.com"></script>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-         rel="stylesheet">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <link rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-      <script>
-      tailwind.config = {
-         theme: {
-            extend: {
-               fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
-               colors: { primary: '#2563eb', secondary: '#6366f1', dark: '#0f172a' }
-            }
-         }
-      }
-   </script>
-      <style>
-      .bg-grid {
-         background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
-         background-size: 30px 30px;
-      }
-
-      .glass-card {
-         background: rgba(255, 255, 255, 0.8);
-         backdrop-filter: blur(12px);
-         border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-
-      .gradient-text {
-         background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%);
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-      }
-   </style>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="css/ws-theme.css">
    </head>
+<body>
+<div id="progress"></div>
+<div id="glow"></div>
 
-   <script>
-const API = "https://web-shakti-backend.vercel.app"; // apna Vercel main domain
+<!-- Loader -->
+<div id="loader"><div style="text-align:center"><img class="lg" src="images/logo-light.png" alt="Web Shakti"><div class="bar"><b></b></div></div></div>
 
-// XSS se bachne ke liye text escape
-const esc = (s = "") =>
-  String(s).replace(/[&<>"']/g, c => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-  }[c]));
+<!-- Navbar -->
+<nav id="nav">
+  <div class="wrap in">
+    <a href="index.html" class="logo"><img src="images/logo-light.png" alt="Web Shakti - Website Development Company in Kota"></a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#contact" class="btn btn-o" style="padding:11px 24px;color:#1a0d00">Get a Quote</a></li>
+    </ul>
+    <button id="burger" aria-label="Open menu"><i class="fa-solid fa-bars-staggered"></i></button>
+  </div>
+</nav>
 
+<div id="mm">
+  <button class="x" id="mmx" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#home">Home</a><a href="services.html">Services</a><a href="about.html">About Us</a>
+  <a href="#projects">Projects</a><a href="#pricing">Pricing</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+  <a href="#contact" class="btn btn-o" style="font-size:18px;color:#1a0d00">Get a Quote</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="home">
+  <canvas id="net"></canvas>
+  <div class="grid-bg"></div>
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Kota's #1 IT &amp; Software Company</span>
+      <h1>
+        <span class="line"><span>Best Website</span></span>
+        <span class="line"><span>Development Company</span></span>
+        <span class="line"><span>in Kota that <em class="grad" style="font-style:normal">Grows</em> You.</span></span>
+      </h1>
+      <p class="lead">Web Shakti builds fast, stunning and SEO-ready <b>websites, mobile apps &amp; custom software</b> for Kota's businesses. We make you <span class="typed" id="typed"></span></p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-o">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://wa.me/918000509635" class="btn btn-g"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+      <div class="trust">
+        <div><i class="fa-solid fa-circle-check"></i> 150+ Happy Clients</div>
+        <div><i class="fa-solid fa-circle-check"></i> Websites from ₹4,999</div>
+        <div><i class="fa-solid fa-circle-check"></i> Delivery in 3-7 Days</div>
+      </div>
+    </div>
+
+    <div class="vis" data-r="z">
+      <div class="chip c1"><i class="fa-solid fa-gauge-high"></i><div>Speed Score<small>Under 2 sec load</small></div></div>
+      <div class="chip c2"><i class="fa-solid fa-magnifying-glass-chart"></i><div>Google Rank<small>Page 1 in Kota</small></div></div>
+      <div class="chip c3"><i class="fa-solid fa-mobile-screen"></i><div>Mobile First<small>Android &amp; iOS apps</small></div></div>
+      <div class="dash" id="dash">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="code" id="code"></div>
+        <div class="chart">
+          <svg viewBox="0 0 400 210" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9410" stop-opacity=".45"/><stop offset="1" stop-color="#ff9410" stop-opacity="0"/></linearGradient>
+              <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6a00"/></linearGradient>
+            </defs>
+            <g stroke="rgba(255,255,255,.08)"><path d="M0 50H400M0 105H400M0 160H400"/></g>
+            <path class="area" d="M5 195 C80 190 120 170 170 140 S270 70 365 28 L365 210 L5 210Z" fill="url(#ga)"/>
+            <path class="line" d="M5 195 C80 190 120 170 170 140 S270 70 365 28" fill="none" stroke="url(#gl)" stroke-width="7" stroke-linecap="round"/>
+            <g class="head"><path d="M338 20 L392 6 L376 60 L368 38 Z" fill="#ff9410"/></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-ind"></div>
+</section>
+
+<!-- Marquee -->
+<div class="marq"><div class="track">
+  <span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-solid fa-n"></i> Next.js</span><span><i class="fa-brands fa-node-js"></i> Node.js</span><span><i class="fa-brands fa-php"></i> PHP</span><span><i class="fa-solid fa-mobile-screen"></i> Flutter</span><span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-brands fa-android"></i> Android</span><span><i class="fa-brands fa-apple"></i> iOS</span><span><i class="fa-solid fa-database"></i> MySQL</span><span><i class="fa-brands fa-figma"></i> Figma</span><span><i class="fa-brands fa-google"></i> SEO &amp; Ads</span><span><i class="fa-solid fa-cart-shopping"></i> E-commerce</span>
+  <span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-solid fa-n"></i> Next.js</span><span><i class="fa-brands fa-node-js"></i> Node.js</span><span><i class="fa-brands fa-php"></i> PHP</span><span><i class="fa-solid fa-mobile-screen"></i> Flutter</span><span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-brands fa-android"></i> Android</span><span><i class="fa-brands fa-apple"></i> iOS</span><span><i class="fa-solid fa-database"></i> MySQL</span><span><i class="fa-brands fa-figma"></i> Figma</span><span><i class="fa-brands fa-google"></i> SEO &amp; Ads</span><span><i class="fa-solid fa-cart-shopping"></i> E-commerce</span>
+</div></div>
+
+<!-- ================= STATS ================= -->
+<section style="padding:80px 0 40px">
+  <div class="wrap stats">
+    <div class="stat" data-r style="--d:0s"><b><span class="cnt" data-to="3">0</span>+</b><span>Years Experience</span></div>
+    <div class="stat" data-r style="--d:.1s"><b><span class="cnt" data-to="200">0</span>+</b><span>Projects Done</span></div>
+    <div class="stat" data-r style="--d:.2s"><b><span class="cnt" data-to="250">0</span>+</b><span>Clients</span></div>
+    <div class="stat" data-r style="--d:.3s"><b><span class="cnt" data-to="99">0</span>%</b><span>Success Rate</span></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap split">
+    <div data-r="l">
+      <span class="eyebrow"><i class="fa-solid fa-rocket"></i> About Web Shakti</span>
+      <h2>Your Business. <span class="grad">Our Technology.</span></h2>
+      <p>Web Shakti is a Kota-based IT and software company helping shops, clinics, coaching institutes, salons, artists and growing brands get a powerful digital identity. We don't just make a website &mdash; we build a growth machine that brings you customers from Google, Instagram and WhatsApp.</p>
+      <p>From a single-page business site to a complete custom software, our team designs, develops, launches and supports everything under one roof &mdash; at an honest price.</p>
+      <ul class="ticks">
+        <li><i class="fa-solid fa-check"></i> Modern, premium design that makes your brand stand out in Kota</li>
+        <li><i class="fa-solid fa-check"></i> SEO-ready code so customers find you on Google</li>
+        <li><i class="fa-solid fa-check"></i> Domain, hosting &amp; SSL included &mdash; no tension</li>
+        <li><i class="fa-solid fa-check"></i> Support after launch, whenever you need us</li>
+      </ul>
+      <a href="about.html" class="btn btn-o">Know More About Us <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="orbit" data-r="r">
+      <div class="ring r2"><span class="sat a"><i class="fa-brands fa-android"></i></span><span class="sat b"><i class="fa-solid fa-cart-shopping"></i></span></div>
+      <div class="ring r1"><span class="sat c"><i class="fa-solid fa-code"></i></span><span class="sat d"><i class="fa-solid fa-chart-line"></i></span></div>
+      <div class="core"><img src="images/logo-light.png" alt="Web Shakti logo"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> What We Do</span>
+      <h2>Complete Digital Solutions <span class="grad">Under One Roof</span></h2>
+      <p>From concept to code and from launch to growth &mdash; everything your business needs to dominate online.</p>
+    </div>
+    <div class="cards">
+      <a href="web-development.html" class="card" data-r style="--d:0s"><div class="ic"><i class="fa-solid fa-code"></i></div><h3>Website Development</h3><p>Custom websites in React, Next.js and PHP &mdash; fast, secure, scalable and fully responsive.</p><ul><li><i class="fa-solid fa-check"></i>Business &amp; Portfolio Websites</li><li><i class="fa-solid fa-check"></i>Custom Dashboards &amp; Admin Panels</li><li><i class="fa-solid fa-check"></i>Landing Pages that Convert</li></ul><span class="more">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="app-development.html" class="card" data-r style="--d:.1s"><div class="ic"><i class="fa-solid fa-mobile-screen-button"></i></div><h3>Mobile App Development</h3><p>Android &amp; iOS apps with smooth experience that your customers will love using every day.</p><ul><li><i class="fa-solid fa-check"></i>Flutter &amp; React Native</li><li><i class="fa-solid fa-check"></i>Play Store &amp; App Store Publishing</li><li><i class="fa-solid fa-check"></i>Push Notifications &amp; Payments</li></ul><span class="more">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="seo-services.html" class="card" data-r style="--d:.2s"><div class="ic"><i class="fa-solid fa-magnifying-glass-chart"></i></div><h3>SEO &amp; Digital Marketing</h3><p>Rank on Google, get more calls and WhatsApp enquiries with proven local SEO strategies.</p><ul><li><i class="fa-solid fa-check"></i>Local SEO for Kota</li><li><i class="fa-solid fa-check"></i>Google My Business &amp; Ads</li><li><i class="fa-solid fa-check"></i>Social Media Management</li></ul><span class="more">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="ecommerce-development.html" class="card" data-r style="--d:0s"><div class="ic"><i class="fa-solid fa-cart-shopping"></i></div><h3>E-commerce Solutions</h3><p>Launch your online store with catalog, cart, payment gateway and order management.</p><ul><li><i class="fa-solid fa-check"></i>Online Store &amp; Catalog</li><li><i class="fa-solid fa-check"></i>UPI, Cards &amp; COD Payments</li><li><i class="fa-solid fa-check"></i>Inventory &amp; Order Tracking</li></ul><span class="more">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="ui-ux-design.html" class="card" data-r style="--d:.1s"><div class="ic"><i class="fa-solid fa-pen-ruler"></i></div><h3>UI/UX Design</h3><p>Eye-catching interfaces designed around your customers, so they stay longer and buy more.</p><ul><li><i class="fa-solid fa-check"></i>Website &amp; App UI Design</li><li><i class="fa-solid fa-check"></i>Brand Identity &amp; Logo</li><li><i class="fa-solid fa-check"></i>Figma Prototypes</li></ul><span class="more">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="software.html" class="card" data-r style="--d:.2s"><div class="ic"><i class="fa-solid fa-laptop-code"></i></div><h3>Custom Software</h3><p>Billing, management, booking and CRM software tailored exactly to how your business works.</p><ul><li><i class="fa-solid fa-check"></i>Billing &amp; Inventory Software</li><li><i class="fa-solid fa-check"></i>Booking &amp; Management Systems</li><li><i class="fa-solid fa-check"></i>Cloud Based &amp; Secure</li></ul><span class="more">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+    </div>
+    <div class="amc" data-r="z">
+      <div><h3><i class="fa-solid fa-screwdriver-wrench" style="color:var(--o);margin-right:10px"></i>Website &amp; Software AMC Support</h3><p>Updates, backups, security and quick fixes &mdash; we take care of your website so you can focus on business.</p></div>
+      <a href="amc-support.html" class="btn btn-o">View AMC Plans <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section id="industries" style="background:linear-gradient(180deg,transparent,rgba(4,13,34,.5),transparent)">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-store"></i> Who We Work With</span>
+      <h2>Websites for Every <span class="grad">Local Business</span></h2>
+      <p>Whatever your business is, we build a website that looks premium and brings real customers.</p>
+    </div>
+    <div class="ind">
+      <div data-r style="--d:0s"><i class="fa-solid fa-hand-sparkles"></i>Mehndi Artists</div>
+      <div data-r style="--d:.05s"><i class="fa-solid fa-scissors"></i>Salons &amp; Spas</div>
+      <div data-r style="--d:.1s"><i class="fa-solid fa-dumbbell"></i>Gyms &amp; Fitness</div>
+      <div data-r style="--d:.15s"><i class="fa-solid fa-graduation-cap"></i>Coaching &amp; Schools</div>
+      <div data-r style="--d:.2s"><i class="fa-solid fa-stethoscope"></i>Clinics &amp; Doctors</div>
+      <div data-r style="--d:0s"><i class="fa-solid fa-utensils"></i>Restaurants &amp; Cafes</div>
+      <div data-r style="--d:.05s"><i class="fa-solid fa-pills"></i>Medical Stores</div>
+      <div data-r style="--d:.1s"><i class="fa-solid fa-champagne-glasses"></i>Event Management</div>
+      <div data-r style="--d:.15s"><i class="fa-solid fa-car-side"></i>Car Rental &amp; Taxi</div>
+      <div data-r style="--d:.2s"><i class="fa-solid fa-building"></i>Real Estate</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-trophy"></i> Why Web Shakti</span>
+      <h2>Why Businesses Trust <span class="grad">Web Shakti</span></h2>
+      <p>We combine design, speed, security and support &mdash; so your website actually works for your business.</p>
+    </div>
+    <div class="bento">
+      <div class="bx big" data-r="l" id="speedbox">
+        <div class="ic"><i class="fa-solid fa-rocket"></i></div>
+        <div class="num grad"><span class="cnt" data-to="2">0</span>s</div>
+        <h4>Blazing Fast Loading</h4>
+        <p>Every line of code is optimised so your website opens in under 2 seconds &mdash; better for customers and better for Google ranking.</p>
+        <div class="speed"><b></b></div>
+      </div>
+      <div class="bx m" data-r="r"><div class="ic"><i class="fa-solid fa-shield-halved"></i></div><h4>Ironclad Security</h4><p>SSL, secure forms and protected admin &mdash; your data and your customers' data stay safe.</p></div>
+      <div class="bx m" data-r="r" style="--d:.1s"><div class="ic"><i class="fa-solid fa-headset"></i></div><h4>24/7 Support</h4><p>Our team is on WhatsApp and call whenever you face any issue or need an update.</p></div>
+      <div class="bx s" data-r style="--d:0s"><div class="ic"><i class="fa-solid fa-indian-rupee-sign"></i></div><h4>Honest Pricing</h4><p>Starts at just &#8377;4,999. No hidden charges.</p></div>
+      <div class="bx s" data-r style="--d:.1s"><div class="ic"><i class="fa-solid fa-mobile-screen"></i></div><h4>Mobile First</h4><p>Looks perfect on every phone, tablet &amp; laptop.</p></div>
+      <div class="bx s" data-r style="--d:.2s"><div class="ic"><i class="fa-solid fa-chart-line"></i></div><h4>Built to Rank</h4><p>SEO-friendly structure from day one.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process" style="background:linear-gradient(180deg,transparent,rgba(4,13,34,.5),transparent)">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-diagram-project"></i> How We Work</span>
+      <h2>From Idea to Launch in <span class="grad">5 Simple Steps</span></h2>
+      <p>A clear, transparent process &mdash; you always know what is happening with your project.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-r style="--d:0s"><div class="n">01</div><h4>Discover</h4><p>We understand your business, customers and goals.</p></div>
+      <div class="step" data-r style="--d:.1s"><div class="n">02</div><h4>Design</h4><p>Premium UI mockups made on your brand colours.</p></div>
+      <div class="step" data-r style="--d:.2s"><div class="n">03</div><h4>Develop</h4><p>Clean, fast and secure code with all features.</p></div>
+      <div class="step" data-r style="--d:.3s"><div class="n">04</div><h4>Launch</h4><p>Domain, hosting, SSL and Google setup &mdash; live!</p></div>
+      <div class="step" data-r style="--d:.4s"><div class="n">05</div><h4>Grow</h4><p>SEO, marketing and support to keep you growing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-briefcase"></i> Our Work</span>
+      <h2>Featured <span class="grad">Projects</span></h2>
+      <p>A glimpse of the creative work we have delivered for our clients.</p>
+    </div>
+    <div id="projects-grid"><p class="pmsg">Loading projects...</p></div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" style="background:linear-gradient(180deg,transparent,rgba(4,13,34,.5),transparent)">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-tags"></i> Pricing</span>
+      <h2>Simple &amp; <span class="grad">Transparent Pricing</span></h2>
+      <p>Choose a plan that fits your business. Need something different? We'll customise it.</p>
+    </div>
+    <div class="prices">
+      <div class="plan" data-r style="--d:0s">
+        <h3>Starter</h3><div class="sub">Perfect for small businesses</div>
+        <div class="pr">&#8377;4,999 <small>/one-time</small></div>
+        <ul><li><i class="fa-solid fa-circle-check"></i>Single Page Website</li><li><i class="fa-solid fa-circle-check"></i>Fully Responsive Design</li><li><i class="fa-solid fa-circle-check"></i>Free SSL Certificate</li><li class="no"><i class="fa-solid fa-circle-xmark"></i>E-commerce Ready</li></ul>
+        <a href="contact.html" class="btn btn-g">Select Plan</a>
+      </div>
+      <div class="plan pop" data-r style="--d:.1s">
+        <span class="tag">MOST POPULAR</span>
+        <h3>Business Pro</h3><div class="sub">Ideal for growing companies</div>
+        <div class="pr grad">&#8377;14,999 <small>/one-time</small></div>
+        <ul><li><i class="fa-solid fa-circle-check"></i>Multi-page Dynamic Site</li><li><i class="fa-solid fa-circle-check"></i>Custom CMS Access</li><li><i class="fa-solid fa-circle-check"></i>SEO Friendly Setup</li><li><i class="fa-solid fa-circle-check"></i>Contact Form &amp; Maps</li></ul>
+        <a href="contact.html" class="btn btn-o">Select Plan</a>
+      </div>
+      <div class="plan" data-r style="--d:.2s">
+        <h3>Custom</h3><div class="sub">For large enterprises</div>
+        <div class="pr">Custom</div>
+        <ul><li><i class="fa-solid fa-circle-check"></i>Complete E-commerce</li><li><i class="fa-solid fa-circle-check"></i>Custom Mobile App</li><li><i class="fa-solid fa-circle-check"></i>24/7 Priority Support</li><li><i class="fa-solid fa-circle-check"></i>Marketing Strategy</li></ul>
+        <a href="contact.html" class="btn btn-g">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCATIONS ================= -->
+<section id="locations">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Our Branches</span>
+      <h2>Visit Us in <span class="grad">Kota &amp; Jabalpur</span></h2>
+      <p>Two offices, one team &mdash; ready to build your digital identity.</p>
+    </div>
+    <div class="locs">
+      <div class="loc" data-r="l">
+        <div class="pin"><i class="fa-solid fa-building"></i></div>
+        <span class="hq">HEAD OFFICE</span><h3>Kota, Rajasthan</h3>
+        <p>3-E-33, Dadabari,<br>Kota, Rajasthan - 324009</p>
+        <div class="row"><a class="btn btn-o" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=3-E-33%2C+DADABARI%2C+Kota%2C+Rajasthan+324009"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a></div>
+      </div>
+      <div class="loc" data-r="r">
+        <div class="pin"><i class="fa-solid fa-building-user"></i></div>
+        <span class="hq">BRANCH OFFICE</span><h3>Jabalpur, Madhya Pradesh</h3>
+        <p>Bhavartal Garden Road, Napier Town,<br>Jabalpur, Madhya Pradesh - 482001</p>
+        <div class="row"><a class="btn btn-o" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a><a class="btn btn-g" href="webshakti-jabalpur.html">Jabalpur Page <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" style="background:linear-gradient(180deg,transparent,rgba(4,13,34,.5),transparent)">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <span class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+      <h2>Frequently Asked <span class="grad">Questions</span></h2>
+      <p>Got doubts? Here are quick answers to what our clients ask most.</p>
+    </div>
+    <div class="faq">
+      <div class="fq" data-r><button type="button">How long does it take to build a website?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Normally, a starter website takes 3-7 days, while a professional business website can take 2-4 weeks depending on features.</p></div></div>
+      <div class="fq" data-r><button type="button">Do you provide domain and hosting?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Yes! We provide all-in-one solutions including Domain registration, Premium Cloud Hosting, and SSL certificates.</p></div></div>
+      <div class="fq" data-r><button type="button">Will my website be mobile friendly?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Absolutely. Every website we build is fully responsive and tested on phones, tablets and desktops.</p></div></div>
+      <div class="fq" data-r><button type="button">Can you make my website rank on Google in Kota?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Every site is built with SEO-friendly structure, and we also offer local SEO and Google My Business setup to help you appear when customers search in Kota.</p></div></div>
+      <div class="fq" data-r><button type="button">Do you also build mobile apps and custom software?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Yes. We build Android and iOS apps with Flutter and React Native, plus billing, booking and management software tailored to your business.</p></div></div>
+      <div class="fq" data-r><button type="button">Do you provide support after the website is live?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Yes, we offer AMC support plans for updates, backups, security and quick fixes, and you can reach us anytime on WhatsApp.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BIG CTA ================= -->
+<section style="padding:40px 0 110px">
+  <div class="wrap">
+    <div class="bigcta" data-r="z">
+      <i class="fa-solid fa-arrow-trend-up arrow"></i>
+      <h2>Ready to <span class="grad">Grow Your Business</span> Online?</h2>
+      <p>Tell us about your idea &mdash; get a free consultation and quote within a few hours.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-o">Get Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:+918000509635" class="btn btn-g"><i class="fa-solid fa-phone"></i> +91 80005 09635</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="padding-top:20px">
+  <div class="wrap cwrap">
+    <div data-r="l">
+      <span class="eyebrow"><i class="fa-solid fa-paper-plane"></i> Contact Us</span>
+      <h2 style="font-size:clamp(30px,4.2vw,48px);margin:18px 0 28px;font-weight:800">Let's Build Something <span class="grad">Powerful</span></h2>
+      <a href="https://wa.me/918000509635" class="cc"><div class="ic" style="background:rgba(37,211,102,.15);color:#25d366"><i class="fa-brands fa-whatsapp"></i></div><div><small>Chat on WhatsApp</small><b>+91 8000509635</b></div></a>
+      <a href="tel:+918000509635" class="cc"><div class="ic"><i class="fa-solid fa-phone"></i></div><div><small>Call Us</small><b>+91 8000509635</b></div></a>
+      <a href="mailto:webshakti154@gmail.com" class="cc"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><small>Email Address</small><b>webshakti154@gmail.com</b></div></a>
+    </div>
+    <div data-r="r">
+      <div class="formbox">
+        <form id="contactForm">
+          <div class="fr">
+            <div class="fld"><label for="name">Your Name</label><input type="text" id="name" placeholder="John Doe" required></div>
+            <div class="fld"><label for="number">Phone Number</label><input type="text" id="number" placeholder="+91 00000 00000" required></div>
+          </div>
+          <div class="fld"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@example.com" required></div>
+          <div class="fld"><label for="message">Your Message</label><textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-o">Send Message Now <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div id="ok"><div class="tick"><i class="fa-solid fa-check"></i></div><h3>Message Sent!</h3><p>Thank you! We'll get back to you within 2-4 hours.</p><button class="btn btn-g" style="margin-top:26px" onclick="location.reload()">Send another message</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <img class="fl" src="images/logo-light.png" alt="Web Shakti Kota">
+        <p style="max-width:340px;margin-bottom:22px">Web Shakti is dedicated to empowering small and large businesses with world-class digital solutions at an affordable price.</p>
+        <div class="soc">
+          <a href="https://www.linkedin.com/company/web-shakti" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/web.shakti/" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/918000509635" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Our Branches</h4>
+        <ul>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=3-E-33%2C+DADABARI%2C+Kota%2C+Rajasthan+324009"><b style="color:#fff"><i class="fa-solid fa-location-dot" style="color:var(--o);margin-right:8px"></i>Kota, Rajasthan</b><br>3-E-33, Dadabari,<br>Kota, Rajasthan - 324009</a></li>
+          <li><a href="webshakti-jabalpur.html"><b style="color:#fff"><i class="fa-solid fa-location-dot" style="color:var(--o);margin-right:8px"></i>Jabalpur, Madhya Pradesh</b></a><br><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001">Bhavartal Garden Road,<br>Napier Town, Jabalpur,<br>Madhya Pradesh - 482001</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="web-development.html">Website Development</a></li><li><a href="app-development.html">App Development</a></li><li><a href="seo-services.html">SEO Services</a></li><li><a href="ecommerce-development.html">E-commerce</a></li><li><a href="ui-ux-design.html">UI/UX Design</a></li><li><a href="amc-support.html">AMC Support</a></li></ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Web Shakti Kota. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/918000509635" class="wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="totop" id="totop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+const API = "https://web-shakti-backend.vercel.app";
+const esc = (s = "") => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---- Projects from backend ---- */
 async function loadProjects() {
   const grid = document.getElementById("projects-grid");
   try {
     const res = await fetch(`${API}/api/projects`);
     const json = await res.json();
-
-    if (!json.success || !json.data.length) {
-      grid.innerHTML = '<p class="text-slate-500 col-span-full text-center">Abhi koi project nahi hai.</p>';
-      return;
-    }
-
-    grid.innerHTML = json.data.map(p => `
-      <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100">
-        <div class="h-56 overflow-hidden bg-slate-100">
-          <img src="${esc(p.image_url || 'images/placeholder.png')}" alt="${esc(p.name)}"
-            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-        </div>
-        <div class="p-6">
-          <h3 class="text-lg font-bold text-dark mb-2">${esc(p.name)}</h3>
-          <p class="text-slate-500 text-sm mb-4">${esc(p.description)}</p>
-          <a href="${esc(p.link)}" target="_blank" rel="noopener"
-            class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
-            View Project <i class="fa-solid fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-      </div>
-    `).join("");
+    if (!json.success || !json.data.length) { grid.innerHTML = '<p class="pmsg">Projects coming soon.</p>'; return; }
+    grid.innerHTML = json.data.map((p, i) => `
+      <div class="pj" data-r style="--d:${(i % 4) * 0.08}s">
+        <div class="im"><img loading="lazy" src="${esc(p.image_url || 'images/img-1.png')}" alt="${esc(p.name)}"></div>
+        <div class="tx"><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p>
+        <a href="${esc(p.link)}" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>`).join("");
+    observe();
   } catch (err) {
     console.error(err);
-    grid.innerHTML = '<p class="text-red-500 col-span-full text-center">Projects load nahi ho paaye.</p>';
+    grid.innerHTML = '<p class="pmsg">Projects could not be loaded right now.</p>';
   }
 }
-
 document.addEventListener("DOMContentLoaded", loadProjects);
+
+/* ---- Loader ---- */
+window.addEventListener("load", () => setTimeout(() => document.getElementById("loader").classList.add("done"), 1100));
+
+/* ---- Reveal + counters ---- */
+const countUp = el => {
+  const to = +el.dataset.to, t0 = performance.now(), d = 1800;
+  const tick = t => { const p = Math.min((t - t0) / d, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 4))); if (p < 1) requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+};
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add("in"); io.unobserve(e.target);
+  e.target.querySelectorAll(".cnt").forEach(countUp);
+}), { threshold: .15 });
+function observe() { document.querySelectorAll("[data-r]:not(.in)").forEach(el => io.observe(el)); }
+observe();
+
+/* ---- Nav, progress, back-to-top ---- */
+const nav = document.getElementById("nav"), prog = document.getElementById("progress"), totop = document.getElementById("totop");
+window.addEventListener("scroll", () => {
+  const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+  nav.classList.toggle("sc", y > 40);
+  prog.style.width = (y / h * 100) + "%";
+  totop.classList.toggle("show", y > 700);
+}, { passive: true });
+totop.onclick = () => scrollTo({ top: 0, behavior: "smooth" });
+
+/* ---- Mobile menu ---- */
+const mm = document.getElementById("mm");
+document.getElementById("burger").onclick = () => mm.classList.add("open");
+document.getElementById("mmx").onclick = () => mm.classList.remove("open");
+mm.querySelectorAll("a").forEach(a => a.onclick = () => mm.classList.remove("open"));
+
+/* ---- Typed text ---- */
+(() => {
+  const words = ["rank on Google.", "go digital.", "stand out.", "grow faster."], el = document.getElementById("typed");
+  let w = 0, c = 0, del = false;
+  (function t() {
+    const s = words[w];
+    el.textContent = s.slice(0, c);
+    if (!del && c === s.length) { del = true; return setTimeout(t, 1400); }
+    if (del && c === 0) { del = false; w = (w + 1) % words.length; }
+    c += del ? -1 : 1;
+    setTimeout(t, del ? 40 : 85);
+  })();
+})();
+
+/* ---- Hero code typing ---- */
+(() => {
+  const el = document.getElementById("code");
+  const lines = [
+    '<span class="c">// your business, upgraded</span>',
+    '<span class="k">const</span> website = <span class="k">await</span> WebShakti.<span class="s">build</span>({',
+    '&nbsp;&nbsp;speed: <span class="s">"under 2s"</span>, seo: <span class="s">true</span>,',
+    '&nbsp;&nbsp;design: <span class="s">"premium"</span>, city: <span class="s">"Kota"</span>',
+    '});  <span class="c">// &#8594; more customers</span>'
+  ];
+  let i = 0;
+  (function add() { if (i >= lines.length) return; el.insertAdjacentHTML("beforeend", "<div>" + lines[i++] + "</div>"); setTimeout(add, 520); })();
+})();
+
+/* ---- 3D tilt on hero dashboard + spotlight on cards ---- */
+const dash = document.getElementById("dash");
+if (dash && matchMedia("(hover:hover)").matches) {
+  const vis = dash.parentElement;
+  vis.addEventListener("mousemove", e => {
+    const r = vis.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    dash.style.transform = `perspective(1000px) rotateY(${x * 12}deg) rotateX(${-y * 10}deg)`;
+  });
+  vis.addEventListener("mouseleave", () => dash.style.transform = "");
+}
+document.querySelectorAll(".card").forEach(c => c.addEventListener("mousemove", e => {
+  const r = c.getBoundingClientRect();
+  c.style.setProperty("--mx", (e.clientX - r.left) + "px"); c.style.setProperty("--my", (e.clientY - r.top) + "px");
+}));
+
+/* ---- Cursor glow ---- */
+const glow = document.getElementById("glow");
+if (matchMedia("(hover:hover)").matches) {
+  addEventListener("mousemove", e => { glow.style.opacity = 1; glow.style.left = e.clientX + "px"; glow.style.top = e.clientY + "px"; });
+}
+
+/* ---- Particle network in hero ---- */
+(() => {
+  const cv = document.getElementById("net"), ctx = cv.getContext("2d");
+  let W, H, pts = [], mouse = { x: -999, y: -999 };
+  const resize = () => {
+    W = cv.width = cv.offsetWidth; H = cv.height = cv.offsetHeight;
+    const n = Math.min(70, Math.floor(W * H / 22000));
+    pts = Array.from({ length: n }, () => ({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35, r: Math.random() * 1.8 + .6 }));
+  };
+  resize(); addEventListener("resize", resize);
+  cv.parentElement.addEventListener("mousemove", e => { const r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+  (function draw() {
+    ctx.clearRect(0, 0, W, H);
+    pts.forEach((p, i) => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > W) p.vx *= -1; if (p.y < 0 || p.y > H) p.vy *= -1;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fillStyle = "rgba(255,180,80,.75)"; ctx.fill();
+      for (let j = i + 1; j < pts.length; j++) {
+        const q = pts[j], d = Math.hypot(p.x - q.x, p.y - q.y);
+        if (d < 130) { ctx.strokeStyle = `rgba(110,160,255,${.22 * (1 - d / 130)})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke(); }
+      }
+      const dm = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+      if (dm < 170) { ctx.strokeStyle = `rgba(255,148,16,${.5 * (1 - dm / 170)})`; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke(); }
+    });
+    requestAnimationFrame(draw);
+  })();
+})();
+
+/* ---- FAQ accordion ---- */
+document.querySelectorAll(".fq button").forEach(b => b.addEventListener("click", () => {
+  const f = b.parentElement, a = f.querySelector(".a"), open = f.classList.contains("open");
+  document.querySelectorAll(".fq.open").forEach(o => { o.classList.remove("open"); o.querySelector(".a").style.maxHeight = 0; });
+  if (!open) { f.classList.add("open"); a.style.maxHeight = a.scrollHeight + "px"; }
+}));
+
+/* ---- Contact form (same Google Script endpoint) ---- */
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const btn = e.target.querySelector("button");
+  btn.innerText = "Sending..."; btn.disabled = true;
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    number: document.getElementById("number").value,
+    message: document.getElementById("message").value
+  };
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbwsa5WSPJruX3e20ELybdb8E5mBKmcWW6T2D2jBMWtV9Wb3m3oswWM8S9NGnby2g78/exec", {
+      method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(formData)
+    });
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("ok").style.display = "block";
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+    btn.innerText = "Send Message Now"; btn.disabled = false;
+  }
+});
 </script>
-   <body class="bg-slate-50 text-slate-900 font-sans bg-grid overflow-x-hidden">
-
-      <!-- Premium Navbar -->
-      <nav
-         class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-slate-200">
-         <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-               <img src="images/logo.png" alt="Web Shakti" class="h-10">
-            </div>
-            <div
-               class="hidden lg:flex items-center gap-10 font-semibold text-slate-600">
-               <a href="#home"
-                  class="hover:text-primary transition-colors">Home</a>
-               <a href="services.html"
-                  class="hover:text-primary transition-colors">Services</a>
-               <a href="about.html"
-                  class="hover:text-primary transition-colors">About Us</a>
-               <a href="contact.html"
-                  class="hover:text-primary transition-colors">Contact</a>
-               <a href="team.html"
-                  class="hover:text-primary transition-colors">Team</a>
-
-               <a href="#contact"
-                  class="bg-primary text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:bg-blue-700 transition-all">Get
-                  a Quote</a>
-            </div>
-            <button class="lg:hidden text-2xl text-dark focus:outline-none"
-               id="menu-btn">
-               <i class="fa-solid fa-bars-staggered"></i>
-            </button>
-         </div>
-      </nav>
-
-      <!-- Mobile Slide-over Menu -->
-      <div id="mobile-menu"
-         class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white transition-all duration-300">
-         <button id="close-menu"
-            class="absolute top-6 right-6 text-3xl text-white focus:outline-none">
-            <i class="fa-solid fa-xmark"></i>
-         </button>
-         <a href="#home"
-            class="mobile-link hover:text-primary transition-colors">Home</a>
-         <a href="services.html"
-            class="mobile-link hover:text-primary transition-colors">Services</a>
-         <a href="about.html"
-            class="mobile-link hover:text-primary transition-colors">About
-            Us</a>
-         <a href="contact.html"
-            class="mobile-link hover:text-primary transition-colors">Contact</a>
-         <a href="team.html"
-            class="mobile-link hover:text-primary transition-colors">Team</a>
-         <a href="#contact"
-            class="mobile-link bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all text-lg">Get
-            a
-            Quote</a>
-      </div>
-
-      <!-- Hero Section -->
-      <section id="home"
-         class="pt-28 pb-12 lg:pt-40 lg:pb-20 relative overflow-hidden">
-         <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div data-aos="fade-right">
-               <span
-                  class="bg-blue-100 text-primary px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">Kota's
-                  #1 Web Company</span>
-               <h1
-                  class="text-3xl sm:text-5xl lg:text-7xl font-extrabold mt-6 leading-tight text-dark">
-                  Empower Your <span class="gradient-text">Business</span> with
-                  Web Shakti.
-               </h1>
-               <p
-                  class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg">
-                  Welcome to Web Shakti, your one-stop solution for professional
-                  website development, responsive design,
-                  digital marketing, and SEO services. We build websites that
-                  are not only beautiful but also fast, secure,
-                  and optimized to rank higher on Google. Grow your online
-                  presence with our expert team today.
-               </p>
-               <div class="mt-8 flex flex-col sm:flex-row flex-wrap gap-4">
-                  <a href="#contact"
-                     class="px-8 py-4 bg-dark text-white rounded-2xl font-bold shadow-2xl hover:bg-slate-800 transition transform hover:-translate-y-1 text-center">Start
-                     Your Project</a>
-                  <div
-                     class="flex items-center justify-center gap-4 px-6 py-4 bg-white rounded-2xl border border-slate-200 shadow-sm">
-                     <div class="flex -space-x-2">
-                        <img
-                           class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"
-                           alt="best web developer in kota"
-                           src="https://i.pravatar.cc/100?u=1">
-                        <img
-                           class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"
-                           alt="best web developer in kota"
-                           src="https://i.pravatar.cc/100?u=2">
-                        <img
-                           class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"
-                           alt="best web developer in kota"
-                           src="https://i.pravatar.cc/100?u=3">
-                     </div>
-                     <p class="text-sm font-bold text-slate-600">150+ Happy
-                        Clients</p>
-                  </div>
-               </div>
-            </div>
-            <div class="relative mt-8 lg:mt-0" data-aos="zoom-in">
-               <div
-                  class="absolute -z-10 top-0 -right-10 sm:-right-20 w-64 h-64 sm:w-80 sm:h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
-               </div>
-               <img src="images/img-1.png" alt="Digital Agency"
-                  class="w-full drop-shadow-2xl rounded-3xl">
-            </div>
-         </div>
-      </section>
-
-      <!-- Stats Section -->
-      <section class="py-10 bg-white border-y border-slate-100">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-               <div class="text-center" data-aos="fade-up">
-                  <h3
-                     class="text-3xl sm:text-4xl font-extrabold text-dark">3+</h3>
-                  <p class="text-slate-500 text-xs sm:text-sm font-medium">Years
-                     Experience</p>
-               </div>
-               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                  <h3
-                     class="text-3xl sm:text-4xl font-extrabold text-dark">200+</h3>
-                  <p
-                     class="text-slate-500 text-xs sm:text-sm font-medium">Projects
-                     Done</p>
-               </div>
-               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                  <h3
-                     class="text-3xl sm:text-4xl font-extrabold text-dark">250+</h3>
-                  <p
-                     class="text-slate-500 text-xs sm:text-sm font-medium">Clients</p>
-               </div>
-               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                  <h3
-                     class="text-3xl sm:text-4xl font-extrabold text-dark">99%</h3>
-                  <p
-                     class="text-slate-500 text-xs sm:text-sm font-medium">Success
-                     Rate</p>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Main Services -->
-      <section id="services" class="py-12 sm:py-16 lg:py-24 bg-slate-50">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-20">
-               <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">Our
-                  Core Expertise</h2>
-               <p class="text-slate-500 text-sm sm:text-base">From concept to
-                  code, we provide end-to-end digital services
-                  to help you dominate
-                  the market.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-               <!-- Card 1 -->
-               <a href="web-development.html">
-                  <div
-                     class="bg-white p-6 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group"
-                     data-aos="fade-up">
-                     <div
-                        class="w-16 h-16 bg-blue-50 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-code"></i>
-                     </div>
-                     <h3 class="text-xl sm:text-2xl font-bold mb-4">Web
-                        Development</h3>
-                     <p
-                        class="text-slate-600 leading-relaxed mb-6 text-sm">Custom-built
-                        websites using React, Next.js, and
-                        PHP that are fast, scalable, and secure.</p>
-                     <ul
-                        class="text-slate-500 space-y-2 text-xs font-bold uppercase tracking-tight">
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i>
-                           Custom Dashboards</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i>
-                           E-commerce Solutions</li>
-                     </ul>
-                  </div>
-               </a>
-               <!-- Card 2 -->
-               <a href="app-development.html">
-
-                  <div
-                     class="bg-white p-6 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group"
-                     data-aos="fade-up" data-aos-delay="100">
-                     <div
-                        class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                     </div>
-                     <h3 class="text-xl sm:text-2xl font-bold mb-4">App
-                        Development</h3>
-                     <p
-                        class="text-slate-600 leading-relaxed mb-6 text-sm">Native
-                        and cross-platform mobile apps for Android
-                        and iOS that provide seamless user experience.</p>
-                     <ul
-                        class="text-slate-500 space-y-2 text-xs font-bold uppercase tracking-tight">
-                        <li><i
-                              class="fa-solid fa-check text-purple-600 mr-2"></i>
-                           Flutter & React Native</li>
-                        <li><i
-                              class="fa-solid fa-check text-purple-600 mr-2"></i>
-                           Play Store Publishing</li>
-                     </ul>
-                  </div>
-               </a>
-               <!-- Card 3 -->
-               <a href="seo-services.html">
-                  <div
-                     class="bg-white p-6 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-slate-100 group"
-                     data-aos="fade-up" data-aos-delay="200">
-                     <div
-                        class="w-16 h-16 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-orange-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                     </div>
-                     <h3 class="text-xl sm:text-2xl font-bold mb-4">Digital
-                        Marketing</h3>
-                     <p
-                        class="text-slate-600 leading-relaxed mb-6 text-sm">Drive
-                        traffic and sales with our SEO, Social Media
-                        Management, and Google Ads strategies.</p>
-                     <ul
-                        class="text-slate-500 space-y-2 text-xs font-bold uppercase tracking-tight">
-                        <li><i
-                              class="fa-solid fa-check text-orange-600 mr-2"></i>
-                           SEO Optimization</li>
-                        <li><i
-                              class="fa-solid fa-check text-orange-600 mr-2"></i>
-                           Content Marketing</li>
-                     </ul>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </section>
-
-      <!-- Why Choose Us -->
-      <section
-         class="py-12 sm:py-16 lg:py-24 bg-dark text-white relative overflow-hidden">
-         <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div data-aos="fade-right">
-               <h2
-                  class="text-3xl sm:text-4xl font-bold leading-tight mb-8">Why
-                  Businesses Trust <br><span
-                     class="text-primary">Web Shakti?</span></h2>
-               <div class="space-y-8">
-                  <div class="flex gap-4 sm:gap-6">
-                     <div
-                        class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-xl text-primary">
-                        <i class="fa-solid fa-rocket"></i>
-                     </div>
-                     <div>
-                        <h4 class="text-lg sm:text-xl font-bold mb-2">Blazing
-                           Fast Speed</h4>
-                        <p
-                           class="text-slate-400 text-xs sm:text-sm leading-relaxed">We
-                           optimize every line of code to
-                           ensure your
-                           website loads in under 2 seconds, improving SEO
-                           and UX.</p>
-                     </div>
-                  </div>
-                  <div class="flex gap-4 sm:gap-6">
-                     <div
-                        class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-xl text-primary">
-                        <i class="fa-solid fa-shield-halved"></i>
-                     </div>
-                     <div>
-                        <h4
-                           class="text-lg sm:text-xl font-bold mb-2">Ironclad
-                           Security</h4>
-                        <p
-                           class="text-slate-400 text-xs sm:text-sm leading-relaxed">Advanced
-                           security protocols to protect
-                           your
-                           business data and customers from any online
-                           threats.</p>
-                     </div>
-                  </div>
-                  <div class="flex gap-4 sm:gap-6">
-                     <div
-                        class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-xl text-primary">
-                        <i class="fa-solid fa-headset"></i>
-                     </div>
-                     <div>
-                        <h4 class="text-lg sm:text-xl font-bold mb-2">24/7
-                           Support</h4>
-                        <p
-                           class="text-slate-400 text-xs sm:text-sm leading-relaxed">Our
-                           dedicated team is always available
-                           to assist
-                           you with technical issues and updates.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="relative group mt-8 lg:mt-0" data-aos="fade-left">
-               <div
-                  class="absolute inset-0 bg-primary blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity">
-               </div>
-               <img src="images/img-4.png"
-                  class="relative z-10 rounded-3xl w-full border border-white/10"
-                  alt="best web developer in kota">
-            </div>
-         </div>
-      </section>
-
-      <!-- Pricing Section -->
-      <section id="pricing" class="py-12 sm:py-16 lg:py-24 bg-white">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
-               <h2
-                  class="text-3xl sm:text-4xl font-bold text-dark mb-4">Simple
-                  & Transparent Pricing</h2>
-               <p class="text-slate-500 text-sm sm:text-base">Choose a plan
-                  that fits your business needs.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-               <!-- Basic -->
-               <div
-                  class="p-6 sm:p-8 border border-slate-200 rounded-[2rem] hover:border-primary transition-all"
-                  data-aos="fade-up">
-                  <h4 class="text-xl font-bold mb-2">Starter</h4>
-                  <p class="text-slate-500 text-sm mb-6">Perfect for small
-                     businesses</p>
-                  <div
-                     class="text-3xl sm:text-4xl font-extrabold mb-8">₹4,999
-                     <span
-                        class="text-xs sm:text-sm font-medium text-slate-400">/one-time</span></div>
-                  <ul class="space-y-4 mb-8 text-sm text-slate-600">
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Single Page Website</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Fully Responsive Design</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Free SSL Certificate</li>
-                     <li class="opacity-40"><i
-                           class="fa-solid fa-circle-xmark mr-2"></i>
-                        E-commerce Ready</li>
-                  </ul>
-                  <a href="contact.html"
-                     class="block text-center py-4 border border-slate-200 rounded-xl font-bold hover:bg-slate-50">Select
-                     Plan</a>
-               </div>
-               <!-- Pro -->
-               <div
-                  class="p-6 sm:p-8 bg-dark text-white rounded-[2rem] ring-4 ring-primary ring-opacity-30 relative my-2 md:my-0"
-                  data-aos="fade-up" data-aos-delay="100">
-                  <span
-                     class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold">MOST
-                     POPULAR</span>
-                  <h4 class="text-xl font-bold mb-2">Business Pro</h4>
-                  <p class="text-slate-400 text-sm mb-6">Ideal for growing
-                     companies</p>
-                  <div
-                     class="text-3xl sm:text-4xl font-extrabold mb-8 text-primary">₹14,999
-                     <span
-                        class="text-xs sm:text-sm font-medium text-slate-500">/one-time</span></div>
-                  <ul class="space-y-4 mb-8 text-sm text-slate-300">
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Multi-page Dynamic Site</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Custom CMS Access</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        SEO Friendly Setup</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Contact Form & Maps</li>
-                  </ul>
-                  <a href="contact.html"
-                     class="block text-center py-4 bg-primary text-white rounded-xl font-bold hover:shadow-lg transition-all">Select
-                     Plan</a>
-               </div>
-               <!-- Custom -->
-               <div
-                  class="p-6 sm:p-8 border border-slate-200 rounded-[2rem] hover:border-primary transition-all"
-                  data-aos="fade-up" data-aos-delay="200">
-                  <h4 class="text-xl font-bold mb-2">Custom</h4>
-                  <p class="text-slate-500 text-sm mb-6">For large
-                     enterprises</p>
-                  <div
-                     class="text-3xl sm:text-4xl font-extrabold mb-8 text-dark">Custom</div>
-                  <ul class="space-y-4 mb-8 text-sm text-slate-600">
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Complete E-commerce</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Custom Mobile App</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        24/7 Priority Support</li>
-                     <li><i
-                           class="fa-solid fa-circle-check text-primary mr-2"></i>
-                        Marketing Strategy</li>
-                  </ul>
-                  <a href="contact.html"
-                     class="block text-center py-4 border border-slate-200 rounded-xl font-bold hover:bg-slate-50">Contact
-                     Us</a>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Our Projects Section -->
-      <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
-               <h2
-                  class="text-3xl sm:text-4xl font-extrabold text-dark mb-4">Our
-                  Featured Projects</h2>
-               <p class="text-slate-500 text-sm sm:text-base">A glimpse of
-                  the creative work we've delivered for our
-                  clients.</p>
-            </div>
-
-            <!-- Projects Grid -->
-            <div id="projects-grid"
-               class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-               <p class="text-slate-500 col-span-full text-center">Loading
-                  projects...</p>
-            </div>
-         </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section class="py-12 sm:py-16 lg:py-24 bg-slate-50">
-         <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked
-               Questions</h2>
-            <div class="space-y-4">
-               <div
-                  class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
-                  <h4
-                     class="font-bold flex justify-between items-center cursor-pointer text-dark select-none"
-                     onclick="toggleFaq(1)">
-                     How long does it take to build a website?
-                     <i id="icon-1"
-                        class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
-                  </h4>
-                  <p id="faq-1"
-                     class="mt-4 text-slate-500 text-sm leading-relaxed hidden">Normally,
-                     a starter website
-                     takes 3-7 days, while
-                     a professional business website can take 2-4 weeks
-                     depending on features.</p>
-               </div>
-               <div
-                  class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200">
-                  <h4
-                     class="font-bold flex justify-between items-center cursor-pointer text-dark select-none"
-                     onclick="toggleFaq(2)">
-                     Do you provide domain and hosting?
-                     <i id="icon-2"
-                        class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
-                  </h4>
-                  <p id="faq-2"
-                     class="mt-4 text-slate-500 text-sm leading-relaxed hidden">Yes!
-                     We provide all-in-one
-                     solutions including Domain registration, Premium Cloud
-                     Hosting, and SSL certificates.</p>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Contact Form Section -->
-      <section id="contact" class="py-12 sm:py-16 lg:py-24 bg-white">
-         <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-10 lg:gap-16">
-
-            <!-- Left: Contact Details -->
-            <div class="lg:col-span-5 space-y-6 sm:space-y-8"
-               data-aos="fade-right">
-               <h2 class="text-3xl font-bold mb-4 sm:mb-8">Contact
-                  Information</h2>
-
-               <!-- WhatsApp -->
-               <a href="https://wa.me/918000509635"
-                  class="contact-card flex items-center gap-4 sm:gap-6 p-5 sm:p-6 bg-white rounded-3xl border border-slate-100 shadow-sm transition-all group">
-                  <div
-                     class="w-12 h-12 sm:w-14 sm:h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-xl sm:text-2xl group-hover:bg-green-600 group-hover:text-white transition-colors">
-                     <i class="fa-brands fa-whatsapp"></i>
-                  </div>
-                  <div>
-                     <p
-                        class="text-xs font-bold text-slate-400 uppercase tracking-widest">Chat
-                        on WhatsApp</p>
-                     <p class="text-base sm:text-lg font-bold">+91
-                        8000509635</p>
-                  </div>
-               </a>
-
-               <!-- Email -->
-               <div
-                  class="contact-card flex items-center gap-4 sm:gap-6 p-5 sm:p-6 bg-white rounded-3xl border border-slate-100 shadow-sm transition-all group">
-                  <div
-                     class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-xl sm:text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                     <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <div>
-                     <p
-                        class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email
-                        Address</p>
-                     <p
-                        class="text-base sm:text-lg font-bold break-all">webshakti154@gmail.com</p>
-                  </div>
-               </div>
-            </div>
-
-            <!-- Right: Contact Form -->
-            <div class="lg:col-span-7 mt-8 lg:mt-0" data-aos="fade-left">
-               <div
-                  class="bg-white p-5 sm:p-12 rounded-[2rem] sm:rounded-[3rem] shadow-2xl border border-slate-100 relative">
-                  <form id="contactForm" class="space-y-6">
-                     <div class="grid md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                           <label
-                              class="text-sm font-bold text-slate-600 ml-2">Your
-                              Name</label>
-                           <input type="text" id="name"
-                              placeholder="John Doe" class="input-field"
-                              required>
-                        </div>
-                        <div class="space-y-2">
-                           <label
-                              class="text-sm font-bold text-slate-600 ml-2">Phone
-                              Number</label>
-                           <input type="text" id="number"
-                              placeholder="+91 00000 00000"
-                              class="input-field" required>
-                        </div>
-                     </div>
-                     <div class="space-y-2">
-                        <label
-                           class="text-sm font-bold text-slate-600 ml-2">Email
-                           Address</label>
-                        <input type="email" id="email"
-                           placeholder="john@example.com" class="input-field"
-                           required>
-                     </div>
-                     <div class="space-y-2">
-                        <label
-                           class="text-sm font-bold text-slate-600 ml-2">Your
-                           Message</label>
-                        <textarea id="message" rows="5"
-                           placeholder="Tell us about your project..."
-                           class="input-field"
-                           required></textarea>
-                     </div>
-                     <button type="submit"
-                        class="w-full py-4 sm:py-5 bg-primary text-white rounded-2xl font-bold shadow-lg shadow-primary/30 hover:bg-blue-700 transition-all uppercase tracking-widest text-sm sm:text-base">Send
-                        Message Now</button>
-                  </form>
-
-                  <!-- Success Message -->
-                  <div id="successMessage" class="hidden py-12 text-center">
-                     <div
-                        class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-10 h-10 text-green-600"
-                           viewBox="0 0 24 24">
-                           <path fill="none" stroke="currentColor"
-                              stroke-width="3" d="M4 12l6 6L20 6" />
-                        </svg>
-                     </div>
-                     <h3 class="text-2xl sm:text-3xl font-bold mb-2">Message
-                        Sent!</h3>
-                     <p class="text-slate-500">Thank you! We'll get back to
-                        you within 2-4 hours.</p>
-                     <button onclick="window.location.reload()"
-                        class="mt-8 text-primary font-bold hover:underline">Send
-                        another message</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <style>
-      .input-field {
-         width: 100%;
-         padding: 12px 20px;
-         border: 1px solid #e2e8f0;
-         border-radius: 12px;
-         outline: none;
-         transition: 0.3s;
-      }
-
-      .input-field:focus {
-         border-color: #3b82f6;
-         box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-      }
-   </style>
-
-      <!-- Footer -->
-      <footer class="bg-dark text-white pt-16 pb-10">
-         <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 lg:grid-cols-5 gap-10 border-b border-white/10 pb-16">
-
-            <!-- Company Info -->
-            <div class="lg:col-span-2">
-               <img src="images/logo.png"
-                  class="h-12 mb-6 sm:mb-8 brightness-0 invert"
-                  alt="Web Shakti Kota">
-
-               <p class="text-slate-400 max-w-sm leading-relaxed text-sm">
-                  Web Shakti is dedicated to empowering small and large
-                  businesses with world-class digital solutions at an
-                  affordable price.
-               </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div>
-               <h4 class="font-bold mb-6">Quick Links</h4>
-               <ul class="space-y-4 text-slate-400 text-sm">
-                  <li><a href="index.html"
-                        class="hover:text-primary transition">Home</a></li>
-                  <li><a href="about.html"
-                        class="hover:text-primary transition">About
-                        Us</a></li>
-                  <li><a href="services.html"
-                        class="hover:text-primary transition">Services</a></li>
-                  <li><a href="services.html"
-                        class="hover:text-primary transition">Projects</a></li>
-               </ul>
-            </div>
-
-            <!-- Our Branches -->
-            <div>
-               <h4 class="font-bold mb-6">Our Branches</h4>
-
-               <div class="space-y-5 text-slate-400 text-sm">
-
-                  <!-- Kota Branch -->
-                  <div>
-                     <h5 class="text-white font-semibold mb-2">
-                        <i
-                           class="fa-solid fa-location-dot mr-2 text-primary"></i>
-                        Kota, Rajasthan
-                     </h5>
-                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=3-E-33%2C+DADABARI%2C+Kota%2C+Rajasthan+324009"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="hover:text-primary transition leading-relaxed">
-                        3-E-33, Dadabari,<br>
-                        Kota, Rajasthan - 324009
-                     </a>
-                  </div>
-
-                  <!-- Jabalpur Branch -->
-                  <div>
-                     <a href="webshakti-jabalpur.html">
-                        <h5 class="text-white font-semibold mb-2">
-                           <i
-                              class="fa-solid fa-location-dot mr-2 text-primary"></i>
-                           Jabalpur, Madhya Pradesh
-                        </h5>
-                     </a>
-                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="hover:text-primary transition leading-relaxed">
-                        Bhavartal Garden Road,<br>
-                        Napier Town, Jabalpur,<br>
-                        Madhya Pradesh - 482001
-                     </a>
-                  </div>
-
-               </div>
-            </div>
-
-            <!-- Social Connect -->
-            <div>
-               <h4 class="font-bold mb-6">Social Connect</h4>
-               <div class="flex gap-4">
-                  <a href="https://www.linkedin.com/company/web-shakti"
-                     target="_blank" rel="noopener noreferrer"
-                     aria-label="Web Shakti on LinkedIn"
-                     class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition">
-                     <i class="fa-brands fa-linkedin"></i>
-                  </a>
-
-                  <a href="https://www.instagram.com/web.shakti/"
-                     target="_blank" rel="noopener noreferrer"
-                     aria-label="Web Shakti on Instagram"
-                     class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition">
-                     <i class="fa-brands fa-instagram"></i>
-                  </a>
-               </div>
-            </div>
-
-         </div>
-
-         <p
-            class="text-center px-4 pt-10 text-slate-500 text-xs uppercase tracking-widest">
-            © 2026 Web Shakti Kota. All rights reserved.
-         </p>
-      </footer>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-      AOS.init({ duration: 1000, once: true });
-
-      // FAQ Toggle (Fixed Logic)
-      function toggleFaq(id) {
-         const p = document.getElementById(`faq-${id}`);
-         const icon = document.getElementById(`icon-${id}`);
-
-         if (p.classList.contains('hidden')) {
-            p.classList.remove('hidden');
-            icon.classList.add('rotate-180');
-         } else {
-            p.classList.add('hidden');
-            icon.classList.remove('rotate-180');
-         }
-      }
-
-      // Mobile Menu Actions
-      const menuBtn = document.getElementById('menu-btn');
-      const closeMenu = document.getElementById('close-menu');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileLinks = document.querySelectorAll('.mobile-link');
-
-      menuBtn.addEventListener('click', () => {
-         mobileMenu.classList.remove('hidden');
-         mobileMenu.classList.add('flex');
-      });
-
-      function hideMenu() {
-         mobileMenu.classList.add('hidden');
-         mobileMenu.classList.remove('flex');
-      }
-
-      closeMenu.addEventListener('click', hideMenu);
-      mobileLinks.forEach(link => {
-         link.addEventListener('click', hideMenu);
-      });
-
-      // Contact Form Submission
-      document.getElementById("contactForm").addEventListener("submit", async function (e) {
-         e.preventDefault();
-
-         const btn = e.target.querySelector('button');
-         btn.innerText = "Sending...";
-         btn.disabled = true;
-
-         const formData = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            number: document.getElementById("number").value,
-            message: document.getElementById("message").value
-         };
-
-         try {
-            await fetch("https://script.google.com/macros/s/AKfycbwsa5WSPJruX3e20ELybdb8E5mBKmcWW6T2D2jBMWtV9Wb3m3oswWM8S9NGnby2g78/exec", {
-               method: "POST",
-               mode: "no-cors",
-               headers: { "Content-Type": "application/json" },
-               body: JSON.stringify(formData)
-            });
-
-            document.getElementById("contactForm").classList.add("hidden");
-            document.getElementById("successMessage").classList.remove("hidden");
-         } catch (error) {
-            alert("Something went wrong. Please try again.");
-            btn.innerText = "Send Message Now";
-            btn.disabled = false;
-         }
-      });
-
-      // Navbar scroll effect
-      window.addEventListener('scroll', function () {
-         const nav = document.querySelector('nav');
-         if (window.scrollY > 50) {
-            nav.classList.add('py-2', 'shadow-xl');
-         } else {
-            nav.classList.remove('py-2', 'shadow-xl');
-         }
-      });
-   </script>
-   </body>
-
+</body>
 </html>
