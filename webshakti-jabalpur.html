@@ -12,7 +12,7 @@
         <meta name="keywords"
             content="software company in Jabalpur, website developer in Jabalpur, web development company Jabalpur, app development Jabalpur, SEO company Jabalpur, digital marketing agency Jabalpur, website design Jabalpur">
         <meta name="author" content="Web Shakti">
-        <meta name="theme-color" content="#2563eb">
+        <meta name="theme-color" content="#061b3f">
         <link rel="canonical"
             href="https://webshakti.net.in/software-company-in-jabalpur.html">
         <link rel="alternate" hreflang="en-IN"
@@ -161,49 +161,41 @@ details[open] .chev{transform:rotate(180deg)}
 .card{background:#fff;border:1px solid #f1f5f9;border-radius:2rem;padding:2rem;transition:.3s}
 .card:hover{box-shadow:0 20px 40px -12px rgba(15,23,42,.15)}
 </style>
-    </head>
-    <body
-        class="bg-slate-50 text-slate-900 font-sans bg-grid overflow-x-hidden">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="css/ws-inner.css">
+   <script src="scripts/ws-inner.js" defer></script>
+</head>
+    <body class="ws ws-inner font-sans">
 
         <!-- Navbar -->
-        <nav class="fixed w-full z-50 glass-card border-b border-slate-200">
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
-                <a href="index.html"><img src="images/logo.png" alt="Web Shakti"
-                        class="h-10"></a>
-                <div
-                    class="hidden lg:flex items-center gap-8 font-semibold text-slate-600">
-                    <a href="index.html" class="hover:text-primary">Home</a>
-                    <a href="services.html"
-                        class="hover:text-primary">Services</a>
-                    <a href="about.html" class="hover:text-primary">About Us</a>
-                    <a href="contact.html"
-                        class="hover:text-primary">Contact</a>
-                    <a href="team.html" class="hover:text-primary">Team</a>
-                    <a href="#contact"
-                        class="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all">Get
-                        a Quote</a>
-                </div>
-                <button class="lg:hidden text-2xl text-dark" id="menu-btn"
-                    aria-label="Open menu"><i
-                        class="fa-solid fa-bars-staggered"></i></button>
-            </div>
-        </nav>
-        <div id="mobile-menu"
-            class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-lg hidden flex-col justify-center items-center gap-8 text-2xl font-bold text-white">
-            <button id="close-menu" class="absolute top-6 right-6 text-3xl"
-                aria-label="Close menu"><i
-                    class="fa-solid fa-xmark"></i></button>
-            <a href="index.html" class="mobile-link">Home</a>
-            <a href="services.html" class="mobile-link">Services</a>
-            <a href="about.html" class="mobile-link">About Us</a>
-            <a href="contact.html" class="mobile-link">Contact</a>
-            <a href="team.html" class="mobile-link">Team</a>
-            <a href="#contact"
-                class="mobile-link bg-primary px-8 py-3 rounded-full text-lg">Get
-                a Quote</a>
-        </div>
+        <nav class="wsn" id="wsn" aria-label="Main navigation">
+   <div class="wsn-in">
+      <a href="index.html" class="wsn-logo"><img src="images/logo-light.png" alt="Web Shakti Kota logo"></a>
+      <div class="wsn-links">
+         <a href="index.html">Home</a>
+         <a href="services.html">Services</a>
+         <a href="about.html">About Us</a>
+         <a href="team.html">Team</a>
+         <a href="contact.html">Contact</a>
+         <a href="contact.html" class="wsn-cta">Get a Quote</a>
+      </div>
+      <button class="wsn-burger" id="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars-staggered"></i></button>
+   </div>
+</nav>
 
+<div id="mobile-menu" class="wsm hidden">
+   <button id="close-menu" class="wsm-x" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+   <a href="index.html" class="mobile-link">Home</a>
+   <a href="services.html" class="mobile-link">Services</a>
+   <a href="about.html" class="mobile-link">About Us</a>
+   <a href="team.html" class="mobile-link">Team</a>
+   <a href="contact.html" class="mobile-link">Contact</a>
+   <a href="contact.html" class="mobile-link wsn-cta">Get a Quote</a>
+</div>
+        
         <!-- Hero -->
         <header class="pt-28 pb-12 lg:pt-40 lg:pb-20 relative overflow-hidden">
             <div
@@ -1012,75 +1004,37 @@ details[open] .chev{transform:rotate(180deg)}
         </section>
 
         <!-- Footer -->
-        <footer class="bg-dark text-white pt-16 pb-10">
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 lg:grid-cols-5 gap-10 border-b border-white/10 pb-16">
-                <div class="lg:col-span-2">
-                    <img src="images/logo.png"
-                        class="h-12 mb-6 brightness-0 invert"
-                        alt="Web Shakti Jabalpur">
-                    <p
-                        class="text-slate-400 max-w-sm leading-relaxed text-sm">Web
-                        Shakti is dedicated to empowering small and large
-                        businesses with world-class digital solutions at an
-                        affordable price.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6">Quick Links</h4>
-                    <ul class="space-y-4 text-slate-400 text-sm">
-                        <li><a href="index.html"
-                                class="hover:text-primary">Home</a></li>
-                        <li><a href="about.html"
-                                class="hover:text-primary">About Us</a></li>
-                        <li><a href="services.html"
-                                class="hover:text-primary">Services</a></li>
-                        <li><a href="services.html"
-                                class="hover:text-primary">Projects</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6">Our Branches</h4>
-                    <div class="space-y-5 text-slate-400 text-sm">
-                        <div><h5 class="text-white font-semibold mb-2"><i
-                                    class="fa-solid fa-location-dot mr-2 text-primary"></i>Kota,
-                                Rajasthan</h5>
-                            <a
-                                href="https://www.google.com/maps/search/?api=1&query=3-E-33%2C+DADABARI%2C+Kota%2C+Rajasthan+324009"
-                                target="_blank" rel="noopener noreferrer"
-                                class="hover:text-primary">3-E-33,
-                                Dadabari,<br>Kota, Rajasthan - 324009</a></div>
-                        <div><h5 class="text-white font-semibold mb-2"><i
-                                    class="fa-solid fa-location-dot mr-2 text-primary"></i>Jabalpur,
-                                Madhya Pradesh</h5>
-                            <a
-                                href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001"
-                                target="_blank" rel="noopener noreferrer"
-                                class="hover:text-primary">Bhavartal Garden
-                                Road,<br>Napier Town, Jabalpur,<br>Madhya
-                                Pradesh - 482001</a></div>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6">Social Connect</h4>
-                    <div class="flex gap-4">
-                        <a href="https://www.linkedin.com/company/web-shakti"
-                            target="_blank" rel="noopener noreferrer"
-                            aria-label="Web Shakti on LinkedIn"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/web.shakti/"
-                            target="_blank" rel="noopener noreferrer"
-                            aria-label="Web Shakti on Instagram"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
+        <footer class="wsf">
+   <div class="wsf-w">
+      <div class="wsf-g">
+         <div>
+            <img class="fl" src="images/logo-light.png" alt="Web Shakti Kota">
+            <p style="max-width:340px">Web Shakti is dedicated to empowering small and large businesses with world-class digital solutions at an affordable price.</p>
+            <div class="wsf-soc">
+               <a href="https://www.linkedin.com/company/web-shakti" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+               <a href="https://www.instagram.com/web.shakti/" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on Instagram"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://wa.me/918000509635" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <p
-                class="text-center px-4 pt-10 text-slate-500 text-xs uppercase tracking-widest">©
-                2026 Web Shakti. Software company in Jabalpur & Kota. All rights
-                reserved.</p>
-        </footer>
+         </div>
+         <div>
+            <h4>Quick Links</h4>
+            <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul>
+         </div>
+         <div>
+            <h4>Our Branches</h4>
+            <ul>
+               <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=3-E-33%2C+DADABARI%2C+Kota%2C+Rajasthan+324009"><b><i class="fa-solid fa-location-dot"></i>Kota, Rajasthan</b><br>3-E-33, Dadabari,<br>Kota, Rajasthan - 324009</a></li>
+               <li><a href="webshakti-jabalpur.html"><b><i class="fa-solid fa-location-dot"></i>Jabalpur, Madhya Pradesh</b></a><br><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001">Bhavartal Garden Road,<br>Napier Town, Jabalpur,<br>Madhya Pradesh - 482001</a></li>
+            </ul>
+         </div>
+         <div>
+            <h4>Services</h4>
+            <ul><li><a href="web-development.html">Website Development</a></li><li><a href="app-development.html">App Development</a></li><li><a href="seo-services.html">SEO Services</a></li><li><a href="ecommerce-development.html">E-commerce</a></li><li><a href="ui-ux-design.html">UI/UX Design</a></li><li><a href="amc-support.html">AMC Support</a></li></ul>
+         </div>
+      </div>
+      <p class="wsf-copy">&copy; 2026 Web Shakti. Software company in Jabalpur &amp; Kota. All rights reserved.</p>
+   </div>
+</footer>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>

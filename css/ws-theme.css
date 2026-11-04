@@ -315,3 +315,56 @@ footer a:hover{color:var(--o2)}
   .wa{width:56px;height:56px;font-size:28px}
 }
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}[data-r]{opacity:1;transform:none}}
+
+/* ===== MOBILE / OVERFLOW FIXES ===== */
+html,body{max-width:100%;overflow-x:hidden}
+section,footer,.marq{overflow-x:clip}
+.hero,.split,.cwrap,.locs,.cards,.prices,.bento,.stats{min-width:0}
+.hero>*,.split>*,.cwrap>*,.cards>*,.prices>*,.bento>*,.locs>*{min-width:0}
+.hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+.split,.cwrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.cwrap{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.code{white-space:normal;overflow-wrap:anywhere}
+.hero h1,.hero p.lead{overflow-wrap:break-word}
+@media(max-width:1100px){
+  .hero,.split,.cwrap{grid-template-columns:minmax(0,1fr)}
+  .vis{height:auto;max-width:560px;width:100%;padding:34px 0 40px}
+  .dash{position:relative;inset:auto}
+  .orbit{max-width:420px;width:82%}
+}
+@media(max-width:640px){
+  .wrap{padding:0 18px}
+  #home{padding:118px 0 70px;min-height:auto}
+  .hero{gap:34px}
+  .hero h1{font-size:clamp(32px,9.2vw,40px)}
+  .hero p.lead{font-size:16px}
+  .cta .btn{width:100%;justify-content:center}
+  .trust{gap:14px 20px}
+  .vis{padding:30px 0 34px}
+  .dash{padding:16px;border-radius:22px}
+  .code{font-size:11.5px;line-height:1.75;min-height:120px}
+  .chart{height:150px}
+  .chip{padding:9px 12px;gap:9px;font-size:12px;border-radius:14px}
+  .chip i{width:30px;height:30px;font-size:13px;border-radius:10px}
+  .chip small{font-size:10px}
+  .c1{left:-6px;top:-4px}.c2{display:none}.c3{left:auto;right:-6px;bottom:-6px}
+  .scroll-ind{display:none}
+  .blob{filter:blur(70px)}.b1{right:-160px}.b2{left:-160px}
+  section{padding:68px 0}
+  .sec-head{margin-bottom:44px}
+  .sec-head p{font-size:15.5px}
+  .stat{padding:24px 12px}
+  .card{padding:30px 24px}
+  .amc{flex-direction:column;align-items:flex-start}
+  .bx{padding:26px}.bx .num{font-size:64px}
+  .steps{grid-template-columns:1fr 1fr;gap:34px 12px}
+  .step .n{width:70px;height:70px;font-size:22px}
+  .loc{padding:30px 24px}
+  .fq button{padding:20px;font-size:15.5px}.fq .a p{padding:0 20px 22px}
+  .bigcta{padding:60px 20px;border-radius:28px}.bigcta .arrow{font-size:70px}
+  .cc{padding:18px;gap:14px}.cc b{font-size:15px}
+  .fg{gap:34px}
+  .totop{right:22px;bottom:88px}
+  nav .logo img{height:40px}
+  #mm{font-size:24px;gap:22px}
+}
