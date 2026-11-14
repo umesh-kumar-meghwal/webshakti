@@ -368,3 +368,6 @@ section,footer,.marq{overflow-x:clip}
   nav .logo img{height:40px}
   #mm{font-size:24px;gap:22px}
 }
+
+/* home navbar: extra "Demo Websites" item - tighten spacing on mid screens */
+@media(min-width:861px) and (max-width:1180px){nav ul{gap:2px}nav ul a{padding:9px 11px;font-size:13.5px}}
