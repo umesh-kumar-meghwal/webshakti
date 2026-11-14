@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>404 - Page Not Found | Web Shakti</title>
+   <meta name="description" content="The page you are looking for does not exist. Go back to Web Shakti home page.">
+   <meta name="robots" content="noindex, nofollow">
+   <meta name="theme-color" content="#061b3f">
+
+   <!-- IMPORTANT: 404 page kisi bhi URL par khulta hai, isliye saare paths "/" se shuru hone chahiye -->
+   <link rel="icon" href="/images/logo.png" type="image/x-icon">
+   <link rel="apple-touch-icon" href="/images/logo.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="/css/ws-inner.css">
+   <script src="/scripts/ws-inner.js" defer></script>
+
+   <style>
+      .e404 {
+         position: relative;
+         min-height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         padding: 130px 20px 70px;
+         overflow: hidden;
+      }
+
+      /* ---------- starfield ---------- */
+      .stars { position: absolute; inset: 0; pointer-events: none; }
+      .stars i {
+         position: absolute;
+         border-radius: 50%;
+         background: #fff;
+         opacity: .2;
+         animation: twinkle var(--t, 3s) ease-in-out infinite;
+         animation-delay: var(--d, 0s);
+      }
+      @keyframes twinkle { 0%, 100% { opacity: .15; transform: scale(1); } 50% { opacity: .95; transform: scale(1.6); } }
+
+      .shoot {
+         position: absolute;
+         width: 120px; height: 2px;
+         background: linear-gradient(90deg, rgba(255, 179, 71, 0), #ffb347);
+         transform: rotate(-35deg);
+         opacity: 0;
+         animation: shoot 6s linear infinite;
+      }
+      .shoot.s1 { top: 14%; left: 70%; animation-delay: 1s; }
+      .shoot.s2 { top: 30%; left: 95%; animation-delay: 3.5s; }
+      .shoot.s3 { top: 8%; left: 40%; animation-delay: 5s; }
+      @keyframes shoot {
+         0% { opacity: 0; transform: translate(0, 0) rotate(-35deg); }
+         4% { opacity: 1; }
+         14% { opacity: 0; transform: translate(-420px, 300px) rotate(-35deg); }
+         100% { opacity: 0; transform: translate(-420px, 300px) rotate(-35deg); }
+      }
+
+      /* glow blobs */
+      .glow { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
+      .glow.g1 { width: 380px; height: 380px; background: rgba(255, 148, 16, .16); top: 10%; left: -80px; animation: drift 14s ease-in-out infinite; }
+      .glow.g2 { width: 420px; height: 420px; background: rgba(40, 100, 220, .22); bottom: -80px; right: -100px; animation: drift 17s ease-in-out infinite reverse; }
+      @keyframes drift { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(40px, -30px); } }
+
+      /* ---------- 404 number ---------- */
+      .e404-in { position: relative; z-index: 2; max-width: 760px; width: 100%; }
+      .num {
+         font-family: 'Sora', sans-serif;
+         font-weight: 800;
+         font-size: clamp(96px, 22vw, 230px);
+         line-height: 1;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: .04em;
+         margin-bottom: 10px;
+         transition: transform .2s ease-out;
+      }
+      .num .d {
+         display: inline-block;
+         background: linear-gradient(110deg, #ffb347, #ff9410 45%, #ff6a00);
+         -webkit-background-clip: text; background-clip: text;
+         -webkit-text-fill-color: transparent;
+         filter: drop-shadow(0 12px 30px rgba(255, 148, 16, .35));
+         animation: floaty 4s ease-in-out infinite;
+      }
+      .num .d.b { animation-delay: -2s; }
+      @keyframes floaty { 0%, 100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(-14px) rotate(1.5deg); } }
+
+      /* planet as the zero */
+      .planet-wrap { position: relative; width: .8em; height: .8em; animation: floaty 5s ease-in-out infinite; animation-delay: -1s; }
+      .planet {
+         position: absolute; inset: 8%;
+         border-radius: 50%;
+         background: radial-gradient(circle at 32% 28%, #ffe1ae 0%, #ffb347 22%, #ff9410 50%, #a53f00 100%);
+         box-shadow: 0 0 60px rgba(255, 148, 16, .55), inset -14px -14px 30px rgba(0, 0, 0, .45);
+         animation: spin-glow 6s ease-in-out infinite;
+      }
+      .planet::before, .planet::after {
+         content: ""; position: absolute; border-radius: 50%;
+         background: rgba(120, 40, 0, .35);
+      }
+      .planet::before { width: 22%; height: 22%; top: 24%; left: 52%; }
+      .planet::after { width: 14%; height: 14%; top: 60%; left: 28%; }
+      @keyframes spin-glow { 0%, 100% { box-shadow: 0 0 50px rgba(255, 148, 16, .45), inset -14px -14px 30px rgba(0, 0, 0, .45); } 50% { box-shadow: 0 0 90px rgba(255, 148, 16, .75), inset -14px -14px 30px rgba(0, 0, 0, .45); } }
+      .ring {
+         position: absolute; left: -22%; right: -22%; top: 38%; height: 24%;
+         border: .035em solid rgba(255, 215, 150, .65);
+         border-radius: 50%;
+         transform: rotate(-18deg);
+         box-shadow: 0 0 20px rgba(255, 179, 71, .3);
+      }
+      .orbit { position: absolute; inset: -14%; border-radius: 50%; animation: orbit 7s linear infinite; }
+      .moon {
+         position: absolute; top: 4%; left: 50%;
+         width: .13em; height: .13em; border-radius: 50%;
+         background: radial-gradient(circle at 30% 30%, #fff, #b9c9ea);
+         box-shadow: 0 0 20px rgba(255, 255, 255, .7);
+      }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+
+      /* ---------- glitch heading ---------- */
+      .glitch {
+         position: relative;
+         font-family: 'Sora', sans-serif;
+         font-weight: 800;
+         font-size: clamp(26px, 5vw, 44px);
+         color: #fff;
+         margin: 6px 0 14px;
+         letter-spacing: -.015em;
+      }
+      .glitch::before, .glitch::after {
+         content: attr(data-text);
+         position: absolute; left: 0; right: 0; top: 0;
+         overflow: hidden;
+      }
+      .glitch::before { color: #ff9410; transform: translateX(2px); clip-path: inset(0 0 55% 0); animation: gl1 3.2s infinite linear alternate-reverse; }
+      .glitch::after { color: #4aa8ff; transform: translateX(-2px); clip-path: inset(55% 0 0 0); animation: gl2 2.7s infinite linear alternate-reverse; }
+      @keyframes gl1 { 0%, 88% { transform: translateX(0); } 90% { transform: translateX(-5px); } 94% { transform: translateX(5px); } 100% { transform: translateX(0); } }
+      @keyframes gl2 { 0%, 82% { transform: translateX(0); } 85% { transform: translateX(6px); } 91% { transform: translateX(-6px); } 100% { transform: translateX(0); } }
+
+      .sub { color: #9fb3d6; font-size: 17px; line-height: 1.7; max-width: 560px; margin: 0 auto 18px; }
+      .path-chip {
+         display: inline-flex; align-items: center; gap: 10px;
+         max-width: 100%;
+         padding: 9px 18px; border-radius: 99px;
+         background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .12);
+         font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13.5px; color: #ffb347;
+         margin-bottom: 30px;
+      }
+      .path-chip i { color: #ff8a8a; }
+      .path-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+      /* ---------- buttons ---------- */
+      .btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 40px; }
+      .b404 {
+         display: inline-flex; align-items: center; gap: 10px;
+         padding: 15px 30px; border-radius: 99px;
+         font-weight: 700; font-size: 15px; font-family: inherit;
+         transition: transform .3s cubic-bezier(.2, .8, .2, 1), box-shadow .3s, background .3s;
+      }
+      .b404:hover { transform: translateY(-3px); }
+      .b404.p { background: linear-gradient(120deg, #ffb347, #ff9410 50%, #ff6a00); color: #1a0d00; box-shadow: 0 10px 34px -8px rgba(255, 148, 16, .7); }
+      .b404.p:hover { box-shadow: 0 18px 44px -8px rgba(255, 148, 16, .85); color: #1a0d00; }
+      .b404.g { background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .14); color: #fff; backdrop-filter: blur(10px); }
+      .b404.g:hover { background: rgba(255, 255, 255, .13); color: #fff; }
+      .b404 i { transition: transform .3s; }
+      .b404.p:hover i { transform: translateX(-4px); }
+
+      /* ---------- quick links ---------- */
+      .ql-t { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #6a82ad; margin-bottom: 14px; }
+      .ql { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+      .ql a {
+         display: flex; flex-direction: column; align-items: center; gap: 8px;
+         padding: 18px 10px; border-radius: 18px;
+         background: linear-gradient(160deg, rgba(255, 255, 255, .085), rgba(255, 255, 255, .025));
+         border: 1px solid rgba(255, 255, 255, .11);
+         color: #dbe6fb; font-weight: 600; font-size: 14px;
+         transition: transform .35s cubic-bezier(.2, .8, .2, 1), border-color .3s, box-shadow .3s;
+      }
+      .ql a i { font-size: 20px; color: #ffb347; }
+      .ql a:hover { transform: translateY(-6px); border-color: rgba(255, 148, 16, .5); box-shadow: 0 20px 40px -20px rgba(255, 148, 16, .45); color: #fff; }
+
+      /* entrance */
+      .rise { opacity: 0; transform: translateY(26px); animation: rise .8s cubic-bezier(.2, .8, .2, 1) forwards; }
+      .rise.r1 { animation-delay: .1s; } .rise.r2 { animation-delay: .3s; } .rise.r3 { animation-delay: .45s; }
+      .rise.r4 { animation-delay: .6s; } .rise.r5 { animation-delay: .75s; }
+      @keyframes rise { to { opacity: 1; transform: none; } }
+
+      @media (max-width: 640px) {
+         .e404 { padding-top: 110px; }
+         .ql { grid-template-columns: 1fr 1fr; }
+         .sub { font-size: 15.5px; }
+         .b404 { padding: 14px 24px; }
+      }
+   </style>
+</head>
+
+<body class="ws ws-inner">
+
+   <!-- Navbar (absolute paths so it works on every URL) -->
+   <nav class="wsn" id="wsn" aria-label="Main navigation">
+      <div class="wsn-in">
+         <a href="/" class="wsn-logo"><img src="/images/logo-light.png" alt="Web Shakti Kota logo"></a>
+         <div class="wsn-links">
+            <a href="/">Home</a>
+            <a href="/services.html">Services</a>
+            <a href="/demo/">Demo Websites</a>
+            <a href="/about.html">About Us</a>
+            <a href="/team.html">Team</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/contact.html" class="wsn-cta">Get a Quote</a>
+         </div>
+         <button class="wsn-burger" id="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+   </nav>
+
+   <div id="mobile-menu" class="wsm hidden">
+      <button id="close-menu" class="wsm-x" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+      <a href="/" class="mobile-link">Home</a>
+      <a href="/services.html" class="mobile-link">Services</a>
+      <a href="/demo/" class="mobile-link">Demo Websites</a>
+      <a href="/about.html" class="mobile-link">About Us</a>
+      <a href="/team.html" class="mobile-link">Team</a>
+      <a href="/contact.html" class="mobile-link">Contact</a>
+      <a href="/contact.html" class="mobile-link wsn-cta">Get a Quote</a>
+   </div>
+
+   <!-- 404 -->
+   <main class="e404" id="scene">
+      <div class="stars" id="stars"></div>
+      <span class="shoot s1"></span><span class="shoot s2"></span><span class="shoot s3"></span>
+      <span class="glow g1"></span><span class="glow g2"></span>
+
+      <div class="e404-in">
+         <div class="num rise r1" id="num" aria-label="404">
+            <span class="d">4</span>
+            <span class="planet-wrap" aria-hidden="true">
+               <span class="orbit"><span class="moon"></span></span>
+               <span class="planet"></span>
+               <span class="ring"></span>
+            </span>
+            <span class="d b">4</span>
+         </div>
+
+         <h1 class="glitch rise r2" data-text="Oops! Page not found">Oops! Page not found</h1>
+         <p class="sub rise r2">Looks like this page got lost in space. The link may be wrong, or the page may have been moved or removed. Don't worry, pick where you want to go from below.</p>
+
+         <div class="rise r3">
+            <div class="path-chip"><i class="fa-solid fa-triangle-exclamation"></i><span id="path">/unknown-page</span></div>
+         </div>
+
+         <div class="btns rise r3">
+            <a href="/" class="b404 p"><i class="fa-solid fa-house"></i> Back to Home</a>
+            <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20could%20not%20find%20a%20page%20on%20your%20website." target="_blank" rel="noopener noreferrer" class="b404 g"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+         </div>
+
+         <div class="rise r4">
+            <p class="ql-t">Or explore these pages</p>
+            <div class="ql">
+               <a href="/services.html"><i class="fa-solid fa-laptop-code"></i>Services</a>
+               <a href="/demo/"><i class="fa-solid fa-palette"></i>Demo Websites</a>
+               <a href="/about.html"><i class="fa-solid fa-users"></i>About Us</a>
+               <a href="/contact.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- Footer -->
+   <footer class="wsf">
+      <div class="wsf-w">
+         <div class="wsf-g">
+            <div>
+               <img class="fl" src="/images/logo-light.png" alt="Web Shakti Kota">
+               <p style="max-width:340px">Web Shakti is dedicated to empowering small and large businesses with world-class digital solutions at an affordable price.</p>
+               <div class="wsf-soc">
+                  <a href="https://www.linkedin.com/company/web-shakti" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.instagram.com/web.shakti/" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://wa.me/918000509635" target="_blank" rel="noopener noreferrer" aria-label="Web Shakti on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+               </div>
+            </div>
+            <div>
+               <h4>Quick Links</h4>
+               <ul><li><a href="/">Home</a></li><li><a href="/about.html">About Us</a></li><li><a href="/services.html">Services</a></li><li><a href="/demo/">Demo Websites</a></li><li><a href="/index.html#projects">Projects</a></li><li><a href="/team.html">Team</a></li><li><a href="/contact.html">Contact</a></li></ul>
+            </div>
+            <div>
+               <h4>Our Branches</h4>
+               <ul>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=3-E-33%2C+DADABARI%2C+Kota%2C+Rajasthan+324009"><b><i class="fa-solid fa-location-dot"></i>Kota, Rajasthan</b><br>3-E-33, Dadabari,<br>Kota, Rajasthan - 324009</a></li>
+                  <li><a href="/webshakti-jabalpur.html"><b><i class="fa-solid fa-location-dot"></i>Jabalpur, Madhya Pradesh</b></a><br><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Bhavartal+Garden+Road%2C+Napier+Town%2C+Jabalpur%2C+Madhya+Pradesh+482001">Bhavartal Garden Road,<br>Napier Town, Jabalpur,<br>Madhya Pradesh - 482001</a></li>
+               </ul>
+            </div>
+            <div>
+               <h4>Services</h4>
+               <ul><li><a href="/web-development.html">Website Development</a></li><li><a href="/app-development.html">App Development</a></li><li><a href="/seo-services.html">SEO Services</a></li><li><a href="/ecommerce-development.html">E-commerce</a></li><li><a href="/ui-ux-design.html">UI/UX Design</a></li><li><a href="/amc-support.html">AMC Support</a></li></ul>
+            </div>
+         </div>
+         <p class="wsf-copy">&copy; 2026 Web Shakti Kota. All rights reserved.</p>
+      </div>
+   </footer>
+
+   <script>
+      // show the wrong URL the visitor tried
+      (function () {
+         try {
+            var p = decodeURIComponent(location.pathname + location.search);
+            document.getElementById('path').textContent = p.length > 60 ? p.slice(0, 57) + '...' : p;
+         } catch (e) { /* keep default text */ }
+      })();
+
+      // twinkling stars
+      (function () {
+         var box = document.getElementById('stars'), frag = document.createDocumentFragment();
+         for (var i = 0; i < 60; i++) {
+            var s = document.createElement('i'), z = Math.random() * 2.2 + .8;
+            s.style.cssText = 'left:' + Math.random() * 100 + '%;top:' + Math.random() * 100 + '%;width:' + z + 'px;height:' + z + 'px;--t:' + (2 + Math.random() * 4) + 's;--d:-' + Math.random() * 5 + 's';
+            frag.appendChild(s);
+         }
+         box.appendChild(frag);
+      })();
+
+      // soft mouse parallax on the 404 number (desktop only)
+      (function () {
+         var num = document.getElementById('num'), scene = document.getElementById('scene');
+         if (!window.matchMedia('(hover:hover)').matches) return;
+         scene.addEventListener('mousemove', function (e) {
+            var x = (e.clientX / window.innerWidth - .5) * 22, y = (e.clientY / window.innerHeight - .5) * 16;
+            num.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+         });
+         scene.addEventListener('mouseleave', function () { num.style.transform = ''; });
+      })();
+   </script>
+</body>
+
+</html>
