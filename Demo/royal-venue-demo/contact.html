@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Royal Venue - Banquet Halls & Marriage Gardens, Jaipur</title>
+<meta name="description" content="Contact Royal Venue, Jaipur, to check dates and get a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { corePlugins: { preflight: false },
+    theme: { extend: { colors: { wine: '#2b0a16', gold: '#d9a93e', ivory: '#fbf3e4' }, fontFamily: { serif: ['Cormorant Garamond','serif'], sans: ['Nunito Sans','sans-serif'] } } } }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<div id="progress"></div>
+<div id="site-header"></div>
+
+<section class="page-hero" style="--bg:url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=70')">
+  <div class="container position-relative">
+    <p class="crumb"><a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> Contact</p>
+    <h1>Contact Us</h1><div class="orn"><span></span><i class="bi bi-diamond-fill"></i><span></span></div>
+  </div>
+</section>
+<section class="section ivory"><div class="container"><div class="row g-5">
+  <div class="col-lg-5 reveal-l"><span class="script">Get in touch</span><h2>Book your venue</h2>
+    <div class="ci dk"><i class="bi bi-geo-alt-fill"></i><div><b>Address</b><p>Royal Venue, Jaipur, Rajasthan</p></div></div>
+    <div class="ci dk"><i class="bi bi-telephone-fill"></i><div><b>Phone</b><p><a href="tel:+919876543210">+91 98765 43210</a></p></div></div>
+    <div class="ci dk"><i class="bi bi-envelope-fill"></i><div><b>Email</b><p><a href="mailto:info@royalvenue.in">info@royalvenue.in</a></p></div></div>
+    <div class="ci dk"><i class="bi bi-clock-fill"></i><div><b>Office hours</b><p>Every day, 10:00 am to 8:00 pm</p></div></div></div>
+  <div class="col-lg-7 reveal-r">
+    <form class="form-card quote-form" id="quoteForm" novalidate>
+      <h3>Get a free quote</h3>
+      <div class="row g-3">
+        <div class="col-md-6"><label class="form-label">Your name</label><input class="form-control" name="name" required></div>
+        <div class="col-md-6"><label class="form-label">Mobile number</label><input class="form-control" name="phone" inputmode="numeric" pattern="[0-9]{10}" required></div>
+        <div class="col-md-6"><label class="form-label">Event type</label><select class="form-select" name="event" required><option value="">Select event</option><option>Wedding</option><option>Engagement</option><option>Reception</option><option>Sangeet / Mehndi</option><option>Birthday / Anniversary</option><option>Corporate event</option></select></div>
+        <div class="col-md-6"><label class="form-label">Venue</label><select class="form-select" name="venue" required><option value="">Select venue</option><option>Banquet Hall</option><option>Marriage Garden</option><option>Not sure yet</option></select></div>
+        <div class="col-md-6"><label class="form-label">Event date</label><input type="date" class="form-control" name="date" required></div>
+        <div class="col-md-6"><label class="form-label">Approx. guests</label><input type="number" min="10" class="form-control" name="guests" required></div>
+        <div class="col-12"><label class="form-label">Message (optional)</label><textarea class="form-control" rows="3" name="msg"></textarea></div>
+        <div class="col-12"><button class="btn btn-gold btn-lg w-100" type="submit"><i class="bi bi-whatsapp"></i> Send enquiry on WhatsApp</button></div>
+      </div><p class="small mt-3 mb-0 formMsg"></p>
+    </form></div>
+  <div class="col-12 reveal"><div class="map-box"><iframe title="Location" src="https://www.google.com/maps?q=Jaipur,Rajasthan&output=embed" loading="lazy" allowfullscreen></iframe></div></div>
+</div></div></section>
+
+<div id="site-footer"></div>
+<a href="#" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+<div id="lightbox" aria-hidden="true"><button id="lbClose" aria-label="Close"><i class="bi bi-x-lg"></i></button><img alt=""><p></p></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
