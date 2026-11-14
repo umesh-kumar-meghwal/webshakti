@@ -1,0 +1,38 @@
+
+html{scroll-behavior:smooth}body{overflow-x:hidden;animation:pg .7s ease}
+@keyframes pg{from{opacity:0}}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#2F6BFF,#FF8A3D);z-index:60}
+.btn,.btn-o,.btn-w{display:inline-flex;align-items:center;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .3s,color .3s}
+.btn{background:#2F6BFF;color:#fff}.btn:hover{background:#12294B;transform:translateY(-3px)}
+.btn-o{border:2px solid #12294B;color:#12294B}.btn-o:hover{background:#12294B;color:#fff}
+.btn-w{background:#fff;color:#12294B}.btn-w:hover{transform:translateY(-3px) scale(1.04)}
+.nav-a{padding:.5rem .65rem;border-radius:.6rem;font-size:.9rem;font-weight:600;display:block;transition:.25s}.nav-a:hover,.nav-a.on{background:#EEF3FF;color:#2F6BFF}
+.hero{background:linear-gradient(135deg,#EEF3FF,#fff 60%)}
+.hero-in>*{opacity:0;animation:up .8s cubic-bezier(.2,.8,.2,1) forwards}.hero-in>*:nth-child(2){animation-delay:.12s}.hero-in>*:nth-child(3){animation-delay:.24s}.hero-in>*:nth-child(4){animation-delay:.36s}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;animation:float 10s ease-in-out infinite;will-change:transform}
+.b1{width:340px;height:340px;background:#7C9CFF;top:-90px;left:-70px}.b2{width:260px;height:260px;background:#FF8A3D;bottom:-90px;right:8%;animation-delay:-4s}
+.card{background:#fff;border:1px solid #E3EAFB;border-radius:1.25rem;padding:1.25rem;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s;transform-style:preserve-3d}
+.card:hover{box-shadow:0 24px 50px -22px rgba(18,41,75,.45)}
+.ph{overflow:hidden;border-radius:1rem;width:100%}.ph .art,.ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.card:hover .art,.card:hover .ph img,.gal:hover .art,.gal:hover .ph img{transform:scale(1.08)}
+.glow{animation:glow 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes glow{50%{transform:scale(1.35);opacity:.45}}
+.gal{border-radius:1.25rem;transition:transform .4s}.gal:hover{transform:translateY(-4px)}
+.step{border-left:3px solid #FF8A3D;padding-left:1rem}
+.band{background:linear-gradient(120deg,#12294B,#2F6BFF,#14B8A6);background-size:220% 220%;animation:shift 9s ease infinite}
+.fld{width:100%;border:1px solid #D5E0FA;border-radius:.8rem;padding:.7rem 1rem;outline:none;transition:.25s}.fld:focus{border-color:#2F6BFF;box-shadow:0 0 0 4px rgba(47,107,255,.18)}
+.marq{display:flex;width:max-content;animation:marq 32s linear infinite}
+.rv,.rv-l,.rv-r{opacity:0;transition:opacity .9s cubic-bezier(.2,.8,.2,1) var(--d,0ms),transform .9s cubic-bezier(.2,.8,.2,1) var(--d,0ms);will-change:transform,opacity}
+.rv{transform:translateY(32px)}.rv-l{transform:translateX(-48px)}.rv-r{transform:translateX(48px)}
+.in{opacity:1!important;transform:none!important}
+.ts{display:none}.ts.on{display:block;animation:fade .9s}
+.fab{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;animation:ring 2.4s infinite}
+.pulse{animation:ring 2.4s infinite}.float{animation:float 5s ease-in-out infinite}.float2{animation:float 6.5s ease-in-out -2s infinite}
+.spin{transform-origin:240px 196px;animation:spin 40s linear infinite}
+details>summary{list-style:none}details[open]{border-color:#2F6BFF}
+#hdr.hide{transform:translateY(-110%)}
+@keyframes float{50%{transform:translateY(-14px)}}@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes marq{to{transform:translateX(-50%)}}@keyframes shift{50%{background-position:100% 50%}}@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(47,107,255,.55)}70%,100%{box-shadow:0 0 0 18px rgba(47,107,255,0)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.rv-l,.rv-r,.hero-in>*{opacity:1;transform:none}}
