@@ -372,5 +372,11 @@ section,footer,.marq{overflow-x:clip}
 /* home navbar: extra "Demo Websites" item - tighten spacing on mid screens */
 @media(min-width:861px) and (max-width:1180px){nav ul{gap:2px}nav ul a{padding:9px 11px;font-size:13.5px}}
 
-/* Blog link added: use the mobile menu on narrow desktops so the navbar never overflows */
-@media(min-width:861px) and (max-width:1060px){nav ul{display:none}#burger{display:block}}
+/* Blog link added: 10 navbar items now, so keep every item on ONE line (no wrapping of "Get a Quote" etc.)
+   and switch to the burger menu a little earlier on narrow desktops */
+nav .logo{flex-shrink:0}
+nav ul{flex-wrap:nowrap}
+nav ul li{flex-shrink:0}
+nav ul a{white-space:nowrap}
+@media(min-width:1181px) and (max-width:1340px){nav ul{gap:0}nav ul a{padding:9px 12px;font-size:14px}nav ul a.btn{padding:11px 20px}}
+@media(min-width:861px) and (max-width:1180px){nav ul{display:none}#burger{display:block}}
