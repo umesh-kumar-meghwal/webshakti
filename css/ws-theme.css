@@ -371,3 +371,6 @@ section,footer,.marq{overflow-x:clip}
 
 /* home navbar: extra "Demo Websites" item - tighten spacing on mid screens */
 @media(min-width:861px) and (max-width:1180px){nav ul{gap:2px}nav ul a{padding:9px 11px;font-size:13.5px}}
+
+/* Blog link added: use the mobile menu on narrow desktops so the navbar never overflows */
+@media(min-width:861px) and (max-width:1060px){nav ul{display:none}#burger{display:block}}

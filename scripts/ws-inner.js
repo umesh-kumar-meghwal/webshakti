@@ -23,6 +23,7 @@
 
     /* active link */
     var page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    if (page.indexOf('blog-') === 0) page = 'blog.html';
     var map = { 'web-development.html': 'services.html', 'app-development.html': 'services.html', 'seo-services.html': 'services.html',
       'ecommerce-development.html': 'services.html', 'ui-ux-design.html': 'services.html', 'amc-support.html': 'services.html', 'software.html': 'services.html' };
     var cur = map[page] || page;
