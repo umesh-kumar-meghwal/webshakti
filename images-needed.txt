@@ -1,0 +1,8 @@
+Put these 6 images (1200x630 jpg) in the  images/blog/  folder:
+
+website-development-cost.jpg
+choose-website-company.jpg
+google-business-profile.jpg
+website-vs-instagram.jpg
+website-types.jpg
+app-or-website.jpg
