@@ -1,147 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://webshakti.net.in/</loc>
-    <priority>1.0</priority>
-  </url>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://webshakti.net.in/webshakti-jabalpur.html</loc>
-    <priority>0.9</priority>
+       <loc>https://webshakti.net.in/</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>1.0000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/about.html</loc>
-    <priority>0.9</priority>
+       <loc>https://webshakti.net.in/index.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/services.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/services.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/Demo/</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/sanjeevani-diagnostics-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/about.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/movewell-physiotherapy-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/team.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/rani-beauty-parlour-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/blog.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/contact.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/web-development.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/mgvn-school-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/app-development.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/royal-venue-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/seo-services.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/Demo/suhani-makeup-demo/</loc>
-    <priority>0.6</priority>
+       <loc>https://webshakti.net.in/ecommerce-development.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/web-development.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/ui-ux-design.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/app-development.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/software.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/ecommerce-development.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/amc-support.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/seo-services.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/Demo/rani-beauty-parlour-demo/</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/ui-ux-design.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/amc-support.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/software.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/team.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/Demo/royal-venue-demo/</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/contact.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/Demo/suhani-makeup-demo/</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog.html</loc>
-    <priority>0.8</priority>
+       <loc>https://webshakti.net.in/blog-website-development-cost-in-india.html</loc>
+       <lastmod>2026-11-14T00:00:00+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog-website-development-cost-in-india.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/blog-how-to-choose-website-development-company-kota-jabalpur.html</loc>
+       <lastmod>2026-11-10T00:00:00+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog-how-to-choose-website-development-company-kota-jabalpur.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/blog-google-business-profile-checklist-local-seo.html</loc>
+       <lastmod>2026-11-05T00:00:00+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog-google-business-profile-checklist-local-seo.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/blog-website-vs-instagram-page-for-business.html</loc>
+       <lastmod>2026-10-30T00:00:00+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog-website-vs-instagram-page-for-business.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/blog-static-vs-dynamic-website-vs-custom-php-web-app.html</loc>
+       <lastmod>2026-10-24T00:00:00+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog-static-vs-dynamic-website-vs-custom-php-web-app.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/blog-mobile-app-or-website-first.html</loc>
+       <lastmod>2026-10-18T00:00:00+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
-
   <url>
-    <loc>https://webshakti.net.in/blog-mobile-app-or-website-first.html</loc>
-    <priority>0.7</priority>
+       <loc>https://webshakti.net.in/Demo/rani-beauty-parlour-demo/contact.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/rani-beauty-parlour-demo/gallery.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/courses.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/contact.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/about.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/results.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/contact.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/lookbook.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/meet-ishika.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/services.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/ishika-makeover-demo/pricing.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/admissions.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/contact.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/academics.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/gallery.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/about.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/royal-venue-demo/contact.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/royal-venue-demo/banquet-halls.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/royal-venue-demo/marriage-gardens.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/royal-venue-demo/gallery.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/suhani-makeup-demo/contact.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/suhani-makeup-demo/gallery.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/toppers-coaching-demo/index.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.4096</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/mgvn-school-demo/index.html</loc>
+       <lastmod>2026-11-16T04:05:23+00:00</lastmod>
+       <priority>0.4096</priority>
+  </url>
+  <url>
+       <loc>https://webshakti.net.in/Demo/royal-venue-demo/index.html</loc>
+       <lastmod>2026-11-16T04:05:22+00:00</lastmod>
+       <priority>0.4096</priority>
   </url>
 </urlset>
