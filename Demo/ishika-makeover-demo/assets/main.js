@@ -4,7 +4,7 @@
 
   // ====== YAHAN APNA LOGO / LINK DALO ======
   var LOGO = '../../../images/webshakti-logo.png';   // apna logo path
-  var LINK = 'https://webshakti.com';       // apni website / WhatsApp link
+  var LINK = 'https://webshakti.net.in/';       // apni website / WhatsApp link
   var TEXT = 'Website by';
   var NAME = 'Webshakti';
   // =========================================
