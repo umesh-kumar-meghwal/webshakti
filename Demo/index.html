@@ -54,10 +54,10 @@
       }
 
       /* Demo card */
-      .Demo-card .Demo-img img { transition: transform .7s ease; }
-      .Demo-card:hover .Demo-img img { transform: scale(1.08); }
-      .Demo-card { transition: transform .35s ease, box-shadow .35s ease; }
-      .Demo-card:hover { transform: translateY(-6px); }
+      .demo-card .demo-img img { transition: transform .7s ease; }
+      .demo-card:hover .demo-img img { transform: scale(1.08); }
+      .demo-card { transition: transform .35s ease, box-shadow .35s ease; }
+      .demo-card:hover { transform: translateY(-6px); }
    </style>
    <link rel="stylesheet" href="../css/ws-inner.css">
    <script src="../scripts/ws-inner.js" defer></script>
@@ -73,8 +73,27 @@
          <a href="../index.html">Home</a>
          <a href="../services.html">Services</a>
          <a href="./" data-active="1">Demo Websites</a>
-         <a href="../about.html">About Us</a>
-         <a href="../team.html">Team</a>
+         <div class="wsn-dd">
+            <a href="../video-portfolio.html" aria-haspopup="true">Videos <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="wsn-dd-menu">
+               <a href="../video-portfolio.html#bridal">Bridal Makeup Reels</a>
+               <a href="../video-portfolio.html#wedding">Wedding Photography Films</a>
+               <a href="../video-portfolio.html#car">Car Showcase Videos</a>
+               <a href="../video-portfolio.html#cinematic">Cinematic Brand Videos</a>
+               <a href="../video-portfolio.html#pricing">Video Editing Price</a>
+            </div>
+         </div>
+         <a href="../index.html#pricing">Pricing</a>
+         <div class="wsn-dd">
+            <a href="#" aria-haspopup="true">More <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="wsn-dd-menu">
+               <a href="../about.html">About Us</a>
+               <a href="../index.html#projects">Projects</a>
+               <a href="../team.html">Team</a>
+               <a href="../blog.html">Blog</a>
+               <a href="../gallery.html">Gallery</a>
+            </div>
+         </div>
          <a href="../contact.html">Contact</a>
          <a href="../contact.html" class="wsn-cta">Get a Quote</a>
       </div>
@@ -87,8 +106,13 @@
    <a href="../index.html" class="mobile-link">Home</a>
    <a href="../services.html" class="mobile-link">Services</a>
    <a href="./" data-active="1" class="mobile-link">Demo Websites</a>
+   <a href="../video-portfolio.html" class="mobile-link">Videos</a>
+   <a href="../index.html#pricing" class="mobile-link">Pricing</a>
    <a href="../about.html" class="mobile-link">About Us</a>
+   <a href="../index.html#projects" class="mobile-link">Projects</a>
    <a href="../team.html" class="mobile-link">Team</a>
+   <a href="../blog.html" class="mobile-link">Blog</a>
+   <a href="../gallery.html" class="mobile-link">Gallery</a>
    <a href="../contact.html" class="mobile-link">Contact</a>
    <a href="../contact.html" class="mobile-link wsn-cta">Get a Quote</a>
 </div>
@@ -111,9 +135,9 @@
       <div class="max-w-7xl mx-auto px-6">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- ============ Demo 1 ============ -->
-            <div class="Demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
-               <div class="Demo-img h-52 overflow-hidden bg-slate-100 relative">
+            <!-- ============ DEMO 1 ============ -->
+            <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
+               <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
                   <img src="https://uasdyzgduyhievtpxtds.supabase.co/storage/v1/object/public/project-images/167d36ec776d4bb2af5f2a8c96084ba9.png" alt="Diagnostic Clinic Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-primary text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Healthcare</span>
                </div>
@@ -137,9 +161,9 @@
                </div>
             </div>
 
-            <!-- ============ Demo 2 ============ -->
-            <div class="Demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="100">
-               <div class="Demo-img h-52 overflow-hidden bg-slate-100 relative">
+            <!-- ============ DEMO 2 ============ -->
+            <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+               <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
                   <img src="https://uasdyzgduyhievtpxtds.supabase.co/storage/v1/object/public/project-images/167d36ec776d4bb2af5f2a8c96084ba9.png" alt="Physiotherapy Clinic Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-emerald-600 text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Healthcare</span>
                </div>
@@ -163,9 +187,9 @@
                </div>
             </div>
 
-            <!-- ============ Demo 3 ============ -->
-            <div class="Demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-               <div class="Demo-img h-52 overflow-hidden bg-slate-100 relative">
+            <!-- ============ DEMO 3 ============ -->
+            <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+               <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
                   <img src="https://uasdyzgduyhievtpxtds.supabase.co/storage/v1/object/public/project-images/4ca4cdc86d824cd0a227f03014410f10.png" alt="Car Rental Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-orange-600 text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Travel</span>
                </div>
@@ -189,7 +213,7 @@
                </div>
             </div>
 
-            <!-- ============ Demo 4 ============ -->
+            <!-- ============ DEMO 4 ============ -->
             <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
                <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
                   <img src="https://uasdyzgduyhievtpxtds.supabase.co/storage/v1/object/public/project-images/7a932ecc8a8d4a8aa59ce379e902801f.png" alt="Mehndi Artist Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
@@ -218,7 +242,7 @@
             <!-- ============ DEMO 5 ============ -->
             <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
-                  <img src="../images/rani.PNG" alt="Restaurant Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
+                  <img src="../images/rani.PNG" alt="Beauty Parlour Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-orange-600 text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Parlour</span>
                </div>
                <div class="p-6 flex flex-col flex-1">
@@ -234,7 +258,7 @@
                      <a href="https://webshakti.net.in/Demo/rani-beauty-parlour-demo/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition">
                         <i class="fa-solid fa-eye"></i> View
                      </a>
-                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20the%20Restaurant%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
+                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20the%20Beauty%20Parlour%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
                         <i class="fa-solid fa-cart-shopping"></i> Order
                      </a>
                   </div>
@@ -345,10 +369,10 @@
                </div>
             </div>
 
-            
+            <!-- ============ DEMO 10 ============ -->
             <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
                <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
-                  <img src="../images/isk.PNG" alt="New Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
+                  <img src="../images/isk.PNG" alt="Makeover Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-primary text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Makeover</span>
                </div>
                <div class="p-6 flex flex-col flex-1">
@@ -364,23 +388,21 @@
                      <a href="https://webshakti.net.in/Demo/ishika-makeover-demo/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition">
                         <i class="fa-solid fa-eye"></i> View
                      </a>
-                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20this%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
+                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20the%20Makeover%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
                         <i class="fa-solid fa-cart-shopping"></i> Order
                      </a>
                   </div>
                </div>
             </div>
 
-
-
-
-             <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
+            <!-- ============ DEMO 11 ============ -->
+            <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
-                  <img src="../images/school.PNG" alt="New Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
+                  <img src="../images/school.PNG" alt="School Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-primary text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">School</span>
                </div>
                <div class="p-6 flex flex-col flex-1">
-                  <h3 class="text-xl font-bold text-dark mb-4">School Website </h3>
+                  <h3 class="text-xl font-bold text-dark mb-4">School Website</h3>
                   <div class="flex items-end justify-between mb-5">
                      <div>
                         <p class="text-xs text-slate-400 font-semibold uppercase">Starting at</p>
@@ -392,20 +414,21 @@
                      <a href="https://webshakti.net.in/Demo/mgvn-school-demo/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition">
                         <i class="fa-solid fa-eye"></i> View
                      </a>
-                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20this%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
+                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20the%20School%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
                         <i class="fa-solid fa-cart-shopping"></i> Order
                      </a>
                   </div>
                </div>
             </div>
 
-            <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
+            <!-- ============ DEMO 12 ============ -->
+            <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up" data-aos-delay="200">
                <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
-                  <img src="../images/marriagegarden.PNG" alt="New Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
+                  <img src="../images/marriagegarden.PNG" alt="Marriage Gardens Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-primary text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Marriage Gardens</span>
                </div>
                <div class="p-6 flex flex-col flex-1">
-                  <h3 class="text-xl font-bold text-dark mb-4">Marriage Gardens Webiste </h3>
+                  <h3 class="text-xl font-bold text-dark mb-4">Marriage Gardens Website</h3>
                   <div class="flex items-end justify-between mb-5">
                      <div>
                         <p class="text-xs text-slate-400 font-semibold uppercase">Starting at</p>
@@ -417,22 +440,21 @@
                      <a href="https://webshakti.net.in/Demo/royal-venue-demo/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition">
                         <i class="fa-solid fa-eye"></i> View
                      </a>
-                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20this%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
+                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20the%20Marriage%20Gardens%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
                         <i class="fa-solid fa-cart-shopping"></i> Order
                      </a>
                   </div>
                </div>
             </div>
 
-
-
+            <!-- ============ DEMO 13 ============ -->
             <div class="demo-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-slate-100 flex flex-col" data-aos="fade-up">
                <div class="demo-img h-52 overflow-hidden bg-slate-100 relative">
-                  <img src="../images/suhani.PNG" alt="New Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
+                  <img src="../images/suhani.PNG" alt="Makeup Artist Demo Website" loading="lazy" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='../images/placeholder.png'">
                   <span class="absolute top-4 left-4 bg-[#040d22]/80 backdrop-blur border border-white/10 text-primary text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">Makeup Artist</span>
                </div>
                <div class="p-6 flex flex-col flex-1">
-                  <h3 class="text-xl font-bold text-dark mb-4">Makeup Artist Website </h3>
+                  <h3 class="text-xl font-bold text-dark mb-4">Makeup Artist Website</h3>
                   <div class="flex items-end justify-between mb-5">
                      <div>
                         <p class="text-xs text-slate-400 font-semibold uppercase">Starting at</p>
@@ -444,16 +466,14 @@
                      <a href="https://webshakti.net.in/Demo/suhani-makeup-demo/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-white transition">
                         <i class="fa-solid fa-eye"></i> View
                      </a>
-                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20this%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
+                     <a href="https://wa.me/918000509635?text=Hi%20Web%20Shakti%2C%20I%20want%20to%20order%20the%20Makeup%20Artist%20demo%20website." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-orange-500/30">
                         <i class="fa-solid fa-cart-shopping"></i> Order
                      </a>
                   </div>
                </div>
             </div>
 
-
-
-
+            <!-- NEW DEMO: copy one demo-card block above, paste here, change image, tag, title, price, chip, View link and the Order message -->
 
          </div>
       </div>

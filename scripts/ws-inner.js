@@ -32,6 +32,23 @@
       if ((a.getAttribute('href') || '').toLowerCase() === cur) a.classList.add('act');
     });
 
+    /* navbar dropdowns (Videos / More): "More" must not jump to top, and touch screens need tap-to-open */
+    var dds = document.querySelectorAll('.wsn-dd');
+    function closeDD() { dds.forEach(function (d) { d.classList.remove('open'); }); }
+    dds.forEach(function (d) {
+      var t = d.firstElementChild;
+      if (!t) return;
+      t.addEventListener('click', function (e) {
+        var isHash = t.getAttribute('href') === '#';
+        if (isHash) e.preventDefault();
+        if (window.matchMedia('(hover: none)').matches) {
+          if (!d.classList.contains('open')) { e.preventDefault(); closeDD(); d.classList.add('open'); }
+          else if (isHash) { d.classList.remove('open'); }
+        }
+      });
+    });
+    document.addEventListener('click', function (e) { if (!e.target.closest('.wsn-dd')) closeDD(); });
+
     /* mobile menu (safe even if the page's own script also binds it) */
     var mm = document.getElementById('mobile-menu'), b = document.getElementById('menu-btn'), x = document.getElementById('close-menu');
     function open() { mm.classList.remove('hidden'); mm.classList.add('flex'); document.body.style.overflow = 'hidden'; }
@@ -39,7 +56,7 @@
     if (mm && b) { b.addEventListener('click', open); }
     if (mm && x) { x.addEventListener('click', close); }
     if (mm) { mm.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', close); }); }
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && mm) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeDD(); if (mm) close(); } });
     window.addEventListener('resize', function () { if (window.innerWidth >= 1024 && mm) close(); });
   });
 })();
