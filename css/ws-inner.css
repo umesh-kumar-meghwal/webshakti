@@ -108,7 +108,7 @@ body.ws ::selection{background:var(--o);color:#1a0d00}
 .wsn-links .wsn-dd:has(.wsn-dd-menu a.act)>a{color:var(--o2);background:rgba(255,148,16,.1)}
 .wsn-dd-menu{position:absolute;top:calc(100% + 8px);left:0;min-width:250px;display:none;flex-direction:column;gap:2px;padding:8px;background:rgba(10,33,80,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:16px;box-shadow:0 22px 50px -12px rgba(0,0,0,.65);z-index:120}
 .wsn-dd-menu::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
-.wsn-dd:hover .wsn-dd-menu,.wsn-dd:focus-within .wsn-dd-menu,.wsn-dd.open .wsn-dd-menu{display:flex;animation:wsddIn .2s var(--ease)}
+.wsn-dd:hover .wsn-dd-menu,.wsn-dd:focus-within .wsn-dd-menu{display:flex;animation:wsddIn .2s var(--ease)}
 .wsn-links .wsn-dd-menu a{display:block;padding:10px 14px;border-radius:10px;font-size:14px;font-weight:500;white-space:nowrap}
 .wsn-links .wsn-dd-menu a:hover{background:rgba(255,148,16,.14);color:var(--o)}
 @keyframes wsddIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
